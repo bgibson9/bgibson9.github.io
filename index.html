@@ -23,14 +23,21 @@
             <ul>
                 <li>Lesson 02: <a href="#">Assignment Link</a></li>
                 <li>Lesson 03: <a href="#">Assignment Link</a></li>
-                <li>Lesson 04: <a href="#">Link | <a href="#">Link</a></li>
+                <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a></li>
             </ul>
         </section>  
     </main>
     <footer>
-        <p>&copy; 2019 | Bambi Gibson | Utah | <a href="https://www.byui.edu/online">BYU Online Learning</a></p> 
-        <p><span id="currentdate"></span></p>
+        <p class="copyright">&copy; 2019 | Bambi Gibson | Utah | <a href="https://www.byui.edu/online">BYU Online Learning</a></p> 
+        <p class="lastModified">Last modified: 
+                <script>
+                        document.write(document.lastModified);
+                    </script>
+
+        </p>
+
     </footer>
-    <script src="js/currentdate.js"></script>
+    <!-- <script src="js/currentdate.js"></script> -->
+
 </body>
 </html>
