@@ -53,35 +53,36 @@ h2 {
     font-size: 1.75em;
     margin: 0;   
 }
-ul li a:link{
+
+ul li a:link {
     color: #f6f4b2;
     text-decoration: none;
 }
 
-ul li a:visited{
+ul li a:visited {
     color: indigo;
 }
 
-ul li a:hover{
+ul li a:hover {
     color:  darkgoldenrod;
 }
-ul li a:active{
+ul li a:active {
     color: khaki;
 }
 
-a:link{
+a:link {
     color: #f6f4b2;
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: indigo;
 }
 
-a:hover{
+a:hover {
     color:  darkgoldenrod;
 }
-a:active{
+a:active {
     color: khaki;
 }
 
