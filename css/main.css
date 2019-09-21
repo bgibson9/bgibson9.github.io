@@ -8,7 +8,7 @@ body {
 }
 
 header, nav, main, footer {
-    margin: 1rem auto;
+    margin: 1rem auto; /* if probs change 1 rem to 0 auto;*/
     max-width: 760px;
 }
 
@@ -52,6 +52,22 @@ h1 {
 h2 {
     font-size: 1.75em;
     margin: 0;   
+}
+
+a:link{
+    color: #f6f4b2;
+    text-decoration: none;
+}
+
+a:visited{
+    color: indigo;
+}
+
+a:hover{
+    color:  darkgoldenrod;
+}
+a:active{
+    color: khaki;
 }
 
 hr {
