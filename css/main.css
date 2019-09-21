@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     background-color: #f1f5f7;
+    color: #024059;
 }
 
 header, nav, main, footer {
