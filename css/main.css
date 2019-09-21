@@ -4,6 +4,7 @@ body {
     font-size: 1.1em;
     font-family: 'Roboto', sans-serif;
     padding: 0;
+    background-color: #f1f5f7;
 }
 
 header, nav, main, footer {
@@ -67,11 +68,11 @@ footer {
     line-height: 5px;
     color: #f1f5f7;
 }
-.copyright{
+#copyright {
     color:#f1f5f7;
-    font-size: 16px;
+    font-size: 14px;
 }
-.lastModified{
+#currentDate {
     color: #c0d1d9;
 }
 
