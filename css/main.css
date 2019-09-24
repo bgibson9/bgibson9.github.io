@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
 body {
     font-size: 1.1em;
@@ -39,7 +38,7 @@ img {
 }
 
 h1 h2 h3 h4 h5 h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: #024059;
     margin: 0;
 }
@@ -56,7 +55,7 @@ h2 {
 }
 
 ul li a:link {
-    color: #f6f4b2;
+    color: #024059;
     text-decoration: none;
 }
 
@@ -72,7 +71,7 @@ ul li a:active {
 }
 
 a:link {
-    color: #f6f4b2;
+    color: #024059;
     text-decoration: none;
 }
 
