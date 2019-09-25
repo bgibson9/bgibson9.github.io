@@ -7,7 +7,7 @@ body {
 }
 
 header, nav, main, footer {
-    margin: 1rem auto; /* if probs change 1 rem to 0 auto;*/
+    margin: 0 auto; /* if probs change 1 rem to 0 auto;*/
     max-width: 760px;
 }
 
@@ -15,7 +15,6 @@ header, footer {
     background-color: #36768e;
     text-align: center;
     border: 1px solid #024059;
-    border-radius: 10px;
 }
 
 header {
@@ -29,11 +28,9 @@ main {
 }
 
 img {
-    float: right;
-    margin: 10px;
+    height: auto;
     border: 1px solid #024059;
-    border-radius: 10px;    
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,13 +40,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.75em;
+    font-size: 1.5rem;
     padding: 0;
-    margin-top: 20px;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1rem;
     margin: 0;   
 }
 
