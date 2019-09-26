@@ -18,8 +18,7 @@ header, footer {
 }
 
 header {
-    height: 100px; 
-}
+    /*height: 100px; */ /* removing this worked! */
 
 main {
     padding:25px;
@@ -91,7 +90,7 @@ hr {
 
 footer {
     padding: 5px;
-    height: 60px;
+    /*height: 60px;*/  /* removing this worked! */
     font-size: 14px;
     line-height: 5px;
     color: #f1f5f7;
