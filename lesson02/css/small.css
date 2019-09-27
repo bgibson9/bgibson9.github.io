@@ -2,6 +2,7 @@
 
 
 body {
+    margin-top: 5px;
     font-size: 1.1em;
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -15,20 +16,23 @@ header, nav, main, footer {
 }
 
 header, footer {
+    margin-top: 10px;
     background-color: #36768e;
     text-align: center;
     border: 1px solid #024059;
 }
 
-header {
-    /*height: 100px; */ /* removing this worked to allow the page elements to nest under each other properly! */
+
+    /*header {height: 100px;} */ /* removing this worked to allow the page elements to nest under each other properly! */
+
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
     font-size: 0.8rem;
-    /*padding:25px;
-    max-width: 740px;*/
+    padding:25px
+    /*max-width: 740px;*/
     
 }
 
@@ -45,18 +49,24 @@ img { /* maybe change to main img or something*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
-    color: #024059;
     margin: 0;
 }
 
 h1 {
     font-size: 1.5rem;
-    padding: 0;
+    color: #024059;
+    height: 10vh;
 }
 
 h2 {
     font-size: 1rem;
-    margin: 0;   
+    color: #36768e;
+    padding: 0 0 10px;   
+}
+
+h3 {
+    font-size: .75rem;
+    color: #9bb9bf;
 }
 
 ul li a:link {
