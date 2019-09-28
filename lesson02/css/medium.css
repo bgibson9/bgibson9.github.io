@@ -10,15 +10,20 @@ header, footer {
 
 main {
     grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    /*column-gap: 1.5rem;*/
 }
 
+article:nth-child(2) {
+    display: block;
+}
 article:nth-child(3){
     grid-column: span 2;
 
 }
 
 main img{
-
+    display: block;
 }
 
 h1 {
@@ -30,10 +35,14 @@ h2 {
     font-size: 1.5rem;
 }
 
+h3{
+    font-size: 1rem;
+}
+
 img {
-        border-radius: 10px;    
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        margin: 10px;
-        float: right;
+    border-radius: 10px;    
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: 10px;
+    float: right;
 }
 }

@@ -10,16 +10,17 @@ body {
     color: #024059;
 }
 
-header, nav, main, footer {
-    margin: 0 auto; /* if probs change 1 rem to 0 auto; this centers the page*/
-    max-width: 760px;
-}
+/*header, nav, main, footer {
+    /*margin: 0 auto;  if probs change 1 rem to 0 auto; this centers the page
+    max-width: 767px;
+}*/
 
 header, footer {
-    margin-top: 10px;
     background-color: #36768e;
     text-align: center;
     border: 1px solid #024059;
+    max-width: 767px;
+    margin: 0 auto;
 }
 
 
@@ -27,24 +28,56 @@ header, footer {
 
 
 main {
+    max-width: 767px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1.5rem;
+    grid-template-columns: 1fr;
+    column-gap: 15px;
     font-size: 0.8rem;
-    padding:25px
-    /*max-width: 740px;*/
-    
+    /*padding:25px;*/
+        
 }
 
 article:nth-child(3){
     grid-column: span 1;
-
 }
+
+#column1, #column2, #column3, .columnImage {
+    display: inline-block;
+    padding: 0px;
+    /*background-position: bottom;*/
+/* added .column down to the figcaption*/
+}
+
+.columnImage {
+    /*margin-bottom: 30px;*/
+    /*width: 187px;
+    height: 296px;*/
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #d4e6ee;
+    margin: 0px;
+    
+}
+
+.columnImage p {
+    display: block;
+    /*margin: -5px;
+    width: 187px;
+    color: #f8ffb0;*/
+    font-size: .75rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px 5px;
+    background-color: #d4e6ee;
+    
+}
+
+
 
 img { /* maybe change to main img or something*/
     height: auto;
-    border: 1px solid #024059;
-    
+    border: 1px solid #024059;    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,13 +88,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 1.5rem;
     color: #024059;
-    height: 10vh;
+    /*height: 7vh;*/
 }
 
 h2 {
     font-size: 1rem;
     color: #36768e;
-    padding: 0 0 10px;   
+    padding: 0 0 10px 0;
+    text-align: left;   
 }
 
 h3 {
@@ -99,14 +133,6 @@ a:hover {
 }
 a:active {
     color: khaki;
-}
-
-hr {
-    background-color: #024059;
-    height: 1px; 
-    border: 0;
-    padding: 0px;
-    margin: 0px;
 }
 
 footer {
