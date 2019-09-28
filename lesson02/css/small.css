@@ -88,8 +88,8 @@ article:nth-child(3){
 .columnImage h3 {
     padding: 15px;
     font-weight: bold;
-    padding-bottom: -10px;
 }
+
 img { /* maybe change to main img or something*/
     height: auto;
     width: 90%; 
