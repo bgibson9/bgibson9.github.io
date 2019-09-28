@@ -158,8 +158,8 @@ footer {
     padding: 5px;
     /*height: 60px;*/  /* removing this worked to allow the page elements to nest under each other properly! */
     font-size: 14px;
-    line-height: 5px;
-    color: #f1f5f7;
+    /*line-height: 5px;
+    color: #f1f5f7;*/
 }
 #copyright {
     color:#f1f5f7;
