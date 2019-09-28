@@ -21,6 +21,7 @@ header, footer {
     border: 1px solid #024059;
     max-width: 767px;
     margin: 0 auto;
+   
     /*padding: 20px 0 20px;*/
 }
 
@@ -43,30 +44,28 @@ article:nth-child(3){
     grid-column: span 1;
 }
 
+
+
 #column1, #column2, #column3, .columnImage {
     display: inline-block;
     padding-bottom: 10px;
     text-align: center;
-    /*background-position: bottom;*/
-/* added .column down to the figcaption*/
+    
 }
 
+
+    
+
 .columnImage {
-    /*margin-bottom: 30px;*/
-    /*width: 187px;
-    height: 296px;*/
     border-radius: 10px;
-    /*padding: 5px;*/
     background-color: #d4e6ee;
     margin: 0px;
-    
+    border: 1px solid #024059;
+
 }
 
 .columnImage p {
     display: block;
-    /*margin: -5px;
-    width: 187px;
-    color: #f8ffb0;*/
     font-size: .75rem;
     text-align: center;
     border-radius: 10px;
@@ -89,6 +88,7 @@ article:nth-child(3){
 .columnImage h3 {
     padding: 15px;
     font-weight: bold;
+    padding-bottom: -10px;
 }
 img { /* maybe change to main img or something*/
     height: auto;
