@@ -1,0 +1,52 @@
+@media only screen and (min-width: 37.5em) {
+    
+header, main, footer {
+    min-width: 37.5em;
+}
+    
+header, footer {
+    border-radius: 10px;
+}
+
+
+nav ul {
+    flex-direction: row;
+    
+}
+
+main {
+    flex-direction: row;
+    padding: 25px;
+    /*column-gap: 1.5rem;*/
+}
+
+article:nth-child(2) {
+    display: block;
+}
+
+/*article:nth-child(3){
+    
+}*/
+
+main img{
+    display: block;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 20px;
+}
+    
+h2 {
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto
+}
+}
