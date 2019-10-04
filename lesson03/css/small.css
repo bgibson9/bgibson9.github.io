@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
 
-/* yellow #f3f315; dk blue #2364aa; med blue #3da5d9; aqua blue #73bfb8; orange #ea7317; */
+/* yellow #f3f315 (243,242,21); dk blue #2364aa(35,100,70); med blue #3da5d9(61,165,217); aqua blue #73bfb8(115,191,184); orange #ea7317(234,115,23); */
 
 body {
     margin-top: 5px;
@@ -141,6 +141,7 @@ article {
 }
 
 .columnImage h3 {
+    font-size: 1.1rem;
     padding: 15px;
     font-weight: bold;
 }
