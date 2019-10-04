@@ -130,6 +130,9 @@ article {
     background-color: #ccc;
     margin: 0px;
     border: 1px solid #024059;
+    max-width: 100%;
+    min-width: 352px;
+    height: auto;
 
 }
 
