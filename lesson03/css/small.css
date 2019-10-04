@@ -24,7 +24,6 @@ header,
 footer {
     background-color: #3da5d9;
     display: flex;
-
     flex-flow: column;
     align-items: center;
     justify-content: center;
@@ -81,8 +80,7 @@ nav ul li {
 nav li a {
     display: block;
     color: #f3f315;        /* change this */
-    /*text-align: center;*/
-    /* not needed */
+    /*    text-align: center;      not needed */
     padding: 0.75rem; /* play with  see what looks best */
     text-decoration: none;
     font-size: 0.95rem;
@@ -103,7 +101,7 @@ main {
 }
 
 main h2 { 
-    color: #73bfb8;
+    color: #2364aa;
 }
 
 article {
@@ -120,10 +118,8 @@ article {
 
 
 #column1,
-#column2,
-#column3,
 .columnImage {
-    display: inline-block;
+    display: block;
     padding-bottom: 10px;
     text-align: center;
 
@@ -131,7 +127,7 @@ article {
 
 .columnImage {
     border-radius: 10px;
-    background-color: #d4e6ee;
+    background-color: #ccc;
     margin: 0px;
     border: 1px solid #024059;
 
@@ -143,7 +139,7 @@ article {
     text-align: center;
     border-radius: 10px;
     padding: 5px;
-    background-color: #d4e6ee;
+    background-color: #ccc;
 
 }
 
@@ -155,7 +151,7 @@ article {
     padding: 5px;
     padding-bottom: 10px;
     text-align: center;
-    height: 3rem;
+    height: 5rem;
 }
 
 .columnImage h3 {
@@ -184,12 +180,12 @@ h2 {
     font-size: 1.25rem;
     color: #2364aa;
     padding: 0 0 10px 0;
-    text-align: left;
+    text-align: center;
 }
 
 h3 {
     font-size: 1rem;
-    color: #024059;
+    color: #2364aa;
 }
 
 ul li a:link {
