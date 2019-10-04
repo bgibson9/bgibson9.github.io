@@ -1,7 +1,9 @@
 @media only screen and (min-width: 60em) {
 
-    /*header, main, footer {
-        min-width:  what goes here? ;
-    }*/
+    {
+    
+        header, main, footer {
+            min-width: 60em;
+        }
 
 }
