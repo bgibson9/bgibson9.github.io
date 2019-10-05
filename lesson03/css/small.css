@@ -31,13 +31,16 @@ footer {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     text-align: center;
     border: 1px solid #000;
 }
 
+
 header {
     font-family: "Roboto Slab", sans-serif; 
+}
+header h2 {
+    padding: 20px;
 }
 
 header img{
@@ -49,6 +52,7 @@ header img{
 nav {
     background-color: #2364aa;
     text-align: center;
+    border: 1px solid #000;
     border-radius: 0 0 10px 10px;
     /*  text-align: center; not needed */
     /* box-shadow: 0 2px 15px gray;*/
@@ -73,16 +77,17 @@ nav ul li {
 /*header {height: 100px;} */
 /* removing this worked to allow the page elements to nest under each other properly! */
 
-nav li a {
+nav ul li a {
     display: block;
-    color: #f3f315;
-    padding: 0.75rem; /* play with  see what looks best */
+    padding: 0.75rem;
     text-decoration: none;
     font-size: 1rem;
+    border-radius: 10px;
 }
 
 .active {
     background-color: #3da5d9;
+    color: #000;
 }
 
 main {
@@ -107,19 +112,15 @@ article {
 
 .columnImage {
     display: block;
-    padding-bottom: 10px;
+    background-color: #e8e8e8;
     text-align: center;
-
-}
-
-.columnImage {
-    border-radius: 10px;
-    background-color: #ccc;
     margin: 0px;
     border: 1px solid #024059;
+    border-radius: 10px;
     max-width: 100%;
     min-width: 352px;
     height: auto;
+    padding-bottom: 10px;
 
 }
 
@@ -129,7 +130,6 @@ article {
     text-align: center;
     border-radius: 10px;
     padding: 5px;
-    background-color: #ccc;
 
 }
 
@@ -138,8 +138,7 @@ article {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 0px;
-    padding: 5px;
-    padding-bottom: 10px;
+    padding: 10px;
     text-align: center;
     height: 2rem;
 }
@@ -167,7 +166,7 @@ article {
     padding: 25px;
 }
 
-table, th, td {
+th, td {
     border: 1px solid black;
     padding: 10px;
     border-radius: 3px;
@@ -180,64 +179,56 @@ table, th, td {
     border-radius: 10px;
 }
 
-#sampleHeader tr td {
-    background-color: #3dad59;
+#sampleHeader {
+    background-color: #3da5d9;
     color: #2364aa;
     font-size: 1.5rem;
     font-family: "Roboto Slab", sans-serif;
 }
 
-#samplePrimaryNav tr td {
-    background-color: #3dad59;
-    color: #2364aa;
+#samplePrimaryNav {
+    background-color:#2364aa;
+    color: #fff;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
-#samplefooterNavr tr td {
-    background-color: #3dad59;
-    color: #2364aa;
+#sampleFooterNav {
+    background-color: #3da5d9;
+    color: #000;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
 
-#samplesampleHeading1 tr td {
-    background-color: #3dad59;
+#sampleHeading1 {
     color: #2364aa;
     font-size: 1.5rem;
     font-family: "Roboto Slab", sans-serif;
 }
 
-#samplesampleHeading2 tr td {
-    background-color: #3dad59;
+#sampleHeading2 {
     color: #2364aa;
     font-size: 1.25rem;
     font-family: "Roboto Slab", sans-serif;
 }
 
-#samplesampleHeading3 tr td {
-    background-color: #3dad59;
+#sampleHeading3 {
     color: #2364aa;
     font-size: 1rem;
     font-family: "Roboto Slab", sans-serif;
 }
 
-#samplesampleHeading4 tr td {
-    background-color: #3dad59;
+#sampleHeading4 {
     color: #000;
     font-size: .75rem;
     font-family: "Roboto Slab", sans-serif;
 }
 
-#sampleBody tr td {
-    font-family:
+#sampleBody {
     color: #000;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 
 h1,
 h2,
@@ -276,9 +267,10 @@ ul li a:visited {
     color: #fff;
 }
 
-nav ul li a:hover {
+ul li a:hover {
     background-color:  #3da5d9;
     color: #f3f315;
+    border-radius: 10px;
 }
 
 ul li a:active {
@@ -317,6 +309,3 @@ body footer p:nth-child(2) {
     color: #f1f5f7;
 }
 
-/*.center {
-
-}   */

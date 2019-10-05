@@ -4,10 +4,13 @@ header, main, footer {
     min-width: 37.5em;
 }
     
-header, footer {
+header {
     border-radius: 10px 10px 0px 0px;
 }
 
+footer {
+    border-radius: 10px;
+}
 
 nav ul {
     flex-direction: row;
