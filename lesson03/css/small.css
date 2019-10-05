@@ -41,6 +41,7 @@ header {
 }
 header h2 {
     padding: 20px;
+    text-shadow: 2px 2px 4px #fff;
 }
 
 header img{
@@ -243,6 +244,7 @@ h6 {
 h1 {
     font-size: 1.5rem;
     color: #2364aa;
+    text-shadow: 2px 2px 4px #fff;
     /*height: 7vh;*/
 }
 
