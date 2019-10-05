@@ -273,11 +273,6 @@ ul li a:hover {
     border-radius: 10px;
 }
 
-ul li a:active {
-    color: #000;
-    
-}
-
 a:link {
     text-decoration: none;
 }
