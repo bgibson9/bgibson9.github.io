@@ -2,6 +2,10 @@
 
 /* yellow #f3f315 (243,242,21); dk blue #2364aa(35,100,70); med blue #3da5d9(61,165,217); aqua blue #73bfb8(115,191,184); orange #ea7317(234,115,23); */
 
+/* {
+    border: 1px solid red !important; /* demo for Box Model Presentation 
+ }*/
+
 body {
     margin-top: 5px;
     font-size: 1.1em;
@@ -78,7 +82,7 @@ nav li a {
 }
 
 .active {
-    color: yellow;
+    background-color: #3da5d9;
 }
 
 main {
@@ -147,6 +151,94 @@ article {
 }
 
 
+.columnColorScheme {
+    display: block;
+    font-size: 1.1rem;
+    text-align: left;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.columnSiteMap img {
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+.audienceTable {
+    display: block;
+    font-size: 1.1rem;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#sampleHeader tr td {
+    background-color: #3dad59;
+    color: #2364aa;
+    font-size: 1.5rem;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+#samplePrimaryNav tr td {
+    background-color: #3dad59;
+    color: #2364aa;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#samplefooterNavr tr td {
+    background-color: #3dad59;
+    color: #2364aa;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#samplesampleHeading1 tr td {
+    background-color: #3dad59;
+    color: #2364aa;
+    font-size: 1.5rem;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+#samplesampleHeading2 tr td {
+    background-color: #3dad59;
+    color: #2364aa;
+    font-size: 1.25rem;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+#samplesampleHeading3 tr td {
+    background-color: #3dad59;
+    color: #2364aa;
+    font-size: 1rem;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+#samplesampleHeading4 tr td {
+    background-color: #3dad59;
+    color: #000;
+    font-size: .75rem;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+#sampleBody tr td {
+    font-family:
+    color: #000;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
 h1,
 h2,
 h3,
@@ -190,7 +282,7 @@ nav ul li a:hover {
 }
 
 ul li a:active {
-    color: #f3f315;
+    color: #000;
     
 }
 
@@ -200,11 +292,8 @@ a:link {
 
 footer {
     padding: 5px;
-    /*height: 60px;*/
-    /* removing this worked to allow the page elements to nest under each other properly! */
+    /*height: 60px; removing this worked to allow the page elements to nest under each other properly! */
     font-size: 14px;
-    /*line-height: 5px;
-    color: #f1f5f7;*/
 }
 
 footer p{
@@ -217,7 +306,6 @@ body footer p:nth-child(1) {
 
 body footer p:nth-child(2) {
     margin-bottom: 15px;
-
 }
 
 #copyright {
