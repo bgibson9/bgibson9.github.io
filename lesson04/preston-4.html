@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bambi Gibson: CIT 230 Assignment W03 - SouthEast Idaho Weather</title>
+    <title>Bambi Gibson: CIT 230 Assignment W04 - SouthEast Idaho Weather</title>
     <meta name="description"
-        content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 3 - The Weather Site Project">
+        content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 4 - The Weather Site Project">
 
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
 
@@ -23,14 +23,15 @@
     <header>
         <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
         <h1>Southeast Idaho Weather</h1>
-        <h2>"Your regional weather forecast"</h2>
+        <h2>"Your Regional Weather Forecast"</h2>
     </header>
-    
+
     <nav>
-        <ul>
-            <li><a class="active" href="../index.html">Home</a></li> <!-- change to elements in assignment? Tag the other hrefs active when the pages are made (on that particular page) -->
-            
-            <li><a href="preston-4.html">Preston</a></li>
+        <ul class="navigation responsive">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <!-- change to elements in assignment? Tag the other hrefs active when the pages are made (on that particular page) -->
+            <li><a class="active" href="preston-4.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -39,10 +40,30 @@
     </nav>
 
     <main>
+        <h2>Preston, Idaho</h2>
 
-        <article>
+        <article id="column1">
+            <!--   may change to row at some point   -->
             <div class="columnImage">
-                
+                <h3>Hero w/ weather summary</h3>
+            </div>
+        </article>
+
+        <article id="column2">     <!--   may change to row at some point   -->
+            <div class="columnImage">
+                <h3>5 Day Forecast</h3>
+            </div>
+        </article>
+
+        <article id="column3">     <!--   may change to row at some point   -->
+            <div class="columnImage">
+                <h3>Article</h3>
+            </div>
+        </article>
+
+        <article id="column4">     <!--   may change to row at some point   -->
+            <div class="columnImage">
+                <h3>Contact Information</h3>
             </div>
         </article>
 
@@ -51,10 +72,8 @@
         <p>&copy; <span id="copyright"></span> | Bambi Gibson | Utah | <a href="https://www.byui.edu/online"
                 target="_blank" rel="noopener noreferrer">BYU Online Learning</a></p>
 
-        <p>Last Updated: <span id="currentDate"></span></p>
+        <p>Today's Date: <span id="currentDate"></span></p>
 
     </footer>
-    <script src="../js/currentdate.js"></script>
-</body>
-
-</html>
+    <script src="../js/lastmodified.js"></script>
+    <script src:"js/toggleHambMenu"> </script> </body> </html>
