@@ -6,6 +6,6 @@ var monthName = months[d.getMonth()];
 var fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + d.getFullYear();
 
 }
-document.getElementById('currentdate').textContent = new date(document.currentDate).getdate();
+document.getElementById('currentdate').textContent = new date(document.currentDate).getDate();
 
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
