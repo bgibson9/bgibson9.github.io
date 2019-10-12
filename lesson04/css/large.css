@@ -6,5 +6,8 @@
 
         }
 
-       
+        .navigation a {
+                
+                padding: 0.25rem;
+        }
 }
