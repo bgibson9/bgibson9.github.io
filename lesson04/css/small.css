@@ -130,7 +130,7 @@ nav ul li a {
 .navigation a {
     display: block;
     padding: 0.25rem;
-    text-size: 0.75rem;
+    font-size: 0.75rem;
     text-align: center;
     text-decoration: none;
 
