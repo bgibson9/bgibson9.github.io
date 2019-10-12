@@ -5,4 +5,4 @@ var fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + d.getFull
 
 document.getElementById('currentDate').textContent = fulldate;
 
-document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
+document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();''
