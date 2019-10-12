@@ -56,12 +56,12 @@
 
     }
 
-    main {
+    /*main {
         /*flex-direction: row;*/
         /*display: block;*/
         /*padding: 25px 0 25px; */
-        /*column-gap: 1.5rem;*/
-    }
+        /*column-gap: 1.5rem;
+    }*/
 
     article:nth-child(2) {
         display: block;
