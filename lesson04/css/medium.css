@@ -33,6 +33,10 @@
         display: flex;
     }
 
+    .navigation a {
+        font-size: 0.8rem;
+    }
+
     nav ul li a {
         white-space: nowrap;
     }
@@ -55,7 +59,7 @@
     main {
         /*flex-direction: row;*/
         /*display: block;*/
-        padding: 25px 0 25px; 
+        /*padding: 25px 0 25px; */
         /*column-gap: 1.5rem;*/
     }
 
