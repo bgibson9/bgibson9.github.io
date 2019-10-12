@@ -29,6 +29,10 @@
         display: flex;
     }
 
+    nav ul li a {
+        white-space: nowrap;
+    }
+
     .navigation li:first-child {
         display: none;
     }
