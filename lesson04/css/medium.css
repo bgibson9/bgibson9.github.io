@@ -1,7 +1,8 @@
 @media only screen and (min-width: 32.5em) {
 
-    /*  causing header to not center when switching from small to medium*/
+    /*  causing header to not center when switching from small to medium. Also 520px = 32.5em based on 16px size*/
     
+
     header,
     nav,
     main,
@@ -18,7 +19,7 @@
     }
 
     footer {
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
     }
 
     nav {
@@ -28,17 +29,13 @@
     nav ul {
         flex-direction: row;
     }
+  
+    nav ul li a {
+        white-space: nowrap;
+    }
 
     .navigation {
         display: flex;
-    }
-
-    .navigation a {
-        font-size: 0.8rem;
-    }
-
-    nav ul li a {
-        white-space: nowrap;
     }
 
     .navigation li:first-child {
@@ -50,18 +47,10 @@
         flex: 1 1 100%;
     }
 
-
     .navigation li a {
         border-radius: 10px;
 
     }
-
-    /*main {
-        /*flex-direction: row;*/
-        /*display: block;*/
-        /*padding: 25px 0 25px; */
-        /*column-gap: 1.5rem;
-    }*/
 
     article:nth-child(2) {
         display: block;
@@ -71,25 +60,27 @@
     
 }*/
 
-    main img {
+main h2 {
+    margin: 10px;
+}
+ /*   main img {
         display: block;
     }
+*/
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
+        white-space: nowrap;
        /* padding: 20px 0 10px;*/
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.50rem;
+        white-space: nowrap;
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
-    /*img {
-        margin-left: auto;
-        margin-right: auto
-    }*/
 }

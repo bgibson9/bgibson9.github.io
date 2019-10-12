@@ -1,20 +1,13 @@
 @media only screen and (min-width: 56em) {
 
-        /*.header-wrapper,
-        .title {
-                margin-top: 0;
-                margin-bottom: 0;
-        }*/
-
-
-
         main,
         footer {
                 max-width: 767px;
-
         }
 
-
+        heading h2 {
+                font-size: 1.5rem;
+        }
 
         .navigation a {
                 font-size: 1rem;

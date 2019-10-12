@@ -12,12 +12,12 @@
 }
 
  body {
-    margin-top: 5px;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     padding: 0;
     background-color: #f1f5f7;
     color: #000;
+    min-width: 360px;
 }
 
 header,
@@ -31,45 +31,38 @@ header,
 footer {
     background-color: #3da5d9;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     width: 100%;
     text-align: center;
     border: 1px solid #000;
-
 }
 
-.header-wrapper, .title {
+.header-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 767px;
-
-}
-
-.header-titles {
-    display: block;
-    padding-left: 20px;
 }
 
 header {
     font-family: "Roboto Slab", sans-serif;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
 }
+    
+    
 
 header img{
     max-width: 75px;
     height: auto;
+    padding-right: 20px;
 }
 
-/*header h1{
-    display: inline;
-}*/
-
 header h2 {
-   /* padding: 10px 0 20px; */ /* change this after moving the logo??? */
     text-shadow: 2px 2px 2px #fff;
+    font-size: 1rem;
 }
 
 
@@ -78,9 +71,7 @@ nav {
     background-color: #2364aa;
     text-align: center;
     border: 1px solid #000;
-    /* border-radius: 0 0 10px 10px; */
     /*  text-align: center; not needed */
-    /* box-shadow: 0 2px 15px gray;*/
 }
 
 nav ul {
@@ -104,10 +95,8 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    /*padding: 0.75rem;*/
     text-decoration: none;
     font-size: 1rem;
-    /*border-radius: 10px;*/
 }
 
 .navigation{
@@ -116,26 +105,21 @@ nav ul li a {
     padding: 0;
     margin: .2rem auto;
     max-width: 767px;
-    
 }
 
 .navigation li:first-child {
     display: block;
-
 }
 
 .navigation li{
     display: none;
-
 }
 
 .navigation a {
     display: block;
     padding: 0.25rem;
-    font-size: 0.75rem;
     text-align: center;
     text-decoration: none;
-
 }
 
 .navigation a:hover {
@@ -154,14 +138,13 @@ nav ul li a {
 }
 
 main {
-    /*display: block;   */
     font-size: 0.8rem;
-    /*padding: 10px 0;*/
     height: 100%;
 }
 
 main h2 { 
     color: #2364aa;
+    padding: 10px 0;
 }
 
 
@@ -173,7 +156,10 @@ article {
     border: 2px dotted #3da5d9;
     align-content: center;
     font-style: italic;
+}
 
+.row1, .row2, .row3 {
+    margin: 5px 5px 0;
 }
 
 h1,
@@ -188,16 +174,17 @@ h6 {
 
 h1 {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #2364aa;
+    text-align: center;
     text-shadow: 2px 2px 4px #fff;
+    white-space: nowrap;
     /*height: 7vh;*/
 }
 
 h2 {
     font-size: 1.25rem;
     color: #2364aa;
-    padding: 15px 0;
     text-align: center;
 }
 
@@ -221,12 +208,6 @@ ul li a:hover {
     /*border-radius: 10px;*/
 }
 
-/*     :active li a:active {
-    background-color:  #3da5d9;
-    color: rgba(234,115,23, .7);
-    /*border-radius: 10px;
-}
-*/
 a:link {
     text-decoration: none;
 }
@@ -237,8 +218,7 @@ footer {
     align-items: center;
     /*height: 60px; removing this worked to allow the page elements to nest under each other properly! */
     font-size: 14px;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 footer p{
