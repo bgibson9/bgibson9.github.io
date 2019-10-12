@@ -1,13 +1,13 @@
 @media only screen and (min-width: 32.5em) {
 
-    /*  causing header to not center when switching from small to medium
+    /*  causing header to not center when switching from small to medium*/
     
     header,
     nav,
     main,
     footer {
         min-width: 32.5em;
-    }   */
+    }
 
     header {
         border-radius: 10px 10px 0px 0px;
