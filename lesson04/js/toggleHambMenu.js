@@ -3,4 +3,4 @@ function toggleMenu() {
 
 }
 
-// the zero means, give me the first instance of it. zero [0] based indexing the first item is zero, next item is 1, and so on.
+// the zero means, give me the first instance of it. zero [0] based indexing the first item is zero, next item is 1, and so on. This will not upload for some reason.
