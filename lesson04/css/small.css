@@ -25,34 +25,51 @@ nav,
 main,
 footer {
     margin: 0 auto;     /*0 auto; this centers the page*/
-
 }
 
 header,
 footer {
     background-color: #3da5d9;
     display: flex;
-    flex-flow: column;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    width: 100%:
     text-align: center;
     border: 1px solid #000;
+
 }
 
+.header-wrapper, .title {
+    flex-direction: row;
+    align-items: center;
+    max-width: 767px;
+
+}
+
+.header-titles {
+    display: block;
+}
 
 header {
-    font-family: "Roboto Slab", sans-serif; 
-}
-header h2 {
-    padding: 10px 0 20px;  /* change this after moving the logo??? */
-    text-shadow: 2px 2px 2px #fff;
+    font-family: "Roboto Slab", sans-serif;
+    padding-top: 20px;
 }
 
 header img{
-    display: block;
-    /*padding-top: 15px;
-    padding-bottom: 5px;*/
+    max-width: 75px;
+    height: auto;
 }
+
+/*header h1{
+    display: inline;
+}*/
+
+header h2 {
+   /* padding: 10px 0 20px; */ /* change this after moving the logo??? */
+    text-shadow: 2px 2px 2px #fff;
+}
+
 
 nav {
     margin: 0 auto;
@@ -168,6 +185,7 @@ h6 {
 }
 
 h1 {
+    display-block;
     font-size: 1.5rem;
     color: #2364aa;
     text-shadow: 2px 2px 4px #fff;
@@ -213,8 +231,12 @@ a:link {
 
 footer {
     padding: 5px;
+    flex-direction: column;
+    align-items: center;
     /*height: 60px; removing this worked to allow the page elements to nest under each other properly! */
     font-size: 14px;
+    text-align: center;
+    
 }
 
 footer p{
