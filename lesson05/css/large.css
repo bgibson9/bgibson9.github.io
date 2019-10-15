@@ -1,0 +1,21 @@
+@media only screen and (min-width: 56em) {
+
+        main,
+        footer {
+                max-width: 767px;
+        }
+
+        heading h2 {
+                font-size: 1.5rem;
+        }
+
+        .navigation a {
+                font-size: 1rem;
+                padding: 0.75rem;
+        }
+
+        .row1, .row2, .row3 {
+                margin: 5px 0 0;
+            }
+
+}

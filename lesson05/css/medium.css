@@ -1,0 +1,86 @@
+@media only screen and (min-width: 32.5em) {
+
+    /*  causing header to not center when switching from small to medium. Also 520px = 32.5em based on 16px size*/
+    
+
+    header,
+    nav,
+    main,
+    footer {
+        min-width: 32.5em;
+    }
+
+    header {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    header img{
+        min-width: 100px;
+    }
+
+    footer {
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav {
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+  
+    nav ul li a {
+        white-space: nowrap;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        border-radius: 10px;
+
+    }
+
+    article:nth-child(2) {
+        display: block;
+    }
+
+    /*article:nth-child(3){
+    
+}*/
+
+main h2 {
+    margin: 10px;
+}
+ /*   main img {
+        display: block;
+    }
+*/
+
+    h1 {
+        font-size: 1.75rem;
+        white-space: nowrap;
+       /* padding: 20px 0 10px;*/
+    }
+
+    h2 {
+        font-size: 1.50rem;
+        white-space: nowrap;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+}
