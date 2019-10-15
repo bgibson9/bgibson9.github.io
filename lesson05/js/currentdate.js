@@ -7,7 +7,7 @@ var options = {
 
 document.getElementById('currentDate').innerHTML = new Date().toLocaleDateString('en-gb', options);
 
-document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
+//document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
 
    
 
