@@ -147,6 +147,9 @@ main h2 {
     padding: 10px 0;
 }
 
+.rowimage {
+    width: 90%;
+}
 
 article {
     margin: 5px auto;
@@ -156,6 +159,9 @@ article {
     border: 2px dotted #3da5d9;
     align-content: center;
     font-style: italic;
+}
+article .row1 {
+    border: 0;
 }
 
 .row1, .row2, .row3 {

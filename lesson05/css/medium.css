@@ -52,6 +52,11 @@
 
     }
 
+
+    .rowimage {
+        width: 70%;
+    }
+
     article:nth-child(2) {
         display: block;
     }
