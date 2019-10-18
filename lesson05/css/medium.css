@@ -65,6 +65,16 @@
     
 }*/
 
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+
+.stats {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
 main h2 {
     margin: 10px;
 }

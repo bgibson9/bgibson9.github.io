@@ -147,8 +147,9 @@ main h2 {
     padding: 10px 0;
 }
 
-.rowimage {
-    width: 90%;
+.rowImage img {
+    width: 100%
+    
 }
 
 article {
@@ -168,6 +169,30 @@ article .row1 {
     margin: 5px 5px 0;
 }
 
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    background-color: #3da5d9;
+    color: #f1f5f7;
+    font-size: 1rem;
+    align: right;
+}
+
+.stats div h2 {
+    grid-column: span 2;
+    }
+
+
+hr {
+    grid-column: span 2;   
+    color: #f1f5f7;
+    width: 90%;
+}
+
+.row2 {
+    display: none;
+}
 h1,
 h2,
 h3,
