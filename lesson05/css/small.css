@@ -20,6 +20,26 @@
     min-width: 360px;
 }
 
+.bannerad {
+    text-align: center;
+    padding: 5px 0;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+.bannerad p {
+    line-height: .5em;
+}
+
+.showbanner {
+    display: block;
+  }
+
+.hidebanner {
+    display: none;
+}
+
 header,
 nav,
 main,
@@ -46,12 +66,15 @@ footer {
     max-width: 767px;
 }
 
+
+
 header {
     font-family: "Roboto Slab", sans-serif;
     padding-top: 10px;
     padding-right: 15px;
 }
-    
+
+
     
 
 header img{
@@ -154,12 +177,7 @@ main h2 {
 
 article {
     margin: 5px auto;
-    padding: 10px;
-    max-width: 1020px;
     height: 100%;
-    border: 2px dotted #3da5d9;
-    align-content: center;
-    font-style: italic;
 }
 article .row1 {
     border: 0;
@@ -169,6 +187,10 @@ article .row1 {
     margin: 5px 5px 0;
 }
 
+.herodiv {
+    margin: 10px auto;
+}
+
 .stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -176,14 +198,25 @@ article .row1 {
     background-color: #3da5d9;
     color: #f1f5f7;
     font-size: 1rem;
-    align: right;
+    text-align: right;
+    width: 100%;
 }
 
 .stats div h2 {
     grid-column: span 2;
     }
 
+.stats h3 {
+        text-align: center;
+    }
+.stats div:nth-child(odd) {
+    text-align: right;
+}
 
+.stats div:nth-child(even){
+    text-align: left;
+}
+    
 hr {
     grid-column: span 2;   
     color: #f1f5f7;
@@ -193,6 +226,11 @@ hr {
 .row2 {
     display: none;
 }
+
+.row4 {
+    background-color: #73bfb8;
+}
+
 h1,
 h2,
 h3,

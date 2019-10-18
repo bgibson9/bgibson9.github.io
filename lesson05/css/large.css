@@ -2,7 +2,7 @@
 
         main,
         footer {
-                max-width: 767px;
+                max-width: 1024px;
         }
 
         heading h2 {
@@ -13,19 +13,20 @@
                 font-size: 1rem;
                 padding: 0.75rem;
         }
-
-        .herodiv {
-                margin: 10px auto;
-                position: relative;
-               
+        
+        .row1,
+        .row2,
+        .row3 {
+                margin: 5px 0 0;
+                display: block;
         }
 
-        .row1, .row2, .row3 {
-                margin: 5px 0 0;
-            }
+        .row2 {
+                display: block;
+        }
 
-            .rowimage {
+        .rowimage {
                 max-width: 960px;
-            }
+        }
 
 }

@@ -18,6 +18,9 @@
         min-width: 100px;
     }
 
+    main {
+        font-size: 1em;
+    }
     footer {
         border-radius: 0 0 10px 10px;
     }
@@ -68,11 +71,22 @@
 .herodiv {
     margin: 10px auto;
     position: relative;
+}
 
 .stats {
     position: absolute;
     top: 25px;
     left: 25px;
+    width: 27%;
+    min-width: 105px;
+}
+
+.stats h4 {
+    grid-column: span 2;
+    }
+
+.row2 {
+    display: block;
 }
 
 main h2 {
@@ -82,6 +96,14 @@ main h2 {
         display: block;
     }
 */
+
+th, td {
+    border: 1px solid black;
+  }
+
+  th{
+      background-color: #3da5d9;
+  }
 
     h1 {
         font-size: 1.75rem;
