@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
 
-/* yellow #f3f315 (243,242,21); dk blue #2364aa(35,100,70); med blue #3da5d9(61,165,217); aqua blue #73bfb8(115,191,184); orange #ea7317(234,115,23); */
+/* yellow #f3f315 (243,242,21); dk blue #2364aa(35,100,70); med blue #3da5d9(61,165,217); aqua blue #73bfb8(115,191,184); orange #ea7317(234,115,23); light orange #f4b98b; very pale yellow #ffffe5;*/ 
+
 
 /* {
     border: 1px solid red !important; /* demo for Box Model Presentation 
@@ -186,6 +187,22 @@ article .row1 {
     margin: 5px 5px 0;
 }
 
+
+.row2 {
+    display: none;
+}
+
+.row3 .rowImage img {
+    width: 100%;
+    border: 3px solid #2364aa;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
+}
+
+.row4 {
+    background-color: #f4b98b; /*#ea7317; /*#ffffe5;*/ 
+}
+
 .herodiv {
     margin: 10px auto;
 }
@@ -221,14 +238,6 @@ hr {
     grid-column: span 2;
     color: #f1f5f7;
     width: 90%;
-}
-
-.row2 {
-    display: none;
-}
-
-.row4 {
-    background-color: #ffffe5;
 }
 
 h1,

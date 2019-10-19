@@ -20,5 +20,5 @@ else {
  }
 
  
-//looked at list of DOM Tokens like toggle. Add was the only one that fit.
+//looked at list of DOM Tokens like toggle. add was the only one that fit.
 //document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();

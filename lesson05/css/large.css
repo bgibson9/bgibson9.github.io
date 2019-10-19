@@ -18,13 +18,11 @@
         .row2,
         .row3 {
                 margin: 5px 0 0;
-                display: block;
+                text-align: center;
+                /*display: block;*/
         }
 
-        .row2 {
-                display: block;
-        }
-
+        
         .stats h4 {
                 grid-column: span 2;
                 }
