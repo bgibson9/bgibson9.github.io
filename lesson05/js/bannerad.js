@@ -10,13 +10,13 @@
 var d = new Date();
 var currentDay = d.getDay();
 
-if (currentDay == 3) {
-    document.getElementsByClassName("bannerad").classList.add("showbanner");
+if (currentDay == 5) {
+    document.getElementsByClassName("bannerad").classList.toggle("showbanner");
 }
 
 else {
  
-    document.getElementsByClassName("bannerad").classList.add("hidebanner");
+    document.getElementsByClassName("bannerad").classList.toggle("hidebanner");
  }
 
  

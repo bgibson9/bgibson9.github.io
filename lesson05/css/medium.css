@@ -149,10 +149,13 @@
         left: 10px;
     }
 
+
+.rowImage4 {
+    display: flex;
+}
     .row4 .rowImage4 img {
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        /*top: 20px;
+        right: 20px;*/
         width: 33%;
     }
 
