@@ -196,6 +196,58 @@ article, section {
     background-color: #f4b98b; /*#ea7317; /*#ffffe5;*/ 
 }
 
+.row4 .rowImage4 img {
+    display: none;
+}
+
+.row4 .row4content {
+    margin: 0;
+    position: relative;
+    padding: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+.row4 h3 {
+
+
+}
+
+
+
+.fa {
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-whatsapp {
+    background:  #25D366;
+    color: white;
+  }
+ 
 .herodiv {
     margin: 10px auto;
 }

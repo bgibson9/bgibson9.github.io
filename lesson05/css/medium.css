@@ -73,9 +73,11 @@
         grid-column: span 2;
     }
 
-    .row1 {
+    /*.row1 {
         max-width: 700px;
-    }
+    }*/
+
+
     .row2 .rowImage2 h3 {
         text-align: center;
         padding-bottom: 10px;
@@ -138,10 +140,18 @@
         display: block;
     }*/
 
+    .row4 {
+
+    
+
+
+    }
+
+
     .row4 .row4content {
         margin: 0;
         position: relative;
-        padding-right: 20px;
+        padding: 40px;
         top: 10px;
         left: 10px;
     }
@@ -165,6 +175,10 @@
 }*/
 
 
+
+.row4 .rowImage4 img {
+    display: block;
+}
 
     .row2 {
         display: block;
