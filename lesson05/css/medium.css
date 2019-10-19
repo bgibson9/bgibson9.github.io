@@ -84,6 +84,7 @@
         text-align: center;
         padding-bottom: 10px;
     }
+    
 
     .row3 {
         position: relative;
@@ -154,12 +155,25 @@
     .rowImage4 {
     display: flex;
 }
-    .row4 .rowImage4 img {
+    .row4map {
         /*top: 20px;
         right: 20px;*/
+
         width: 33%;
+        display: block;
+        padding: 20px;
     }
 
+    .row4 .rowImage4 img {
+        display: block;
+    }
+
+    .row4googlepin {
+        width: 10px;
+    }
+    .row4. address img {
+        width: 10px;
+    }
     .row4 .rowImage4 h3 {
         margin: 0;
         padding: 10px 10px;
@@ -168,11 +182,6 @@
     
 }*/
 
-
-
-.row4 .rowImage4 img {
-    display: none;
-}
 
  
 
