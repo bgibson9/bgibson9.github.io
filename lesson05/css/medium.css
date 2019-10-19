@@ -20,6 +20,7 @@
 
     main {
         font-size: 1em;
+        /*max-width: 650px;*/
     }
 
     footer {
@@ -56,22 +57,15 @@
 
     }
 
-    .herodiv {
-        margin: 10px auto;
-        position: relative;
-    }
+
 
     .stats {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        width: 27%;
-        min-width: 105px;
+     
+        /*min-width: 105px; took off 10/19 2:01pm*/
+        font-size: 1rem;
+        width: 250px;
     }
 
-    .stats div h4 {
-        grid-column: span 2;
-    }
 
     /*.row1 {
         max-width: 700px;
@@ -79,6 +73,7 @@
 
     .row2 {
         display: block;
+        margin-top: 30px;
     }
     .row2 .rowImage2 h3 {
         text-align: center;
@@ -87,15 +82,16 @@
     
 
     .row3 {
-        position: relative;
+        /*position: relative;*/
         background-color: #f9dcc5;
         border: 1px solid #ea7317;
         padding: 15px;
+        margin-top: 50px;
         /*white-space: nowrap;*/
-        display: flex;
+        /*display: flex;*/
     }
 
-    .row3 .row3content {
+    /*.row3 .row3content {
         margin: 0;
         position: relative;
         padding-right: 20px;
@@ -108,16 +104,18 @@
         box-sizing: border-box;
         box-shadow: 0 5x 15px rgba(0,0,0.5);
         /*width: 60%;
-        min-width: 105px;*/
-    }
+        min-width: 105px;
+    }*/
 
     .row3 .rowImage3 img {
-        position: absolute;
+        margin: 0;
+        float: right;
         top: 20px;
         right: 20px;
         width: 33%;
+        margin-left: 10px;
         /*height: 85%;*/
-        flex: 0 0 33%;
+        /*flex: 0 0 33%;*/
         /*max-width: 100%;*/
         /*min-width: 105px;*/
     }
@@ -134,32 +132,35 @@
 
     .row3 .row3content p {
         margin: 0;
-        padding: 0 0 20px;
-        text-align: left;
-        width: 62%;
+        /*text-align: left;*/
+        /*width: 62%;*/
     }
 
     /*article:nth-child(2) {
         display: block;
     }*/
 
-    .row4 .row4content {
-        margin: 0;
-        position: relative;
-        padding: 40px;
-        top: 10px;
-        left: 10px;
+    /*.row4 {
+        
+
+
+        
+
+    }*/
+
+    .row4content {
+    display: flex;
+    flex-direction: column;
     }
 
-
-    .rowImage4 {
+  .rowImage4 {
     display: flex;
 }
     .row4map {
         /*top: 20px;
         right: 20px;*/
-
-        width: 33%;
+        min-width: 275px;
+        width: 50%;
         display: block;
         padding: 20px;
     }
@@ -168,16 +169,10 @@
         display: block;
     }
 
-    .row4googlepin {
-        width: 10px;
-    }
     .row4 address img {
         width: 10px;
     }
-    .row4 .rowImage4 h3 {
-        margin: 0;
-        padding: 10px 10px;
-    }
+    
     /*article:nth-child(3){
     
 }*/

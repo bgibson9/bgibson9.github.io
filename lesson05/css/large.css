@@ -1,11 +1,6 @@
 @media only screen and (min-width: 56em) {
 
-        main,
-        footer {
-                max-width: 1024px;
-        }
-
-        heading h2 {
+         heading h2 {
                 font-size: 1.5rem;
         }
 
@@ -15,8 +10,7 @@
         }
         
         .row1,
-        .row2,
-         {
+        .row2 {
                 margin: 5px 0 0;
                 text-align: center;
                 /*display: block;*/
