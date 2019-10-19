@@ -11,12 +11,12 @@ var d = new Date();
 var currentDay = d.getDay();
 
 if (currentDay == 3) {
-    document.getElementsByClassName("bannerad").classList[0].toggle("showbanner");
+    document.getElementsByClassName("bannerad")[0].classList.toggle("showbanner");
 }
 
 else {
  
-    document.getElementsByClassName("bannerad").classList[0].toggle("hidebanner");
+    document.getElementsByClassName("bannerad")[0].classList.toggle("hidebanner");
  }
 
  
