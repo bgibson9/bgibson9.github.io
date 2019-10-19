@@ -13,13 +13,8 @@
         .row2 {
                 margin: 5px 0 0;
                 text-align: center;
-                /*display: block;*/
         }
-
-        .row3 {
-                text-align: center;
-
-        }
+        
         .stats h4 {
                 grid-column: span 2;
                 }
