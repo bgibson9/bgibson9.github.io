@@ -137,9 +137,9 @@
         width: 62%;
     }
 
-    article:nth-child(2) {
+    /*article:nth-child(2) {
         display: block;
-    }
+    }*/
 
     .row4 .row4content {
         margin: 0;

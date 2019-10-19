@@ -172,13 +172,9 @@ main h2 {
     padding: 10px 0;
 }
 
-article {
+article, section {
     margin: 5px auto;
     height: 100%;
-}
-
-article .row1 {
-    border: 0;
 }
 
 .row1,
