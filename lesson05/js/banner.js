@@ -10,14 +10,11 @@
 var d = new Date();
 var currentDay = d.getDay();
 
-if (currentDay == 3) {
+if (currentDay == 5) {
     document.getElementsByClassName("bannerad")[0].classList.toggle("showbanner");
 }
 
-else {
- 
-    document.getElementsByClassName("bannerad")[0].classList.toggle("hidebanner");
- }
+
 
  
 //looked at list of DOM Tokens like toggle. add was the only one that fit.

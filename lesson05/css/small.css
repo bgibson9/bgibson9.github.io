@@ -27,6 +27,7 @@ body {
     background-color: gold;
     color: black;
     font-weight: bold;
+    display: none;
 }
 
 .bannerad p {
@@ -35,10 +36,6 @@ body {
 
 .showbanner {
     display: block;
-}
-
-.hidebanner {
-    display: none;
 }
 
 header,
