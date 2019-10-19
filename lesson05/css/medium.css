@@ -79,7 +79,7 @@
         /*justify-content: center;*/
     }
 
-    .row2 .rowImage h3 {
+    .row2 .rowImage2 h3 {
         text-align: center;
         padding-bottom: 10px;
     }
@@ -109,7 +109,7 @@
         min-width: 105px;*/
     }
 
-    .row3 .rowImage img {
+    .row3 .rowImage3 img {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -120,12 +120,12 @@
         /*min-width: 105px;*/
     }
 
-    .row3 .rowImage h3 {
+    .row3 .rowImage3 h3 {
         margin: 0;
         padding-bottom: 10px;
     }
 
-    .row3 .rowImage h4 {
+    .row3 .rowImage3 h4 {
         margin: 0;
         padding-bottom: 10px;
     }
@@ -149,14 +149,14 @@
         left: 10px;
     }
 
-    .row4 .rowImage img {
+    .row4 .rowImage4 img {
         position: absolute;
         top: 20px;
         right: 20px;
         width: 33%;
     }
 
-    .row4 .rowImage h3 {
+    .row4 .rowImage4 h3 {
         margin: 0;
         padding: 10px 10px;
     }
