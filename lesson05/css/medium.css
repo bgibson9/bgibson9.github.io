@@ -77,7 +77,9 @@
         max-width: 700px;
     }*/
 
-
+    .row2 {
+        display: block;
+    }
     .row2 .rowImage2 h3 {
         text-align: center;
         padding-bottom: 10px;
@@ -140,14 +142,6 @@
         display: block;
     }*/
 
-    .row4 {
-
-    
-
-
-    }
-
-
     .row4 .row4content {
         margin: 0;
         position: relative;
@@ -157,7 +151,7 @@
     }
 
 
-.rowImage4 {
+    .rowImage4 {
     display: flex;
 }
     .row4 .rowImage4 img {
@@ -177,12 +171,10 @@
 
 
 .row4 .rowImage4 img {
-    display: block;
+    display: none;
 }
 
-    .row2 {
-        display: block;
-    }
+ 
 
     main h2 {
         margin: 10px;
