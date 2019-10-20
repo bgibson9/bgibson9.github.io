@@ -1,6 +1,6 @@
 @media only screen and (min-width: 56em) {
 
-         heading h2 {
+        heading h2 {
                 font-size: 1.5rem;
         }
 
@@ -8,23 +8,27 @@
                 font-size: 1rem;
                 padding: 0.75rem;
         }
-        
+
         .row1,
         .row2 {
                 margin: 5px 0 0;
                 text-align: center;
         }
-        
+
         .stats h4 {
                 grid-column: span 2;
-                }
+        }
 
         .rowimage3 {
                 max-width: 960px;
 
         }
 
-        article img{
+        .row4content {
+                font-size: 1em;
+        }
+
+        article img {
                 display: block;
         }
 }

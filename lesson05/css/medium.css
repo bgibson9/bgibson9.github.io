@@ -2,7 +2,6 @@
 
     /*  causing header to not center when switching from small to medium. Also 520px = 32.5em based on 16px size*/
 
-
     header,
     nav,
     main,
@@ -20,7 +19,6 @@
 
     main {
         font-size: 1em;
-        /*max-width: 650px;*/
     }
 
     footer {
@@ -60,52 +58,34 @@
 
 
     .stats {
-     
-        /*min-width: 105px; took off 10/19 2:01pm*/
         font-size: 1rem;
         width: 250px;
     }
 
-
-    /*.row1 {
-        max-width: 700px;
-    }*/
-
     .row2 {
         display: block;
         margin-top: 30px;
+        align-content: stretch;
+       /*align-content: space-evenly;*/
     }
+
+    .rowImage2 table {
+        width: 60%; 
+        align-content: space-evenly;      
+    }
+
     .row2 .rowImage2 h3 {
         text-align: center;
         padding-bottom: 10px;
     }
-    
 
     .row3 {
-        /*position: relative;*/
         background-color: #f9dcc5;
         border: 1px solid #ea7317;
         padding: 15px;
-        margin-top: 50px;
-        /*white-space: nowrap;*/
-        /*display: flex;*/
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
-
-    /*.row3 .row3content {
-        margin: 0;
-        position: relative;
-        padding-right: 20px;
-        top: 10px;
-        left: 10px;
-        /*transform: translate(-50%,-50%);*/
-        /*padding: 20px;*/
-
-        /*width: 75%;/*
-        box-sizing: border-box;
-        box-shadow: 0 5x 15px rgba(0,0,0.5);
-        /*width: 60%;
-        min-width: 105px;
-    }*/
 
     .row3 .rowImage3 img {
         margin: 0;
@@ -114,10 +94,6 @@
         right: 20px;
         width: 33%;
         margin-left: 10px;
-        /*height: 85%;*/
-        /*flex: 0 0 33%;*/
-        /*max-width: 100%;*/
-        /*min-width: 105px;*/
     }
 
     .row3 .rowImage3 h3 {
@@ -132,36 +108,22 @@
 
     .row3 .row3content p {
         margin: 0;
-        /*text-align: left;*/
-        /*width: 62%;*/
     }
 
     /*article:nth-child(2) {
         display: block;
     }*/
 
-    /*.row4 {
-        
-
-
-        
-
-    }*/
-
     .row4content {
-    display: flex;
-    flex-direction: column;
+        width: 50%;
+                padding: 0 10%;
+                margin: auto;
+    word-break: normal;
+    font-size: .80em;
     }
 
-  .rowImage4 {
-    display: flex;
-}
     .row4map {
-        /*top: 20px;
-        right: 20px;*/
-        min-width: 275px;
         width: 50%;
-        display: block;
         padding: 20px;
     }
 
@@ -173,37 +135,33 @@
         width: 10px;
     }
     
+    .row4content h3 {
+        font-size: 1.4em;
+    }
+
+
     /*article:nth-child(3){
     
 }*/
 
-
- 
-
     main h2 {
         margin: 10px;
     }
-
-    /*   main img {
-        display: block;
-    }
-*/
 
     table,
     tr,
     th,
     td {
         margin: 0 auto;
-        /*display: flex;*/
         justify-content: center;
         text-align: center;
         border: 1px solid black;
         width: 100px;
-        vertical-align: middle;
     }
 
     table tr th {
         align-content: center;
+        align-content: space-evenly; 
     }
 
     th {
@@ -213,20 +171,12 @@
     tr td img {
         height: 32px;
         width: 32px;
-        /*display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-self: center;  */
     }
-
- 
-
 
     h1 {
         font-size: 1.75rem;
         white-space: nowrap;
-        /* padding: 20px 0 10px;*/
-    }
+     }
 
     h2 {
         font-size: 1.50rem;
