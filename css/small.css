@@ -21,10 +21,10 @@ header, footer {
     border: 1px solid #024059;
 }
 
-header {
+/*header {
     /*height: 100px; */
-    /* removing this worked to allow the page elements to nest under each other properly! */
-}
+    /* removing this worked to allow the page elements to nest under each other properly!
+} */
 
 main {
     padding: 25px;
