@@ -1,8 +1,8 @@
 
-var tempF = parseFloat(document.getElementsByClassName('temp')[0].textContent);
-var speed = parseFloat(document.getElementsByClassName('windSpeed')[0].textContent);
+var tempF = parseFloat(document.getElementsByClassName("temp")[0].textContent);
+var speed = parseFloat(document.getElementsByClassName("windSpeed")[0].textContent);
 var f = calcWindChill(tempF, speed);
-	 document.getElementsByClassName('wChill')[0].textContent - f;
+	 document.getElementsByClassName("wChill")[0].textContent - f;
 
 function calcWindChill(tempF, speed) {
 	var t = tempF;
