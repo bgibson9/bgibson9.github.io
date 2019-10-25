@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500i,700,900&display=swap');
 
 
-/* yellow #f3f315 (243,242,21); dk blue #2364aa(35,100,70); darken that blue for accessibility = #184676; med blue #3da5d9(61,165,217); aqua blue #73bfb8(115,191,184); orange #ea7317(234,115,23); light orange #f4b98b; very pale yellow #ffffe5;bgibson */ 
+/* yellow #f3f315 (243,242,21);
+ dk blue #2364aa(35,100,70); 
+ darken that blue for accessibility = #184676; 
+ med blue #3da5d9(61,165,217); 
+ aqua blue #73bfb8(115,191,184); 
+ orange #ea7317(234,115,23); 
+ light orange #f4b98b; 
+ very pale yellow #ffffe5; bgibson */ 
 
 
 /* {
@@ -169,8 +176,22 @@ main h2 {
 
 .herodiv {
     margin: 10px auto;
-    position: relative;
 }
+
+/*main picture.responsivephoto{
+    width:90%;
+    /*margin: 0 0 0 2%;
+    
+}*/
+
+/*main picture.responsivephoto img{
+    width: 100%;
+}*/
+
+/*main figure.myphoto figcaption { From W06 Dr. Cheney video C using figure and figcaption
+    text-align: center;
+    font-size: .75rem;
+}*/
 
 .rowImage1 img {
     width: 100%;
@@ -228,10 +249,7 @@ main h2 {
     width: 10px;
 }
 
-.herodiv {
-    margin: 10px auto;
-    position: relative;
-}
+
 
 .stats {
     position: absolute;
