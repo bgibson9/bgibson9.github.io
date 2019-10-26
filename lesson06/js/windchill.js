@@ -8,7 +8,7 @@ function calcWindChill(tempF, speed) {
 	var t = tempF;
     var s = speed;
     //return statement if not within bounds (above 50 and wind speed above 3) no windchill
-    if (t >=50 || s <= 3) { 
+    if (t >=50 || s <= 3) { //could have (t <=50 && s >=3) 
         return "N/A";
 
     }
