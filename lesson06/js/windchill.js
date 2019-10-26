@@ -7,8 +7,8 @@ var f = calcWindChill(tempF, speed);
 function calcWindChill(tempF, speed) {
 	var t = tempF;
     var s = speed;
-    //return statement if not within bounds (above 50 and wind speed above 3) no windchill
-    if (t >=50 || s <= 3) { //could have (t <=50 && s >=3) 
+    //return statement if not within bounds (above 50 and wind speed below 3) no windchill, at or below 50 and windspeed above 3.0 mph wind chill calculates 
+    if (t >=50 || s <= 3) { 
         return "N/A";
 
     }
@@ -20,3 +20,4 @@ function calcWindChill(tempF, speed) {
     }
 }
 
+//Line 11 could have if (t <=50 && s >=3) depending on how I wrote it  + - / * %remainder; exponentiation ** Increment ++ Decrement -- Logical operators && (both true) OR || not! https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
