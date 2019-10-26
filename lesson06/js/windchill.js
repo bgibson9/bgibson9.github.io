@@ -2,7 +2,7 @@
 var tempF = parseFloat(document.getElementsByClassName("temp")[0].textContent);
 var speed = parseFloat(document.getElementsByClassName("windSpeed")[0].textContent);
 var f = calcWindChill(tempF, speed);
-	 document.getElementsByClassName("wChill")[0].textContent - f;
+	 document.getElementsByClassName("wChill")[0].textContent = f.toFixed(2);
 
 function calcWindChill(tempF, speed) {
 	var t = tempF;
@@ -10,6 +10,7 @@ function calcWindChill(tempF, speed) {
     //return statement if not within bounds (above 50 and wind speed above 3) no windchill
     if (t >=50 && s <= 3) { 
         return 0;
+
     }
     
     //else calculate and return
