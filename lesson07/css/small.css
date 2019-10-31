@@ -207,7 +207,7 @@ main h2 {
 
 .lazyloaddemo {
     display: grid;
-    grid-template-columns: 1;
+    grid-columns: 1;
     justify-content: center;
     align-content: center;
 }
