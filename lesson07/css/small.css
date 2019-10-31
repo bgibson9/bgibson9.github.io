@@ -210,7 +210,6 @@ main h2 {
     grid-column: 1;
     justify-content: center;
     align-content: center;
-    max-width: 90%;
 }
 
 .galleryimages {
