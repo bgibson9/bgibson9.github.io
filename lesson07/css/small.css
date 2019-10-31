@@ -215,10 +215,10 @@ main h2 {
 
 .galleryimages {
     display: grid;
-    grid-column: 1;
+    grid-column: 1fr;
     justify-content: center;
     align-content: center;
-    max-width: 90%;
+}
 
 picture img[data-src]{
     filter: blur(0.2em);
