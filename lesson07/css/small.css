@@ -207,9 +207,10 @@ main h2 {
 
 .lazyloaddemo {
     display: grid;
-    grid-columns: 1;
+    grid-column: 1;
     justify-content: center;
     align-content: center;
+    max-width: 90%;
 }
 
 picture img[data-src]{
