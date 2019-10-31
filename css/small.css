@@ -85,6 +85,9 @@ a:hover {
     color: darkgoldenrod;
 }
 
+figure:hover {
+    
+}
 a:active {
     color: khaki;
 }
