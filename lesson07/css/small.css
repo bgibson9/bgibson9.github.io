@@ -205,7 +205,7 @@ main h2 {
     font-size: .75rem;
 }*/
 
-main .lazyloaddemo picture img{
+.lazyloaddemo {
     display: grid;
     grid-template-columns: 1;
     justify-content: center;
