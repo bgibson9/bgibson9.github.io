@@ -183,7 +183,7 @@ main h2 {
     min-height: 50px;
     /*if you have 5 images on first row and more images on 2nd row and you want them to make sure they lazyload separately know that by default your images have load by default images have a 0 x 0px, so if you load in a bunch of pictures you don't actually mean to load yet, I recommend you give a min-width and min-height to be sure it's taking up a little space*/
     
-}
+/*}*/
 
 [data-src] {
     min-width: 50px;
@@ -204,6 +204,22 @@ main h2 {
     text-align: center;
     font-size: .75rem;
 }*/
+
+main .lazyloaddemo picture img{
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    align-content: center;
+}
+
+picture img[data-src]{
+    filter: blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
 
 .rowImage1 img {
     width: 100%;
