@@ -219,7 +219,8 @@ main h2 {
     align-content: center;
 }
 
-picture img[data-src]{  /*for lazyload.html */
+/*for lazyload.html */
+picture img[data-src]{  
     filter: blur(0.2em);
 }
 
@@ -237,6 +238,7 @@ figure img[data-src]{
 figure img {
     filter: blur(0em);
     transition: filter 0.5s;
+    width: 100%;
 }
 
 figcaption {
@@ -247,6 +249,7 @@ figcaption {
 figure:hover {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .rowImage1 img {
     width: 100%;
 }
