@@ -214,12 +214,12 @@ main h2 {
 
 .galleryimages {
     display: grid;
-    grid-column: 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
 }
 
-picture img[data-src]{
+picture img[data-src]{  /*for lazyload.html */
     filter: blur(0.2em);
 }
 
@@ -228,13 +228,20 @@ picture img {
     transition: filter 0.5s;
 }
 
-figure img[data-src]{
+
+/* for gallery-7.html */
+figure img[data-src]{     
     filter: blur(0.2em);
 }
 
 figure img {
     filter: blur(0em);
     transition: filter 0.5s;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .75rem;
 }
 
 figure:hover {
