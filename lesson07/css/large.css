@@ -11,9 +11,14 @@
 
         .galleryimages {
                 grid-template-columns: 1fr 1fr 1fr;
-        
-            }
-            
+
+        }
+
+
+        figure:hover {
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
         .row1,
         .row2 {
                 margin: 5px 0 0;
