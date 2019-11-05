@@ -71,19 +71,33 @@ table {
     box-shadow: 10px 10px 15px rgba(98, 140, 166, .9);
 }
 
+caption {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+    background-color: #7fb9c2;
+    padding: 10px;
+    box-shadow: 10px 10px 15px rgba(98, 140, 166, .9);
+}
 table tbody {
     padding: 10px;
     border: 1px solid #777;
-
 }
 
-table tr:nth-child(2) th {
+table thead tr th{
     color: #fff;
     background-color:#628ca6;
-    font-size: 24px;
+    font-size: 1.5em;
+    padding: 10px;
     font-weight: bold;
 }
 
+.samestyle {
+    color: #fff;
+    background-color:#628ca6;
+    font-size: 1.5em;
+    padding: 10px;
+}
 table tr:nth-child(odd) {
     background-color:#e7f0ed;
 }
@@ -92,21 +106,10 @@ table tr:nth-child(even) {
     background-color:#e7ffed;
 }
 
-table tr:nth-child(4) td:nth-child(3) {
+/*table tr:nth-child(4) td:nth-child(3) {
     background-color: #628ca6;
     color: #fff;
-}
-
-table tr:nth-child(5) td:nth-child(1) {
-    font-style: italic;
-}
-
-thead tr th {
-    color: #000000;
-    background-color:#7fb9c2;
-    font-size: 40px;
-    padding: 10px;
-}
+}*/
 
 table tr td {
     color: #000;

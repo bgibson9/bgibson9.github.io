@@ -215,6 +215,7 @@ main h2 {
 .galleryimages {
     display: grid;
     grid-template-columns: 1fr;
+    column-gap: 5px;
     justify-content: center;
     align-content: center;
 }
@@ -233,6 +234,10 @@ picture img {
 /* for gallery-7.html */
 figure img[data-src]{     
     filter: blur(0.2em);
+}
+
+figure {
+    margin: 0 auto;
 }
 
 figure img {
