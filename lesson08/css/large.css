@@ -1,0 +1,48 @@
+@media only screen and (min-width: 56em) {  /*   56em = 896px   */
+
+        heading h2 {
+                font-size: 1.5rem;
+        }
+
+        .navigation a {
+                font-size: 1rem;
+                padding: 0.75rem;
+        }
+
+        main {
+                max-width: 1280px;
+        }
+
+        .galleryimages {
+                grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+
+        figure:hover {
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        .row1,
+        .row2 {
+                margin: 5px 0 0;
+                text-align: center;
+        }
+
+        .stats h4 {
+                grid-column: span 2;
+        }
+
+        .rowimage3 {
+                max-width: 960px;
+
+        }
+
+        .row4content {
+                font-size: 1em;
+        }
+
+        article img {
+                display: block;
+        }
+}
