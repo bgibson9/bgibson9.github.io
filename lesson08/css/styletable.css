@@ -98,11 +98,16 @@ table thead tr th{
     font-size: 1.5em;
     padding: 10px;
 }
+
+table tr {
+    background-color: #e7ffed;
+}
+
 table tr:nth-child(odd) {
     background-color:#e7f0ed;
 }
 
-table tr:nth-child(even) {
+/*table tr:nth-child(even) {
     background-color:#e7ffed;
 }
 
