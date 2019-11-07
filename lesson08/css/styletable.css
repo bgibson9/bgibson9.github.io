@@ -77,6 +77,7 @@ caption {
     color: #000;
     background-color: #7fb9c2;
     padding: 10px;
+    border: 1px solid #a1a1a1;
     box-shadow: 10px 10px 15px rgba(98, 140, 166, .9);
 }
 table tbody {
