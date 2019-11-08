@@ -34,8 +34,8 @@
         <div class="header-wrapper">
             <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
             <div class="header-titles">
-                <h1 class="title">Southeast Idaho Weather</h1>
-                <h2 class="subtitle">"Your Regional Weather Forecast"</h2>
+                <h1 class="title">Southeast Idaho Storm Center</h1>
+                <h2 class="subtitle">"Report Storms or Unusual Weather"</h2>
             </div>
         </div>
     </header>
@@ -53,57 +53,11 @@
         </ul>
     </nav>
 
-    <main class="stormcenter">
-        <h2>Southeastern Idaho Storm Center</h2>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label class="contactinfo">Full Name* <input type="text" name="name" required minlength="5" pattern="[A-Za-z]{5,}"></label>
-                <label class="contactinfo">Phone <input type="tel" name="phone" required placeholder="1235551234"></label>
-                <label class="contactinfo">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="contactinfo">Zip Code <input type="url" name="url" placeholder="http://"></label>
-            
-            </fieldset>
-    
-            <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <!--     leaving name the same allows one to deactivate as another is selected If you were to have audience1, audience2, audience3, all 3 radio buttons could be selected, which defeats the purpose of a radio button
-                sbs class means side by side     -->
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
-    
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-    
-            </fieldset>
-    
-            <fieldset>
-                <label class="top">Anticipated Completion Date <input type="date" name="completedDate">
-                <label class="top">Course Subject
-                    <select name="subject">
-                        <option value="">Please select &#9662;</option>     <!--down arrow code &#9662-->
-                    <option value="software">Software Development</option>
-                    <option value="creative">Creative Professional</option>
-                    <option value="info">Information Technology</option>
-                    <option value="data">Data Professional</option>
-                    <option value="construction">Construction</option>
-                    <option value="manufacturing">Manufacturing</option>
-                    <option value="business">Business Professional</option>
-                    <option value="security">Cyber Security</option>
-                    <option value="sts">School Technology Specialist</option>
-                    </select>
-                         </label>
-                         <label class="top">How Many Authors <input type="number" name="authors">
-            </fieldset>
-    
-            <input type="submit" value = "Report Storm" class="submitBtn">
-            </form>
-        </div>  
+    <main>
+        <div class="thanksmessage">
+            <h1>Southeastern Idaho Storm Center</h1>
+            <p>Thank you reporting the storm or unusual weather you have observed. Please be safe and protect yourself. Your reports help us serve the weather needs of the Southeastern Idaho area.</p>
+        </div>
         
 
         <section class="row4">
@@ -130,6 +84,7 @@
         </section>
 
     </main>
+
     <footer>
         <p>&copy; <span id="copyright"></span>Southeast Idaho Weather | Attributions | Bambi Gibson</p>
 
