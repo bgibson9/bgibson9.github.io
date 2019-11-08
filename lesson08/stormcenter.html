@@ -45,65 +45,86 @@
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li> <!-- Here added hamb was toggleMenu???  -->
             <li><a href="../index.html">Home</a></li>
             <!-- change to elements in assignment? Tag the other hrefs active when the pages are made (on that particular page) -->
-            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a class="active" href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main class="stormcenter">
-        <h2>Southeastern Idaho Storm Center</h2>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label class="contactinfo">Full Name* <input type="text" name="name" required minlength="5" pattern="[A-Za-z]{5,}"></label>
-                <label class="contactinfo">Phone <input type="tel" name="phone" required placeholder="1235551234"></label>
-                <label class="contactinfo">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="contactinfo">Zip Code <input type="url" name="url" placeholder="http://"></label>
-            
-            </fieldset>
-    
-            <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <!--     leaving name the same allows one to deactivate as another is selected If you were to have audience1, audience2, audience3, all 3 radio buttons could be selected, which defeats the purpose of a radio button
-                sbs class means side by side     -->
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
-    
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-    
-            </fieldset>
-    
-            <fieldset>
-                <label class="top">Anticipated Completion Date <input type="date" name="completedDate">
-                <label class="top">Course Subject
-                    <select name="subject">
-                        <option value="">Please select &#9662;</option>     <!--down arrow code &#9662-->
-                    <option value="software">Software Development</option>
-                    <option value="creative">Creative Professional</option>
-                    <option value="info">Information Technology</option>
-                    <option value="data">Data Professional</option>
-                    <option value="construction">Construction</option>
-                    <option value="manufacturing">Manufacturing</option>
-                    <option value="business">Business Professional</option>
-                    <option value="security">Cyber Security</option>
-                    <option value="sts">School Technology Specialist</option>
-                    </select>
-                         </label>
-                         <label class="top">How Many Authors <input type="number" name="authors">
-            </fieldset>
-    
-            <input type="submit" value = "Report Storm" class="submitBtn">
+        <div>
+            <h2>Southeastern Idaho Storm Center</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="contactinfo">Full Name* <input type="text" name="name" placeholder="Full Name" required  pattern="[A-Za-z ]{5,40}"></label>  <!--minlength="5"-->
+                    <label class="contactinfo">Email <input type="email" name="email" placeholder="name@example.com"></label>
+                    <label class="contactinfo">Phone* <input type="tel" name="phone" required placeholder="1235551234"></label>
+                    <label class="contactinfo">Zip Code* <input type="number" name="postal-code" placeholder="Zip Code" required></label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Storm Details</legend>
+                    <div></div>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                    <!--     leaving name the same allows one to deactivate as another is selected If you were to have audience1, audience2, audience3, all 3 radio buttons could be selected, which defeats the purpose of a radio button
+                    sbs class means side by side     -->
+                    <label class="sbs"><input list="stormtype" name="stormtype">
+                    <datalist class="stormtype">
+                        <option value="flashflood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </datalist>
+                    </label>
+
+                    <label class="stormseverityrange" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
+                    <span class="ratingvalue">1</span>
+                    <input type="range" id="rating" value="10" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span class="ratingvalue">10</span>
+                    </label>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+
+
+                    <label class="dropdown">Select Region... &#9662;</label>     <!--down arrow code &#9662-->
+                    <datalist>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div>Is user in danger?</div>
+                    <label class="sbs"><input type="radio" name="yes" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="no" value="no"> No</label>
+                    <label class="sbs"><input type="radio" name="maybe" value="maybe"> Maybe</label>
+                    
+
+                    <label class="addlinfo">Additional Information or Comments: </label>
+                    <textarea class="addlinfo" name="addlinfo" placeholder="Start typing your comments here..."></textarea>
+                    
+                </fieldset>
+                
+                <input type="submit" value = "Report Storm" class="submitBtn">
             </form>
-        </div>  
+         
         
 
         <section class="row4">
@@ -128,7 +149,7 @@
             </div>
             </div>
         </section>
-
+    </div>
     </main>
     <footer>
         <p>&copy; <span id="copyright"></span>Southeast Idaho Weather | Attributions | Bambi Gibson</p>
@@ -138,7 +159,7 @@
     </footer>
 
     
-    <script src="js/windchill.js"> </script>
+    
     <script src="js/banner.js"> </script>
     <script src="js/togglehambmenu.js"> </script>
     <script src="js/currentdate.js"> </script>

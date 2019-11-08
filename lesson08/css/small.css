@@ -190,17 +190,17 @@ main .thanksmessage {
 
 /*     Week 08 Forms     */
 
-form label.contactinfo input,  form label.contactinfo select {
+form label.contactinfo input,  form label.dropdown select {
     -webkit-appearance: none; /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own in html next to please select*/
     display: block;     /*makes them appear below their titles */
     font-size: 1rem;
-    border: solid 1px #999;
+    border: solid 1px #2364aa;
     border-radius: 4px;
     padding: .75rem; /* 44px touch space for mobile */
     color: #184676; /* color of input type */
     width: 100%; /* small screen width looks dumb on lg set max-width*/
     max-width: 20rem; /*looks better on large screen */
-    background-color: rgba(61,165,217,0.2); /* 20% bkgd color for inputs */
+    background-color: rgba(61,165,217,0.051); /* 20% bkgd color for inputs */
 }
 
 form label.sbs {
@@ -212,9 +212,9 @@ form label.sbs {
 
 form input.submitBtn {
     border: none; /*bkgd disappears add color */
-    background-color: #9c2c13;
+    background-color: #2364aa;
     color: #fff;
-    border-radius: 1rem;
+    border-radius: 4px;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%; /*0top 0right 2rem bottom 2% left pushes over 2% */
     width: 96%; /*matches inputs on smaller screens */
@@ -222,13 +222,12 @@ form input.submitBtn {
 }
 
     /*help users quickly identify required fields */
-form label.top input:required {
-    border-left: red solid 6px;
-
-form label.top input:required:valid { /* setting input that is valid */
-    border-left: green solid 6px;
+form label.contactinfo input:required {
+    border-left:#f4b98b solid 4px;
 }
 
+form label.contactinfo input:required:valid { /* setting input that is valid */
+    border-left: green solid 4px;
 }
 
 /* From first videos not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*
