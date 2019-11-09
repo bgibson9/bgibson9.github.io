@@ -68,16 +68,15 @@
                 <fieldset>
                     <legend>Storm Details</legend>
                     <div></div>
-                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
-                    <!--     leaving name the same allows one to deactivate as another is selected If you were to have audience1, audience2, audience3, all 3 radio buttons could be selected, which defeats the purpose of a radio button
-                    sbs class means side by side     -->
-                    <label class="sbs"><input list="stormtype" name="stormtype">
+                    <label class="stormdetails">Storm Date <input type="date" name="stormDate"></label>
+                    
+                    <label class="sbs"><input type="text" name="stormtype" list="stormtype">
                     <datalist class="stormtype">
-                        <option value="flashflood">Flash Flood</option>
-                        <option value="hail">Hail</option>
-                        <option value="hurricane">Hurricane</option>
-                        <option value="thunderstorm">Thunderstorm</option>
-                        <option value="tornado">Tornado</option>
+                        <option value="flashflood"></option>
+                        <option value="hail"></option>
+                        <option value="hurricane"></option>
+                        <option value="thunderstorm"></option>
+                        <option value="tornado"></option>
                     </datalist>
                     </label>
 
@@ -101,31 +100,40 @@
                         </datalist>
 
 
-                    <label class="dropdown">Select Region... &#9662;</label>     <!--down arrow code &#9662-->
-                    <datalist>
+                    <label class="dropdown">Select Region... <select name="region">   <!--down arrow code &#9662-->
+                        <!--     leaving name the same allows one to deactivate as another is selected If you were to have audience1, audience2, audience3, all 3 radio buttons could be selected, which defeats the purpose of a radio button
+                    sbs class means side by side     -->
+                        <!--<datalist> -->
+                            <option value="">Please select</option>
+                            <option value="fishhaven">Fish Haven</option>
                             <option value="preston">Preston</option>
                             <option value="sodasprings">Soda Springs</option>
-                            <option value="fishhaven">Fish Haven</option>
-                        </datalist>
+                        </select> 
+                            
+                        <!--</datalist>   -->
+                    </label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Additional Information</legend>
                     <div>Is user in danger?</div>
-                    <label class="sbs"><input type="radio" name="yes" value="yes"> Yes</label>
-                    <label class="sbs"><input type="radio" name="no" value="no"> No</label>
-                    <label class="sbs"><input type="radio" name="maybe" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
                     
 
-                    <label class="addlinfo">Additional Information or Comments: </label>
-                    <textarea class="addlinfo" name="addlinfo" placeholder="Start typing your comments here..."></textarea>
+                    <label class="addlinfo">Additional Information or Comments: 
+                    <textarea class="addlinfo" name="comments" placeholder="Start typing your comments here..."></textarea></label>
                     
                 </fieldset>
                 
-                <input type="submit" value = "Report Storm" class="submitBtn">
+                <fieldset>
+                    <input type="submit" value = "Report Storm" class="submitBtn">
+                </fieldset>
+
             </form>
          
-        
+                
 
         <section class="row4">
                 <!--Contact Information-->
