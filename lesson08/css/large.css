@@ -37,6 +37,9 @@
                 text-align: center;
         }
 
+        .row4 {
+                clear: both;
+        }
         .stats h4 {
                 grid-column: span 2;
         }

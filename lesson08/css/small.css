@@ -228,6 +228,10 @@ form label.sbs {
 
 }
 
+form label.sbs .addl {
+    padding-bottom: 20px;
+}
+
 form label.addlinfo placeholder {
     width: 20rem;
 }
@@ -252,6 +256,17 @@ form label.contactinfo input:required {
 
 form label.contactinfo input:required:valid { /* marks green to left if settin input is valid */
     border-left: green solid 4px;
+}
+form textarea.addlinfo {
+    width: 100%;
+    height: 8em; 
+}
+#storms {
+
+}
+
+.stormseverityrange {
+    white-space: nowrap;
 }
 
 /* From first videos not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*

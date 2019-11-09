@@ -9,9 +9,9 @@
                 padding: 0.75rem;
         }
 
-        main {
+        /*main {
                 max-width: 1280px;
-        }
+        }*/
 
         .galleryimages {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -29,6 +29,7 @@
                 text-align: center;
         }
 
+        
         .stats h4 {
                 grid-column: span 2;
         }
@@ -36,6 +37,10 @@
         .rowimage3 {
                 max-width: 960px;
 
+        }
+
+        .row4 {
+                clear: both;
         }
 
         .row4content {

@@ -59,7 +59,7 @@
             <form method="get" action="thanks.html">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label class="contactinfo">Full Name* <input type="text" name="name" placeholder="Full Name" required  pattern="[A-Za-z ]{5,40}"></label>  <!--minlength="5"-->
+                    <label class="contactinfo">Full Name* <input type="text" name="name" placeholder="Full Name" required  pattern="[A-Za-z '-]{5,99}"></label>  <!--minlength="5"-->
                     <label class="contactinfo">Email <input type="email" name="email" placeholder="name@example.com"></label>
                     <label class="contactinfo">Phone* <input type="tel" name="phone" required placeholder="1235551234"></label>
                     <label class="contactinfo">Zip Code* <input type="number" name="postal-code" placeholder="Zip Code" required></label>
@@ -70,13 +70,13 @@
                     <div></div>
                     <label class="stormdetails">Storm Date <input type="date" name="stormDate"></label>
                     
-                    <label class="sbs"><input type="text" name="stormtype" list="stormtype">
-                    <datalist class="stormtype">
-                        <option value="flashflood"></option>
-                        <option value="hail"></option>
-                        <option value="hurricane"></option>
-                        <option value="thunderstorm"></option>
-                        <option value="tornado"></option>
+                    <label class="sbs">Storm Type<input type="text" name="stormtype" list="storms">
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
                     </datalist>
                     </label>
 
@@ -119,7 +119,7 @@
                     <div>Is user in danger?</div>
                     <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
                     <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs addl"><input type="radio" name="danger" value="maybe"> Maybe</label>
                     
 
                     <label class="addlinfo">Additional Information or Comments: 
