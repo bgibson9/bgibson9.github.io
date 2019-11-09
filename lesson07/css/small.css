@@ -161,7 +161,7 @@ nav ul li a {
 main {
     font-size: 0.8rem;
     padding: 0 5px;
-    /*max-width: 967px;     took off in W07 */
+    max-width: 967px;     /*took off in W07 added back W08 */
 }
 
 main h2 {
