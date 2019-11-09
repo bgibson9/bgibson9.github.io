@@ -72,9 +72,9 @@
                 <fieldset>
                     <legend>Storm Details</legend>
                     <div></div>
-                    <label class="stormdetails">Storm Date: <input type="date" name="stormDate"></label>
+                    <label class="stormdetails">Storm Date <input type="date" name="stormDate"></label>
 
-                    <label class="sbs">Storm Type: <input type="text" name="stormtype" list="storms">
+                    <label class="sbs">Storm Type <input type="text" name="stormtype" list="storms">
                         <!-- This one must have an "id" and not a class -->
                         <datalist id="storms">
                             <option value="Flash Flood"></option>
@@ -85,12 +85,12 @@
                         </datalist>
                     </label>
 
-                    <label class="stormseverityrange" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
-                        <span class="ratingvalue">1</span>
+                    <label class="stormseverityrange" for="rating"><span>Storm Severity (1-10) &nbsp;&nbsp;&nbsp;</span>
+                        <!--</span>class="ratingvalue">1-->
                         <input type="range" id="rating" value="10" min="1" max="10" step="1" list="tickmarks"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span class="ratingvalue">10</span>
-                    </label>
+                        <span id="ratingvalue">10</span></label>
+                
                     <datalist id="tickmarks">
                         <option value="0">
                         <option value="1">
@@ -105,23 +105,23 @@
                         <option value="10">
                     </datalist>
 
-                    <label class="dropdown">Storm Region: <select name="region">
+                    <label class="dropdown">Storm Region <select name="region">
                                 <!--<datalist> -->
-                            <option value="" disabled="disbled" selected="selected">Select Region...</option>
+                            <option value="" disabled="disabled" selected="selected">Select Region... &#9660;</option>
                             <option value="fishhaven">Fish Haven</option>
                             <option value="preston">Preston</option>
                             <option value="sodasprings">Soda Springs</option>
                         </select>
                     </label>
                         <!--</datalist>   -->
-
-                    <span class="danger-level"></span>
-                        <div>Is user in danger?</div>
+                
+                    <span class="danger-level">
+                        Is user in danger?
                         <label class="user-danger"><input type="radio" name="danger" value="yes"> Yes</label>
                         <label class="user-danger"><input type="radio" name="danger" value="no"> No</label>
                         <label class="user-danger"><input type="radio" name="danger" value="maybe"> Maybe</label>
                     </span>
-                    </label>
+    
                 </fieldset>
 
                 <!--down arrow code &#9662-->

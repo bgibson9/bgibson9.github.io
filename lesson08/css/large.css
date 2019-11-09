@@ -17,6 +17,12 @@
                 font-size: 2rem;
         }
 
+        /* Week 08 */
+        form label.stormseverityrange span {
+                display: inline;
+                padding-bottom: 10px;
+            }
+
         /*form label.addlinfo {
                 padding: .25rem;
         }*/
