@@ -170,7 +170,7 @@ nav ul li a {
 main {
     font-size: 0.8rem;
     padding: 0 5px;
-    /*max-width: 967px;     took off in W07 */
+    max-width: 967px;
     margin: auto;
 }
 
@@ -196,18 +196,18 @@ form {
     font-family: Roboto, sans-serif;
 }
 form fieldset {
-    margin: 1rem auto;
+    margin: 0 auto;
     border: 1px solid #2364aa;
     border-radius: 10px;
     padding: .5rem 3%;
-    max-width: 25rem;
+    max-width: 25rem;    
 }
 
 form label.contactinfo input,
-form label.stormdetails, 
+form label.stormdetails input,
+form label.sbs input,
 form label.dropdown,
-form label.stormseverityrange,
-form label.addlinfo {
+form input.submitBtn {
     -webkit-appearance: none; /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own in html next to please select*/
     display: block;     /*makes them appear below their titles */
     font-size: 1rem;
@@ -221,15 +221,20 @@ form label.addlinfo {
     background-color: rgba(61,165,217,0.051); /* 10% bkgd color for inputs */
 }
 
-form label.sbs {
-    display: block; /*stacks the radio and check boxes on top of each other */
-    padding: .75rem 0; /*44px high for small screens - 0 aligns them to the left*/
-    color: #555; /*good design is consistent*/
-
+form label.stormseverityrange,
+form label.user-danger {
+    display: block;
+    white-space: nowrap;
+    padding-bottom: 15px;
 }
 
-form label.sbs .addl {
-    padding-bottom: 20px;
+form label.danger-level input {
+    display: block;  /*stacks the radio and check boxes on top of each other */
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: .75rem 0;  /*44px high for small screens - 0 aligns them to the left*/
+    max-width: 20rem; /*good design is consistent*/
+
 }
 
 form label.addlinfo placeholder {
@@ -237,13 +242,12 @@ form label.addlinfo placeholder {
 }
 
 form input.submitBtn {
-    border: none; /*bkgd disappears add color */
+    border: none;
     background-color: #2364aa;
     color: #fff;
-    border-radius: 4px;
     padding: .75rem 1.5rem;
-
-    /*margin: 0 0 1.5rem 15.5rem; /*0top 0right 2rem bottom 2% left pushes over 2% */
+    margin: 0 auto;
+    /*margin: 0 0 1.5rem 15.5rem; /*0top 0right 2rem bottom 2% left pushes over 2%*/
     text-align: center;
     width: 96%; /*matches inputs on smaller screens */
     max-width: 20rem; /* for lg screens */
@@ -259,15 +263,10 @@ form label.contactinfo input:required:valid { /* marks green to left if settin i
 }
 form textarea.addlinfo {
     width: 100%;
-    height: 8em; 
-}
-#storms {
-
+    height:6em; 
 }
 
-.stormseverityrange {
-    white-space: nowrap;
-}
+
 
 /* From first videos not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*
 
@@ -376,6 +375,10 @@ figure img {
     filter: blur(0em);
     transition: filter 0.5s;
     width: 100%;
+}
+
+figure {
+    margin:0 auto;
 }
 
 figcaption {

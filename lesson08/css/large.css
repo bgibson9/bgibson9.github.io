@@ -10,16 +10,16 @@
         }
 
         main {
-                max-width: 1280px;
+                max-width: 960px;
         }
 
         main .thanksmessage {
                 font-size: 2rem;
-                }
-
-        form label.sbs {
-                padding: .25rem;
         }
+
+        /*form label.addlinfo {
+                padding: .25rem;
+        }*/
 
         .galleryimages {
                 grid-template-columns: 1fr 1fr 1fr;
