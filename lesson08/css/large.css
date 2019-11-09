@@ -17,6 +17,10 @@
                 font-size: 2rem;
                 }
 
+        form label.sbs {
+                padding: .25rem;
+        }
+
         .galleryimages {
                 grid-template-columns: 1fr 1fr 1fr;
 
