@@ -238,12 +238,7 @@ form label.stormseverityrange,
 form label.user-danger {
     display: block;
     white-space: nowrap;
-    padding-bottom: 15px;
-}
-
-form label.stormseverityrange span{
-    display: block;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 form label.danger-level input {
