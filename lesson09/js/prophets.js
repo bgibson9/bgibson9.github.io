@@ -17,6 +17,7 @@ fetch(requestURL)
         let h2 = document.createElement("h2");
         //let birthdate = document.createElement("birthdate");
         //let p = document.createElement("birthdate");
+        //let birthdate = document.createElement("p");
         //let birthplace = document.createElement("birthplace");
         //let p = document.createElement("birthplace");
         //let img = document.createElement("img");
