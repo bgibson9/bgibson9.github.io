@@ -83,6 +83,10 @@ main h2 {
 }
 
 @media only screen and (min-width: 56em) {
-}
+
+ 
+    main {  /*is this correct? */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    }
+}
