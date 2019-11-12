@@ -15,8 +15,8 @@ fetch(requestURL)
 
         let card = document.createElement("section");
         let h2 = document.createElement("h2");
-        let p1 = document.createElement("birthdate");
-        let p2 = document.createElement("birthplace");
+        let birthdate = document.createElement("birthdate");
+        let birthplace = document.createElement("birthplace");
         let img = document.createElement("img");
         let order = document.createElement("order");
         
