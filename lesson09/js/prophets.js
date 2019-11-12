@@ -31,8 +31,8 @@ fetch(requestURL)
         //card.appendChild(birthdate);
         //card.appendChild(birthplace);
         
-        img.setAttribute('src', prophets[i].imageurl);
-        img.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + '-' + prophets[i].order);
+        //img.setAttribute('src', prophets[i].imageurl);
+        //img.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + '-' + prophets[i].order);
 
         document.querySelector('div.cards').appendChild(card);
 
