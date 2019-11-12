@@ -22,6 +22,7 @@ darken that blue for accessibility
     border: 1px solid red !important; /* demo for Box Model Presentation 
  }*/
 
+
 * {
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
