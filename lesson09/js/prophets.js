@@ -16,7 +16,6 @@ fetch('https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.
         let birthdate = document.createElement("p");
         let birthplace = document.createElement("p");
         let image = document.createElement("img");
-        //let order = document.createElement("order");
         
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
         birthdate.textContent = 'Date of Birth:' + ' ' + prophets[i].birthdate;
