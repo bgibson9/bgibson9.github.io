@@ -30,7 +30,7 @@ fetch('https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.
         image.setAttribute('src', prophets[i].imageurl);
         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname); 
 
-        document.querySelector('div.cards').appendChild(card);
+        document.querySelector('div.card').appendChild(card);
 
   }
 });
