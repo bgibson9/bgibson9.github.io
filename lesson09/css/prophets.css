@@ -46,9 +46,10 @@ footer {
 
 footer {
     background-color: #3da5d9;
-        padding: 20px;
-        font-size: 14px;
-        text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #184676;
     
 }
 
