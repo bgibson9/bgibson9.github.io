@@ -1,5 +1,6 @@
+const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 
-fetch('https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json')
+fetch(requestURL)
 
   .then(function (response) {
     return response.json();
@@ -27,7 +28,7 @@ fetch('https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.
         card.appendChild(image);
         
         image.setAttribute('src', prophets[i].imageurl);
-        image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname); 
+        image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order); 
 
         document.querySelector('div.card').appendChild(card);
 
