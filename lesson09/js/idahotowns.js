@@ -8,7 +8,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
    // console.table(jsonObject);  // temporary checking for valid response and data parsing
 
-    const idahotowns = jsonObject["towns"];
+    const towns = jsonObject["towns"];
 
     for (let i = 0; i < towns.length; i++) {
 
@@ -20,17 +20,17 @@ fetch(requestURL)
         let averageRainfall = document.createElement ("p");
         let photo = document.createElement("img");
         
-        h2.textContent = towns[1].name;
-        h2.textContent = towns[5].name;
-        h2.textContent = towns[6].name;
-        motto.textContent = towns.[1, 5, 6].motto;
-        motto.textContent = towns.[5].p;
-        motto.textContent = towns.[6].p;
-        yearFounded.textContent = 'Year Founded' + ' ' + 'towns.[1, 5, 6].yearFounded;
-        yearFounded.textContent = towns.[1, 5, 6].yearFounded;
-        yearFounded.textContent = towns.[1, 5, 6].yearFounded;
-        currentPopulation.textContent = towns.[1, 5, 6].currentPopulation;
-        averageRainfall.textContent = towns.[1, 5, 6].averageRainfall;
+        h2.textContent = towns[i].name;
+        h2.textContent = towns[i].name;
+        h2.textContent = towns[i].name;
+        motto.textContent = towns[i].p;
+        motto.textContent = towns[i].p;
+        motto.textContent = towns[i].p;
+        yearFounded.textContent = 'Year Founded' + ' ' + towns[1, 5, 6].yearFounded;
+        yearFounded.textContent = towns[1, 5, 6].yearFounded;
+        yearFounded.textContent = towns[1, 5, 6].yearFounded;
+        currentPopulation.textContent = towns[1, 5, 6].currentPopulation;
+        averageRainfall.textContent = towns[1, 5, 6].averageRainfall;
 
 //        birthplace.textContent = 'Place of Birth:' + ' ' + prophets[i].birthplace;
 
@@ -42,7 +42,7 @@ fetch(requestURL)
         card.appendChild(photo);
         
         photo.setAttribute('src', towns[1, 5, 6].photo); 
-       photo.setAttribute('alt',towns[1,5,6].name);
+        photo.setAttribute('alt', towns[1, 5, 6].name);
 
         document.querySelector('span.towns').appendChild(card);
 
