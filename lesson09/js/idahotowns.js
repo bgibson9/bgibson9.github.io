@@ -20,12 +20,12 @@ fetch(requestURL)
         let averageRainfall = document.createElement ("p");
         let photo = document.createElement("img");
         
-        h2.textContent = towns[i].name;
-        h2.textContent = towns[i].name;
-        h2.textContent = towns[i].name;
-        motto.textContent = towns[i].p;
-        motto.textContent = towns[i].p;
-        motto.textContent = towns[i].p;
+        h2.textContent = towns[1].name;
+        h2.textContent = towns[5].name;
+        h2.textContent = towns[6].name;
+        motto.textContent = towns[1].p;
+        motto.textContent = towns[5].p;
+        motto.textContent = towns[6].p;
         yearFounded.textContent = 'Year Founded' + ' ' + towns[1, 5, 6].yearFounded;
         yearFounded.textContent = towns[1, 5, 6].yearFounded;
         yearFounded.textContent = towns[1, 5, 6].yearFounded;
