@@ -416,6 +416,58 @@ figcaption {
     padding-top: 10px;
 }
 
+/*     Week 09 - Three Towns Page     */
+
+.threetownspage {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.idahotowns {
+    width: 100%;
+
+}
+
+h1 .idahotowns{
+    font-size: 2rem;
+    color: #184676;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+h2 .idahotowns {
+    font-size: 1.4em;
+    padding-bottom: 10px;
+    color:#184676;
+}
+
+.idahotowns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    text-align: center;
+}
+
+section .idahotowns {
+    background-color: #99cfeb;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #2364aa;
+    margin-bottom: 10px;
+}
+
+#FishHavenIdaho img,
+#PrestonIdaho img,
+#SodaSpringsIdaho img {
+    height: auto;
+    width: 50%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
 
 /*     Row 4 is Contact Information     */
 .row4 {
