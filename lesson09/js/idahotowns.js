@@ -20,16 +20,14 @@ fetch(requestURL)
         let averageRainfall = document.createElement ("p");
         let photo = document.createElement("img");
         
-        h2.textContent = towns[1].name;
-        h2.textContent = towns[5].name;
-        h2.textContent = towns[6].name;
-        motto.textContent = towns[1].p;
-        motto.textContent = towns[5].p;
-        motto.textContent = towns[6].p;
-        yearFounded.textContent = 'Year Founded' + ' ' + towns[1, 5, 6].yearFounded;
-        
-        currentPopulation.textContent = towns[1, 5, 6].currentPopulation;
-        averageRainfall.textContent = towns[1, 5, 6].averageRainfall;
+        h2.textContent = towns[i].name;
+       
+        motto.textContent = towns[i].p;
+       
+        yearFounded.textContent = 'Year Founded' + ' ' + 'towns[i].yearFounded';
+      
+        currentPopulation.textContent = towns[i].currentPopulation;
+        averageRainfall.textContent = towns[i].averageRainfall;
 
 //        birthplace.textContent = 'Place of Birth:' + ' ' + prophets[i].birthplace;
 
@@ -40,8 +38,8 @@ fetch(requestURL)
         card.appendChild(averageRainfall);
         card.appendChild(photo);
         
-        photo.setAttribute('src', towns[1, 5, 6].photo); 
-        photo.setAttribute('alt', towns[1, 5, 6].name);
+        photo.setAttribute('src', towns[i].photo); 
+        photo.setAttribute('alt', towns[i].name);
 
         document.querySelector('span.towns').appendChild(card);
 
