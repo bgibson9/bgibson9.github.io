@@ -27,8 +27,7 @@ fetch(requestURL)
         motto.textContent = towns[5].p;
         motto.textContent = towns[6].p;
         yearFounded.textContent = 'Year Founded' + ' ' + towns[1, 5, 6].yearFounded;
-        yearFounded.textContent = towns[1, 5, 6].yearFounded;
-        yearFounded.textContent = towns[1, 5, 6].yearFounded;
+        
         currentPopulation.textContent = towns[1, 5, 6].currentPopulation;
         averageRainfall.textContent = towns[1, 5, 6].averageRainfall;
 
