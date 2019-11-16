@@ -96,7 +96,7 @@
         order: 3;
     }
 
-    .towns :nth-child(odd) {
+    .towns :nth-child(3) {
         flex-direction: row-reverse;
     }
 
