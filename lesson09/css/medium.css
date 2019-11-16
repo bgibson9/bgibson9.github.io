@@ -89,7 +89,8 @@
 
     .towns section {
         display: flex;
-        margin-bottom: 10px;        
+        margin-bottom: 10px;
+        flex-direction: row-reverse;    
     }
 
     .towns :nth-child(odd) {
@@ -101,8 +102,8 @@
         line-height: .75em;           
     }
 
-    .towns img {
-        width: 100%;
+    .towns section img {
+        width: 50%;
     }
 
 

@@ -33,11 +33,6 @@
                flex-direction: row;
        }
         
-            .towns section {
-                display: grid;
-                grid-template-columns: 1fr;
-                margin:5px;
-            }
 
             
         /*     Week 07     */
