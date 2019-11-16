@@ -506,7 +506,7 @@ figcaption {
     font-weight: bold;
 }
 
-.towns section :first-child {
+.towns section:first-child {
     order: 3;
 }
 
