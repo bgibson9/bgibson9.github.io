@@ -12,9 +12,11 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i++) {
 
-    if(towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i.name == "Soda Springs"])
+    if(towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs")
         {
+
         let card = document.createElement("section");
+        let span = document.createElement("span");
         let h2 = document.createElement("name");
         let motto = document.createElement("p");
         let yearFounded = document.createElement("p");
@@ -23,24 +25,22 @@ fetch(requestURL)
         let photo = document.createElement("img");
         
         h2.textContent = towns[i].name;
-       
-        motto.textContent = towns[i].p;
-       
-        yearFounded.textContent = 'Year Founded' + ' ' + 'towns[i].yearFounded';
-      
-        currentPopulation.textContent = towns[i].currentPopulation;
-        averageRainfall.textContent = towns[i].averageRainfall;
+        motto.textContent = towns[i].motto;
+        yearFounded.textContent = 'Year Founded:' + ' ' + towns[i].yearFounded;
+        currentPopulation.textContent = 'Current Population:' + ' ' + towns[i].currentPopulation;
+        averageRainfall.textContent = 'Average Rainfall:' + ' ' + towns[i].averageRainfall;
 
 //        birthplace.textContent = 'Place of Birth:' + ' ' + prophets[i].birthplace;
 
-        card.appendChild(h2);
-        card.appendChild(motto);
-        card.appendChild(yearFounded);
-        card.appendChild(currentPopulation);
-        card.appendChild(averageRainfall);
+        card.appendChild(span);
+        span.appendChild(h2);
+        span.appendChild(motto);
+        span.appendChild(yearFounded);
+        span.appendChild(currentPopulation);
+        span.appendChild(averageRainfall);
         card.appendChild(photo);
         
-        photo.setAttribute('src', towns[i].photo); 
+        photo.setAttribute('src', 'images/' + towns[i].photo); 
         photo.setAttribute('alt', towns[i].name);
 
         document.querySelector('span.towns').appendChild(card);

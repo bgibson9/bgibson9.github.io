@@ -27,6 +27,23 @@
                 padding: .25rem;
         }*/
 
+        /*     Week 09     */
+       .towns {
+               display: flex;
+               flex-direction: row;
+       }
+        
+            .towns section {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin:5px;
+            }
+
+            
+        /*     Week 07     */
+
+        
+
         .galleryimages {
                 grid-template-columns: 1fr 1fr 1fr;
 

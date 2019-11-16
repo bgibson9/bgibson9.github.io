@@ -374,7 +374,7 @@ picture img {
 }
 
 
-/* for gallery-7.html */
+/*    for gallery-7.html */
 figure img[data-src]{     
     filter: blur(0.2em);
 }
@@ -396,6 +396,7 @@ figcaption {
 
 .rowImage1 img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .row2 {
@@ -404,11 +405,13 @@ figcaption {
 
 .row3{
     margin-top: 50px;
+    border-radius: 5px;
 }
 
 .row3 .rowImage3 img {
     width: 100%;
     border: 3px solid #2364aa;
+    border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);  
 }
 
@@ -423,51 +426,98 @@ figcaption {
     text-align: left;
 }
 
-.idahotowns {
-    width: 100%;
 
-}
 
-h1 .idahotowns{
+/*h1 .idahotowns{
     font-size: 2rem;
     color: #184676;
     text-align: center;
     font-weight: bold;
     white-space: nowrap;
 
-}
+}*/
 
-h2 .idahotowns {
+/*h2 .idahotowns {
     font-size: 1.4em;
     padding-bottom: 10px;
     color:#184676;
-}
+}*/
 
-.idahotowns {
+/*.idahotowns {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
+    width: 100%;
     text-align: center;
-}
+}*/
 
-section .idahotowns {
-    background-color: #99cfeb;
+.idahotowns {
+    /*background-color: #99cfeb;*/
     justify-content: center;
     align-content: center;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #2364aa;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
+.towns {
+    display: flex;
+    flex-direction: column;
+}
 
-#FishHavenIdaho img,
+.towns section {
+    background-color: #3da5d9;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    line-height: 1em;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #184676;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.towns section img {
+    border: 1px solid #184676;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+.towns name {
+    font-size: 2em;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.towns p {
+    font-size: .75em;
+    line-height: .50em;
+
+}
+.towns section span :nth-child(2) {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.towns section span {
+    margin: 0;
+}
+
+/*#FishHavenIdaho img,
 #PrestonIdaho img,
 #SodaSpringsIdaho img {
     height: auto;
     width: 50%;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.75);
-}
+}*/
+
+
 
 /*     Row 4 is Contact Information     */
 .row4 {
@@ -475,6 +525,8 @@ section .idahotowns {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 
 }
 

@@ -87,10 +87,22 @@
     }
     /*    Week 09     */
 
-    .idahotowns {
+    .towns section {
         display: flex;
-        text-align: center;
+        margin-bottom: 10px;        
     }
+
+    .towns :nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .towns p {
+        font-size: .75em;
+        line-height: .75em;           
+    }
+
+
+
 
     .row3 {
         background-color: #f9dcc5;
@@ -127,17 +139,19 @@
         display: block;
     }*/
 
+    /*     contact info     */
     .row4content {
         width: 50%;
-                padding: 0 10%;
-                margin: auto;
-    word-break: normal;
-    font-size: .80em;
+        padding: 0 10%;
+        margin: auto;
+        word-break: normal;
+        font-size: .80em;
     }
 
     .row4map {
         width: 50%;
         padding: 20px;
+
     }
 
     .row4 .rowImage4 img {
