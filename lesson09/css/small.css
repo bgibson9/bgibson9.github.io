@@ -422,9 +422,14 @@ figcaption {
 
 /*     Week 09 - Three Towns Page     */
 
+/*.row3.rowImage3.row3threetownspage {
+    margin-top: 0;
+} */
+
 .threetownspage {
     padding: 5px;
     text-align: left;
+
 }
 
 
