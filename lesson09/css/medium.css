@@ -92,7 +92,7 @@
         margin-bottom: 10px;    
     }
 
-    .towns section :nth-child(1) {
+    .towns section span :nth-child(1) {
         order: 3;
     }
 
