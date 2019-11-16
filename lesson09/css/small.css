@@ -397,6 +397,7 @@ figcaption {
 .rowImage1 img {
     width: 100%;
     border-radius: 5px;
+    border: 1px solid #184676;
 }
 
 .row2 {
@@ -496,8 +497,8 @@ figcaption {
 }
 
 .towns p {
-    font-size: .75em;
-    line-height: .50em;
+    font-size: 1em;
+    line-height: .75em;
 
 }
 .towns section span :nth-child(2) {
@@ -525,13 +526,15 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    
 
 }
 
 .rowImage4{
     display: flex;
+    border: 1px solid #ea7317;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .row4map {
