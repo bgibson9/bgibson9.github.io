@@ -506,6 +506,10 @@ figcaption {
     font-weight: bold;
 }
 
+.towns section :first-child {
+    order: 3;
+}
+
 .towns section span {
     margin: 0;
 }

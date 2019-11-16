@@ -23,6 +23,7 @@ fetch(requestURL)
         let currentPopulation = document.createElement("p");
         let averageRainfall = document.createElement ("p");
         let photo = document.createElement("img");
+    
         
         h2.textContent = towns[i].name;
         motto.textContent = towns[i].motto;

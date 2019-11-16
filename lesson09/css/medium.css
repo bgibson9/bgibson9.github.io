@@ -89,22 +89,28 @@
 
     .towns section {
         display: flex;
-        margin-bottom: 10px;
-        flex-direction: row-reverse;    
+        margin-bottom: 10px;    
     }
 
     .towns :nth-child(odd) {
         flex-direction: row-reverse;
     }
 
+   
+
     .towns p {
         font-size: .75em;
-        line-height: .75em;           
+        line-height: .75em;
+        justify-content: center;
+        /*text-align: center;*/
+        /*align-items: center;*/
     }
 
     .towns section img {
         width: 50%;
     }
+
+
 
 
 

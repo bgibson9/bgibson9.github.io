@@ -28,11 +28,17 @@
         }*/
 
         /*     Week 09     */
+
        .towns {
                display: flex;
                flex-direction: row;
+
        }
         
+       .towns section {
+               flex-direction: column;
+               justify-content: center;
+       }
 
             
         /*     Week 07     */
