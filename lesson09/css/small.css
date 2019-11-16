@@ -423,7 +423,7 @@ figcaption {
 /*     Week 09 - Three Towns Page     */
 
 .threetownspage {
-    padding-top: 10px;
+    padding: 5px;
     text-align: left;
 }
 
@@ -452,8 +452,8 @@ figcaption {
     text-align: center;
 }*/
 
-.idahotowns {
-    /*background-color: #99cfeb;*/
+/*.idahotowns {
+    /*background-color: #99cfeb;
     justify-content: center;
     align-content: center;
     width: 100%;
@@ -462,25 +462,38 @@ figcaption {
     border: 1px solid #2364aa;
     border-radius: 5px;
     margin-bottom: 10px;
-}
+}*/
+
 .towns {
     display: flex;
     flex-direction: column;
+    
+
+    /*justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;*/
+    padding: 5px;
+    border: 1px solid #2364aa;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .towns section {
     background-color: #3da5d9;
     justify-content: center;
     text-align: center;
-    align-content: center;
+    /*align-content: center;*/
     line-height: 1em;
     width: 100%;
     height: auto;
     padding: 10px;
     border: 1px solid #184676;
     border-radius: 5px;
-    margin-bottom: 10px;
+}
 
+.towns section span {
+    margin: auto;
 }
 
 .towns section img {
@@ -501,6 +514,18 @@ figcaption {
     line-height: .75em;
 
 }
+
+
+/*    This does the 2nd and 3rd section children    */
+.towns section:nth-child(2),
+.towns section:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.towns section:nth-child(3) {
+    padding-left: 10px;
+}
+/*     This does just the child line 2   */
 .towns section span :nth-child(2) {
     font-style: italic;
     font-weight: bold;
@@ -510,9 +535,7 @@ figcaption {
     order: 3;
 }
 
-.towns section span {
-    margin: 0;
-}
+
 
 /*#FishHavenIdaho img,
 #PrestonIdaho img,

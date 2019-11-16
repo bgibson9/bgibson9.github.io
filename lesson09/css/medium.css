@@ -89,8 +89,17 @@
 
     .towns section {
         display: flex;
-        margin-bottom: 10px;    
+       /* margin-bottom: 10px;   */
+        padding: 20px;   
     }
+
+    .towns section span {
+
+    }
+    .towns section:nth-child(2),
+    .towns section:nth-child(3) {
+        margin-bottom: 5px;
+}
 
     .towns section span :nth-child(1) {
         order: 3;
@@ -106,6 +115,7 @@
         font-size: .75em;
         line-height: .75em;
         justify-content: center;
+
         /*text-align: center;*/
         /*align-items: center;*/
     }

@@ -47,15 +47,30 @@
     }
 
     .towns section img {
-            justify-content: center;
+            align-items: center;
+            
             width: 100%;
     }
+
+    .towns section:nth-child(2),
+    .towns section:nth-child(3) {
+        margin-bottom: 0;
+    }
+
     
-       .towns section span{
+   /*    .towns section span{
         margin: auto;
 
+}/*
+     
+/* we have to look at the actual inspect on the page to see which child the thing we want to change is in the HTML, for example, visually on the large.css soda springs is in the middle. I want to put a left and right margin on that section. Soda springs is physically in the HTML the 3rd section so I have to put the margins on that section. Thus why I had to do the code below this way. */
+
+.towns section:nth-child(3){
+        margin-left: 15px;
+        margin-right: 15px;
 }
-            
+
+
         /*     Week 07     */
 
         
