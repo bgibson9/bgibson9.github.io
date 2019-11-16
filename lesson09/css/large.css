@@ -39,7 +39,7 @@
        .towns section{
                flex-direction: column;
                justify-content: center;
-
+               margin-bottom: 0;
        }
 
        .towns :nth-child(3) {
