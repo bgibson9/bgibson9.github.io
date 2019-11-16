@@ -12,6 +12,8 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i++) {
 
+    if(towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i.name == "Soda Springs"])
+        {
         let card = document.createElement("section");
         let h2 = document.createElement("name");
         let motto = document.createElement("p");
@@ -42,6 +44,6 @@ fetch(requestURL)
         photo.setAttribute('alt', towns[i].name);
 
         document.querySelector('span.towns').appendChild(card);
-
+    }
   }
 });
