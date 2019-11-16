@@ -46,6 +46,11 @@
         flex-direction: column;
     }
 
+    .towns section img {
+            justify-content: center;
+            width: 100%;
+    }
+    
        .towns section span{
         margin: auto;
 
