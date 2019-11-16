@@ -32,6 +32,7 @@
        .towns {
                display: flex;
                flex-direction: row;
+               margin-bottom: 25px;
 
 
        }
