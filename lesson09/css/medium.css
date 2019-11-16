@@ -92,13 +92,17 @@
         margin-bottom: 10px;        
     }
 
-    .towns :nth-child(2) {
+    .towns :nth-child(odd) {
         flex-direction: row-reverse;
     }
 
     .towns p {
         font-size: .75em;
         line-height: .75em;           
+    }
+
+    .towns img {
+        width: 100%;
     }
 
 
