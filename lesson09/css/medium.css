@@ -92,6 +92,10 @@
         margin-bottom: 10px;    
     }
 
+    .towns section :nth-child(1) {
+        order: 3;
+    }
+
     .towns :nth-child(odd) {
         flex-direction: row-reverse;
     }
