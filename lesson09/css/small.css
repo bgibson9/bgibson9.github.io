@@ -518,16 +518,17 @@ figcaption {
 /*     Row 4 is Contact Information     */
 .row4 {
     background-color: #f4b98b;
-    /*#ea7317; /*#ffffe5;*/
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #ea7317;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .rowImage4 {
     display: flex;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    
 }
 
 .row4map {
