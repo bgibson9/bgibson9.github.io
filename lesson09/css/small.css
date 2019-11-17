@@ -564,7 +564,6 @@ figcaption {
 
 .rowImage4{
     display: flex;
-    border: 1px solid #ea7317;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }

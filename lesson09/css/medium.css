@@ -181,6 +181,10 @@
 
     }
 
+    .rowImage4{
+        border: 1px solid #ea7317;
+    }
+            
     .row4 .rowImage4 img {
         display: block;
     }
