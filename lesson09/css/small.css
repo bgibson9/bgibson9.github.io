@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500i,700,900&display=swap');
 
-
 /*yellow #f3f315; 
 (243,242,21);
 dk blue #2364aa
@@ -24,8 +23,8 @@ darken that blue for accessibility
 
 
 * {
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     line-height: 1.1em;
 }
@@ -61,7 +60,8 @@ header,
 nav,
 main,
 footer {
-    margin: 0 auto; /*0 auto; this centers the page*/
+    margin: 0 auto;
+    /*0 auto; this centers the page*/
 }
 
 header,
@@ -81,8 +81,6 @@ footer {
     flex-direction: row;
     align-items: center;
 }
-
-
 
 header {
     font-family: "Roboto Slab", sans-serif;
@@ -196,13 +194,14 @@ main .thanksmessage {
 form {
     font-family: Roboto, sans-serif;
 }
+
 form fieldset {
     margin: 0 auto;
     border: 1px solid #2364aa;
     border-radius: 10px;
     padding: .5rem 3%;
-    max-width: 25rem; 
-    margin-bottom: 20px;   
+    max-width: 25rem;
+    margin-bottom: 20px;
 }
 
 form label.contactinfo input,
@@ -210,18 +209,26 @@ form label.stormdetails input,
 form label.sbs input,
 form label.dropdown select,
 form input.submitBtn {
-    -webkit-appearance: none; /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own &#9660; in html next to please select*/
-    display: block;     /*makes them appear below their titles */
+    -webkit-appearance: none;
+    /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own &#9660; in html next to please select*/
+    display: block;
+    /*makes them appear below their titles */
     font-size: 1rem;
     border: solid 1px #2364aa;
     border-radius: 4px;
     margin-bottom: 15px;
-    padding: .75rem; /* 44px touch space for mobile */
-    color: #184676; /* color of input type */
-    width: 100%; /* small screen width looks dumb on lg set max-width*/
-    max-width: 20rem; /*looks better on large screen */
-    background-color: rgba(61,165,217,0.051); /* 10% bkgd color for inputs */
+    padding: .75rem;
+    /* 44px touch space for mobile */
+    color: #184676;
+    /* color of input type */
+    width: 100%;
+    /* small screen width looks dumb on lg set max-width*/
+    max-width: 20rem;
+    /*looks better on large screen */
+    background-color: rgba(61, 165, 217, 0.051);
+    /* 10% bkgd color for inputs */
 }
+
 form input.submitBtn {
     border: none;
     background-color: #2364aa;
@@ -230,8 +237,10 @@ form input.submitBtn {
     margin: 0 auto;
     /*margin: 0 0 1.5rem 15.5rem; /*0top 0right 2rem bottom 2% left pushes over 2%*/
     text-align: center;
-    width: 96%; /*matches inputs on smaller screens */
-    max-width: 20rem; /* for lg screens */
+    width: 96%;
+    /*matches inputs on smaller screens */
+    max-width: 20rem;
+    /* for lg screens */
     margin-bottom: 20px;
 }
 
@@ -243,11 +252,14 @@ form label.user-danger {
 }
 
 form label.danger-level input {
-    display: block;  /*stacks the radio and check boxes on top of each other */
+    display: block;
+    /*stacks the radio and check boxes on top of each other */
     margin-bottom: 15px;
     border-radius: 4px;
-    padding: .75rem 0;  /*44px high for small screens - 0 aligns them to the left*/
-    max-width: 20rem; /*good design is consistent*/
+    padding: .75rem 0;
+    /*44px high for small screens - 0 aligns them to the left*/
+    max-width: 20rem;
+    /*good design is consistent*/
 
 }
 
@@ -259,17 +271,19 @@ form label.textinfo {
     width: 20rem;
 }
 
-    /*   this helps users quickly identify required fields */
+/*   this helps users quickly identify required fields */
 form label.contactinfo input:required {
-    border-left:#f4b98b solid 4px;
+    border-left: #f4b98b solid 4px;
 }
 
-form label.contactinfo input:required:valid { /* marks green to left if settin input is valid */
+form label.contactinfo input:required:valid {
+    /* marks green to left if settin input is valid */
     border-left: green solid 4px;
 }
+
 form textarea.addlinfo {
     width: 100%;
-    height:6em; 
+    height: 6em;
 }
 
 
@@ -311,7 +325,7 @@ input[type="checkbox"] ~ label, input[type="radio"] ~ label {
 
 /*     Week 04     */
 .row1 {
-    position: relative;   
+    position: relative;
 }
 
 .herodiv {
@@ -322,7 +336,7 @@ input[type="checkbox"] ~ label, input[type="radio"] ~ label {
     min-width: 50px;  
     min-height: 50px;
     /*if you have 5 images on first row and more images on 2nd row and you want them to make sure they lazyload separately know that by default your images have load by default images have a 0 x 0px, so if you load in a bunch of pictures you don't actually mean to load yet, I recommend you give a min-width and min-height to be sure it's taking up a little space*/
-    
+
 /*}*/
 
 /*     Week 07     */
@@ -331,7 +345,7 @@ input[type="checkbox"] ~ label, input[type="radio"] ~ label {
     min-width: 50px;
     min-height: 50px;
 }
-    
+
 /*main picture.responsivephoto{
     width:90%;
     /*margin: 0 0 0 2%;
@@ -364,7 +378,7 @@ input[type="checkbox"] ~ label, input[type="radio"] ~ label {
 }
 
 /*for lazyload.html */
-picture img[data-src]{  
+picture img[data-src] {
     filter: blur(0.2em);
 }
 
@@ -375,7 +389,7 @@ picture img {
 
 
 /*    for gallery-7.html */
-figure img[data-src]{     
+figure img[data-src] {
     filter: blur(0.2em);
 }
 
@@ -404,7 +418,7 @@ figcaption {
     display: none;
 }
 
-.row3{
+.row3 {
     margin-top: 50px;
     border-radius: 5px;
 }
@@ -413,7 +427,7 @@ figcaption {
     width: 100%;
     border: 3px solid #2364aa;
     border-radius: 5px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);  
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .row3content h3 {
@@ -432,47 +446,10 @@ figcaption {
 
 }
 
-
-
-/*h1 .idahotowns{
-    font-size: 2rem;
-    color: #184676;
-    text-align: center;
-    font-weight: bold;
-    white-space: nowrap;
-
-}*/
-
-/*h2 .idahotowns {
-    font-size: 1.4em;
-    padding-bottom: 10px;
-    color:#184676;
-}*/
-
-/*.idahotowns {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;
-    width: 100%;
-    text-align: center;
-}*/
-
-/*.idahotowns {
-    /*background-color: #99cfeb;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    border: 1px solid #2364aa;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}*/
-
 .towns {
     display: flex;
     flex-direction: column;
-    
+
 
     /*justify-content: center;
     align-content: center;
@@ -507,8 +484,6 @@ figcaption {
     width: 100%;
 }
 
-
-
 .towns name {
     font-size: 2em;
     font-family: "Roboto Slab", sans-serif;
@@ -517,7 +492,6 @@ figcaption {
 .towns p {
     font-size: 1em;
     line-height: .75em;
-
 }
 
 
@@ -530,6 +504,7 @@ figcaption {
 .towns section:nth-child(3) {
     padding-left: 10px;
 }
+
 /*     This does just the child line 2   */
 .towns section span :nth-child(2) {
     font-style: italic;
@@ -540,29 +515,16 @@ figcaption {
     order: 3;
 }
 
-
-
-/*#FishHavenIdaho img,
-#PrestonIdaho img,
-#SodaSpringsIdaho img {
-    height: auto;
-    width: 50%;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.75);
-}*/
-
-
-
 /*     Row 4 is Contact Information     */
 .row4 {
-    background-color: #f4b98b; /*#ea7317; /*#ffffe5;*/
+    background-color: #f4b98b;
+    /*#ea7317; /*#ffffe5;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
-.rowImage4{
+.rowImage4 {
     display: flex;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -590,8 +552,6 @@ figcaption {
     float: left;
     width: 10px;
 }
-
-
 
 .stats {
     position: absolute;
@@ -623,7 +583,7 @@ hr {
 }
 
 .stats div h4 {
-    
+
     text-align: center;
 }
 
@@ -636,16 +596,16 @@ hr {
 }
 
 .socialMediaIcons {
-      display: flex;
+    display: flex;
 }
- 
+
 .facebooklogo img {
     margin: 0 3px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
-  
+
 .pinterestlogo img {
     margin: 0 3px;
     width: 20px;
@@ -659,14 +619,13 @@ hr {
     height: 20px;
     border-radius: 50%;
 }
-  
+
 .whatsapplogo img {
     margin: 0 3px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
- 
 
 h1,
 h2,
@@ -681,7 +640,8 @@ h6 {
 h1 {
     display: block;
     font-size: 1.25rem;
-    color: #184676;;
+    color: #184676;
+    ;
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px 1px #fff;
@@ -691,7 +651,8 @@ h1 {
 
 h2 {
     font-size: 1.25rem;
-    color: #184676;;
+    color: #184676;
+    ;
     text-align: center;
 }
 

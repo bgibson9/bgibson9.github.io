@@ -1,4 +1,5 @@
-@media only screen and (min-width: 56em) {  /*   56em = 896px   */
+@media only screen and (min-width: 56em) {
+        /*   56em = 896px   */
 
         heading h2 {
                 font-size: 1.5rem;
@@ -21,7 +22,7 @@
         form label.stormseverityrange span {
                 display: inline;
                 padding-bottom: 15px;
-            }
+        }
 
         /*form label.addlinfo {
                 padding: .25rem;
@@ -29,58 +30,45 @@
 
         /*     Week 09     */
 
-       .towns {
-               display: flex;
-               flex-direction: row;
-               margin-bottom: 25px;
+        .towns {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 25px;
+        }
 
+        .towns section {
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 0;
+        }
 
-       }
-        
-       .towns section{
-               flex-direction: column;
-               justify-content: center;
-               margin-bottom: 0;
-       }
+        .towns :nth-child(3) {
+                flex-direction: column;
+        }
 
-       .towns :nth-child(3) {
-        flex-direction: column;
-    }
+        .towns section img {
+                align-items: center;
+                width: 100%;
+        }
 
-    .towns section img {
-            align-items: center;
-            
-            width: 100%;
-    }
-
-    .towns section:nth-child(2),
-    .towns section:nth-child(3) {
-        margin-bottom: 0;
-    }
-
-    
-   /*    .towns section span{
-        margin: auto;
-
-}/*
+        .towns section:nth-child(2),
+        .towns section:nth-child(3) {
+                margin-bottom: 0;
+        }
      
 /* we have to look at the actual inspect on the page to see which child the thing we want to change is in the HTML, for example, visually on the large.css soda springs is in the middle. I want to put a left and right margin on that section. Soda springs is physically in the HTML the 3rd section so I have to put the margins on that section. Thus why I had to do the code below this way. */
 
-.towns section:nth-child(3){
-        margin-left: 15px;
-        margin-right: 15px;
-}
+        .towns section:nth-child(3) {
+                margin-left: 15px;
+                margin-right: 15px;
+        }
 
 
         /*     Week 07     */
 
-        
-
         .galleryimages {
                 grid-template-columns: 1fr 1fr 1fr;
-
         }
-
 
         figure:hover {
                 box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -95,6 +83,7 @@
         .row4 {
                 clear: both;
         }
+
         .stats h4 {
                 grid-column: span 2;
         }
