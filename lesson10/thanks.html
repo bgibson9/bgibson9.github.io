@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambi Gibson: CIT 230 Assignment W08 - Storm Center</title>
+    <meta name="description" content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 8 - The Storm Center">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--cannot use per Collin Blake 10/19/2019 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- <link href="css/main.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+    <aside class="bannerad">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
+    </aside>
+
+    <header>
+        <div class="header-wrapper">
+            <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
+            <div class="header-titles">
+                <h1 class="title">Southeast Idaho Storm Center</h1>
+                <h2 class="subtitle">"Report Storms or Unusual Weather"</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li> <!-- Here added hamb was toggleMenu???  -->
+            <li><a href="../index.html">Home</a></li>
+            <!-- change to elements in assignment? Tag the other hrefs active when the pages are made (on that particular page) -->
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="thanksmessage">
+            <h1>Southeastern Idaho Storm Center</h1>
+            <p>Thank you reporting the storm or unusual weather you have observed. Please be safe and protect yourself.
+                Your reports help us serve the weather needs of the Southeastern Idaho area.</p>
+        </div>
+
+
+        <section class="row4">
+            <!--Contact Information-->
+
+            <div class="rowImage4">
+
+                <img class="row4map" src="images/soda-fish-preston-map.jpg"
+                    alt="map showing Preston Soda Springs and Fish Haven">
+                <div class="row4content">
+                    <h3>Southeast Idaho Weather</h3>
+                    <address> <img class="row4googlepin" src="images/googlemapspinlogo-resized2.png"
+                            alt="googlepinlogo"> 30 N 1st E</address>
+                    <address>Preston, ID 83263</address>
+                    <p>&#9742; 999.999.9999</p>
+                    <p>&#9993; seidw@SoutheastIdahoWeather.com</p>
+                    <div class="socialMediaIcons">
+                        <a href="http://www.facebook.com" class="facebooklogo">
+                            <img src="images/f_logo_RGB-Hex-Blue_512.png" alt="facebook link and logo"></a>
+                        <a href="http://www.pinterest.com" class="pinterestlogo"><img
+                                src="images/Pinterest-badgeRGB-244px.png" alt="pinterest link and logo"></a>
+                        <a href="http://www.twitter.com" class="twitterlogo"><img
+                                src="images/Twitter_Social_Icon_Circle_Color.png" alt="twitter link and logo"></a>
+                        <a href="http://www.whatsapp.com" class="whatsapplogo"><img
+                                src="images/WhatsApp-Logo-1-cropped-47px.png" alt="whatsapp link and logo"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span>Southeast Idaho Weather | Terms of Use | Bambi Gibson</p>
+
+        <p><span id="currentDate"></span></p>
+
+    </footer>
+
+
+    <script src="js/windchill.js"> </script>
+    <script src="js/banner.js"> </script>
+    <script src="js/togglehambmenu.js"> </script>
+    <script src="js/currentdate.js"> </script>
+
+</body>
+
+</html>

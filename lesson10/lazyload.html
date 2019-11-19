@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambi Gibson: CIT 230 Assignment W07 - Progressive Loading Images</title>
+    <meta name="description"
+        content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 7 - Progressive Loading Images">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+                                 
+
+    <!--cannot use per Collin Blake 10/19/2019 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- <link href="css/main.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+                <div class="header-titles">
+                    <h1 class="title">Week 7 Progressive Loading Images</h1>
+                </div>
+            </div>
+        </header>
+    <main>
+        <h1>Lazy Load Example</h1>
+            <div class="lazyloaddemo">
+            <picture>
+                <img src= "images/placeholder-300x400.png" data-src= "https://spaceholder.cc/300x400" alt="https://spaceholder.cc/"> 
+            </picture>
+            <picture>
+                <img src= images/placeholder-300x400.png data-src="https://picsum.photos/300/400" alt="https://picsum.photos">
+            </picture>
+            <picture>
+                <img src="images/placeholder-300x400.png" data-src="https://placeimg.com/300/400/nature" alt="https://placeimg.com/">
+            </picture>
+            <picture>
+                <img src="images/placeholder-300x400.png" data-src="https://placeimg.com/300/400/arch" alt="https://placeimg.com/">
+            </picture>
+            <picture>
+                <img src="images/placeholder-300x400.png" data-src="https://placekitten.com/300/400" alt="https://placekitten.com/">
+            </picture>
+            <picture>
+                <img src="images/placeholder-300x400.png" data-src=" https://placebear.com/300/400" alt="https://placebear.com/">
+            </picture>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span>Southeast Idaho Weather | Terms of Use | Bambi Gibson</p>
+
+        <p><span id="currentDate"></span></p>
+
+    </footer>
+    <script src="js/lazy-load.js"> </script>
+    <script src="js/currentdate.js" defer> </script>
+
+</body>
+
+</html>
