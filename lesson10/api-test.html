@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambi Gibson: CIT 230 Assignment - Week 10 - SouthEast Idaho Weather</title>
+    <meta name="description"
+        content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 10 - API Activity - The Weather Site Project">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+
+    <header>
+    <div class="header-wrapper">
+            <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
+            <div class="header-titles">
+                <h1 class="title">Southeast Idaho Weather</h1>
+                <h2 class="subtitle">"Your Regional Weather Forecast"</h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+        <hr>
+        <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="icon" alt="icon" id="icon"></p>
+        <p>Source:  <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span>Southeast Idaho Weather | Terms of Use | Bambi Gibson | <a
+                href="https://bgibson9.github.io/index.html">CIT230 Portal Home</a> | <a
+                href="images/Week09-WireframeHomePageBambiGibson.pdf">Wireframes</a></p>
+
+        <p><span id="currentDate"></span></p>
+
+    </footer>
+
+    <script src="js/weatherapi.js"></script>
+
+</body>
+</html>
