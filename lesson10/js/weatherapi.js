@@ -12,7 +12,7 @@
 //Set the src attribute for the <img> with the id of 'icon'.
 //Set the alt attribute for the <img> for accessibility.
 
-const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
 
 fetch(apiURL)
   .then((response) => response.json())
