@@ -30,6 +30,3 @@ fetch(apiURL)
   document.getElementById('icon').setAttribute('alt', desc);
 
 });
- 
- //  const weather = jsObject["weather"];
- 
