@@ -19,6 +19,15 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
+  var d = new Date();
+  var currentDay = d.getDay();
+
+  if (currentDay == 3) {
+    document.getElementsByClassName("weds").forecast.list[1]("showbanner");
+}
+
+
+
  document.getElementById('current-temp').textContent = jsObject.main.temp; 
 
  const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';   //lesson note:  note the concatenation
