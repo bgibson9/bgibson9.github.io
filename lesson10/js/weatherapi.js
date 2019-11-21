@@ -23,7 +23,7 @@ fetch(apiURL)
   var currentDay = d.getDay();
 
   if (currentDay == 3) {
-    document.getElementsByClassName("weds").forecast.list[1]("showbanner");
+    //document.getElementsByClassName("weds").forecast.list[1]("showbanner");
 }
 
 

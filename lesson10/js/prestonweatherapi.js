@@ -33,6 +33,10 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
+    const test = 'Hello World';
+if (test.includes('World')) { 
+  // Found world
+}
     //if day equals something and time = 18:00:00 dt_txt = jsObject.dt_txt.list[1].forecast >= 18:00:00 display the temp forecast and the icon that goes with the weather at the time. And then show the next day up to the 5th day out.  for (let i = 0; i < forecast.length; i++) {
 
     //    if(forecast[i].time == 18:00:00 Preston")
