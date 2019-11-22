@@ -17,48 +17,95 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    //console.log(jsObject);
 
-    document.getElementsByClassName('currently')[0].textContent = jsObject.weather.description;
+    document.getElementsByClassName('currently')[0].textContent = jsObject.weather[0].description;
     document.getElementsByClassName('high-temp')[0].textContent = jsObject.main.temp_max;
     document.getElementsByClassName('windSpeed')[0].textContent = jsObject.wind.speed;
     document.getElementsByClassName('humidity')[0].textContent = jsObject.main.humidity;
 
-    document.getElementsByClassName('img src')[0].textContent = "https://openweathermap.org/img/wn/" + jsObject.weather.icon + "@2x.png";
-
-    // img  fix classname in html
     runWC();
 
   });
 
-  function runWC(){
-    var tempF = parseFloat(document.getElementsByClassName("high-temp")[0].textContent);
-    var speed = parseFloat(document.getElementsByClassName("windSpeed")[0].textContent);
-    var f = calcWindChill(tempF, speed);
-         document.getElementsByClassName("wChill")[0].textContent = f;
-        }   
-    
-    function calcWindChill(tempF, speed) {
-      var t = tempF;
-        var s = speed;
-    
-        console.log(tempF)
-        console.log(speed)
-    
-        console.log(t)
-        console.log(s)
-        //return statement if not within bounds (above 50 and wind speed below 3) no windchill, at or below 50 and windspeed above 3.0 mph wind chill calculates 
-        if (t >=50 || s <= 3) { 
-            return "N/A";
-    
-        }
-        
-        //else calculate and return
-      else {
-            var f = (35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s,0.16)));
-            return f.toFixed();
-        }
-    }
-    
-    //Line 11 could have if (t <=50 && s >=3) depending on how I wrote it  + - / * %remainder; exponentiation ** Increment ++ Decrement -- Logical operators && (both true) OR || not! https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+function runWC() {
+  var tempF = parseFloat(document.getElementsByClassName("high-temp")[0].textContent);
+  var speed = parseFloat(document.getElementsByClassName("windSpeed")[0].textContent);
 
+  console.log(tempF)
+  console.log(speed)
+
+  var f = calcWindChill(tempF, speed);
+  document.getElementsByClassName("wChill")[0].textContent = f;
+}
+
+function calcWindChill(tempF, speed) {
+  var t = tempF;
+  var s = speed;
+
+  console.log(t)
+  console.log(s)
+
+  //return statement if not within bounds (above 50 and wind speed below 3) no windchill, at or below 50 and windspeed above 3.0 mph wind chill calculates 
+  if (t >= 50 || s <= 3) {
+    return "N/A";
+
+  }
+
+  //else calculate and return
+  else {
+    var f = (35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16)));
+    return f.toFixed();
+  }
+}
+
+//Line 11 could have if (t <=50 && s >=3) depending on how I wrote it  + - / * %remainder; exponentiation ** Increment ++ Decrement -- Logical operators && (both true) OR || not! https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+
+
+const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
+
+fetch(forecastapiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+
+    document.getElementById('day_1').textContent = 'https://openweathermap.org/img/wn/' + jsObject.weather.icon + "@2x.png";
+
+    for (let i = 0; i < (jsObject.list.length); i++) {
+      if (jsObject.list[i].dt_txt.includes('18:00:00')); {
+        document.getElementById('tempday_1').textContent = jsObject.main.temp_max;
+        var icon = document.getElementById('img');
+        var imagesrc = 'https://openweathermap.org/img/wn/' + jsObject.list[i].weather.icon + '@2x.png';
+        var desc = 'https://openweathermap.org/img/wn/' + jsObject.list[i].weather.description + '@2x.png';
+      }
+
+    }
+
+  });
+
+//  
+
+//  
+// <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="icon" alt="icon" id="icon"></p>
+
+//list.main.temp_max
+//list.dt
+//list.dt_txt includes '18:00:00'
+
+//my html ids on table cells
+//day of week in table "day_1"
+//weather icon "iconday_1"
+//temp "tempday_1"
+
+// Function takes in a Date object and returns the day of the week in a text format.
+
+function getWeekDay(date) {
+  //Create an array containing each day, starting with Sunday.
+  var weekdays = new Array(
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+  );
+  //Use the getDay() method to get the day.
+  var day = date.getDay();
+  //Return the element that corresponds to that index.
+  return weekdays[day];
+}
