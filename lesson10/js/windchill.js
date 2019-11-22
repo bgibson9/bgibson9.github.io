@@ -7,6 +7,12 @@ var f = calcWindChill(tempF, speed);
 function calcWindChill(tempF, speed) {
 	var t = tempF;
     var s = speed;
+
+    console.log(tempF)
+    console.log(speed)
+
+    console.log(t)
+    console.log(s)
     //return statement if not within bounds (above 50 and wind speed below 3) no windchill, at or below 50 and windspeed above 3.0 mph wind chill calculates 
     if (t >=50 || s <= 3) { 
         return "N/A";
@@ -15,8 +21,8 @@ function calcWindChill(tempF, speed) {
     
     //else calculate and return
 	else {
-        var f = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s,0.16));
-        return f.toFixed();
+        var f = (35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s,0.16)));
+        return f;
     }
 }
 
