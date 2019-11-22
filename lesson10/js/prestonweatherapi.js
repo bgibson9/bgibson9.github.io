@@ -24,6 +24,10 @@ fetch(apiURL)
     document.getElementById('windSpeed').textContent = jsObject.wind.speed;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
 
+    for (let i = 0; i < ?weather.length; i++) {
+
+      if
+
   });
 
 const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';

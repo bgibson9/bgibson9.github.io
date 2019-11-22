@@ -19,12 +19,8 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
-  var d = new Date();
-  var currentDay = d.getDay();
+  
 
-  if (currentDay == 3) {
-    //document.getElementsByClassName("weds").forecast.list[1]("showbanner");
-}
 
 
 
