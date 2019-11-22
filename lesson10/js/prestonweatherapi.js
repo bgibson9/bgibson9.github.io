@@ -24,18 +24,19 @@ fetch(apiURL)
     document.getElementById('windSpeed').textContent = jsObject.wind.speed;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
 
-    for (let i = 0; i < ?weather.length; i++) {
+    document.getElementById('currently').img = "https://openweathermap.org/img/win/" + jsObject.weather.icon + "@2x.png";
 
-      if
 
   });
 
-const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
+const apiURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
 
-fetch(apiURL)
+fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
+
+    for (let i = 0; i < ?weather.length; i++) {
 
     const test = 'Hello World';
 if (test.includes('World')) { 
