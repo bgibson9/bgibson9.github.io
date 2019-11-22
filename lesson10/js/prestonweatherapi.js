@@ -19,12 +19,12 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
-    document.getElementById('currently').textContent = jsObject.weather.description;
-    document.getElementById('high-temp').textContent = jsObject.main.temp_max;
-    document.getElementById('windSpeed').textContent = jsObject.wind.speed;
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementsByClassName('currently')[0].textContent = jsObject.weather.description;
+    document.getElementsByClassName('high-temp')[0].textContent = jsObject.main.temp_max;
+    document.getElementsByClassName('windSpeed')[0].textContent = jsObject.wind.speed;
+    document.getElementsByClassName('humidity')[0].textContent = jsObject.main.humidity;
 
-    document.getElementById('currently').img = "https://openweathermap.org/img/win/" + jsObject.weather.icon + "@2x.png";
+    document.getElementsByClassName('currently')[0].img = "https://openweathermap.org/img/win/" + jsObject.weather.icon + "@2x.png";
 
 
   });
