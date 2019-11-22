@@ -69,14 +69,17 @@ fetch(forecastapiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
-    document.getElementById('day_1').textContent = 'https://openweathermap.org/img/wn/' + jsObject.weather.icon + "@2x.png";
+    document.getElementById('day_1').textContent = 'https://openweathermap.org/img/wn/' + (jsObject) + list.weather.icon + "@2x.png";
 
     for (let i = 0; i < (jsObject.list.length); i++) {
       if (jsObject.list[i].dt_txt.includes('18:00:00')); {
         document.getElementById('tempday_1').textContent = jsObject.main.temp_max;
-        var icon = document.getElementById('img');
-        var imagesrc = 'https://openweathermap.org/img/wn/' + jsObject.list[i].weather.icon + '@2x.png';
-        var desc = 'https://openweathermap.org/img/wn/' + jsObject.list[i].weather.description + '@2x.png';
+        
+        let img = document.createElement("img");
+        let image_src = "http://openweathermap.org/img/wn/" + weather_icon + "@2x.png";
+        img.setAttribute("src", image_src);
+        let image_alt = forecast_data[i].weather[0].description;
+        img.setAttribute("alt", image_alt);
       }
 
     }
@@ -99,13 +102,13 @@ fetch(forecastapiURL)
 
 // Function takes in a Date object and returns the day of the week in a text format.
 
-function getWeekDay(date) {
+//function getWeekDay(date) {
   //Create an array containing each day, starting with Sunday.
-  var weekdays = new Array(
-    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-  );
+//  var weekdays = new Array(
+//    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+//  );
   //Use the getDay() method to get the day.
-  var day = date.getDay();
+//  var day = date.getDay();
   //Return the element that corresponds to that index.
-  return weekdays[day];
-}
+//  return weekdays[day];
+// });
