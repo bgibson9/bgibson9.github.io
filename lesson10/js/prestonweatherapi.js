@@ -24,8 +24,41 @@ fetch(apiURL)
     document.getElementsByClassName('windSpeed')[0].textContent = jsObject.wind.speed;
     document.getElementsByClassName('humidity')[0].textContent = jsObject.main.humidity;
 
-    document.getElementsByClassName('currently')[0].img = "https://openweathermap.org/img/win/" + jsObject.weather.icon + "@2x.png";
+    document.getElementsByClassName('img src')[0].textContent = "https://openweathermap.org/img/wn/" + jsObject.weather.icon + "@2x.png";
 
+    // img  fix classname in html
+    runWC();
 
   });
+
+  function runWC(){
+    var tempF = parseFloat(document.getElementsByClassName("high-temp")[0].textContent);
+    var speed = parseFloat(document.getElementsByClassName("windSpeed")[0].textContent);
+    var f = calcWindChill(tempF, speed);
+         document.getElementsByClassName("wChill")[0].textContent = f;
+        }   
+    
+    function calcWindChill(tempF, speed) {
+      var t = tempF;
+        var s = speed;
+    
+        console.log(tempF)
+        console.log(speed)
+    
+        console.log(t)
+        console.log(s)
+        //return statement if not within bounds (above 50 and wind speed below 3) no windchill, at or below 50 and windspeed above 3.0 mph wind chill calculates 
+        if (t >=50 || s <= 3) { 
+            return "N/A";
+    
+        }
+        
+        //else calculate and return
+      else {
+            var f = (35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s,0.16)));
+            return f.toFixed();
+        }
+    }
+    
+    //Line 11 could have if (t <=50 && s >=3) depending on how I wrote it  + - / * %remainder; exponentiation ** Increment ++ Decrement -- Logical operators && (both true) OR || not! https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
 
