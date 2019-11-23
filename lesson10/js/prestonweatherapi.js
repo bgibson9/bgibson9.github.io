@@ -18,8 +18,8 @@ function runWC() {
   var tempF = parseFloat(document.getElementsByClassName("high-temp")[0].textContent);
   var speed = parseFloat(document.getElementsByClassName("windSpeed")[0].textContent);
 
-  console.log(tempF)
-  console.log(speed)
+ // console.log(tempF)
+ // console.log(speed)
 
   var f = calcWindChill(tempF, speed);
   document.getElementsByClassName("wChill")[0].textContent = f;
@@ -29,8 +29,8 @@ function calcWindChill(tempF, speed) {
   var t = tempF;
   var s = speed;
 
-  console.log(t)
-  console.log(s)
+ // console.log(t)
+ // console.log(s)
 
   //return statement if not within bounds (above 50 and wind speed below 3) no windchill, at or below 50 and windspeed above 3.0 mph wind chill calculates 
   if (t >= 50 || s <= 3) {

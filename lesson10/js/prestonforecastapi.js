@@ -5,15 +5,18 @@ fetch(forecastapiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
+    let forecast-temps = jsObject.list;
+    let dt_text
+
  //   document.getElementById('iconday_1').icon = 'https://openweathermap.org/img/wn/' + (jsObject) + list[0].weather[0].icon + "@2x.png";
 
     for (let i = 0; i < (jsObject.list.length); i++) {
-      if (jsObject.list[i].dt_txt.includes('18:00:00'[, position])); {
-        document.getElementById('tempday_1').textContent = jsObject.main.temp_max;
+      if (jsObject.list[i].dt_txt.includes('18:00:00')); {
+        document.getElementById('tempday_1').textContent = jsObject.main.;
         
         let img = document.createElement("img");
         let image_src = "http://openweathermap.org/img/wn/" + weather_icon + "@2x.png";
-        img.setAttribute("src", image_src);
+        img.setAttribute("src", img_src);
         let image_alt = forecast_data[i].weather[0].description;
         img.setAttribute("alt", image_alt);
       }
@@ -26,6 +29,10 @@ fetch(forecastapiURL)
 
 //  
 // <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="icon" alt="icon" id="icon"></p>
+
+//if (jsObject.list[i].dt_txt.includes('18:00:00')); {
+   // document.getElementById('tempday_1').innerHTML = jsObject.main.temp_max;
+
 
 //list.main.temp_max
 //list.dt
