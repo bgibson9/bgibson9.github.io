@@ -15,11 +15,11 @@ fetch(forecastapiURL)
 
         let image_src = "http://openweathermap.org/img/wn/" + jsObject.list[i].weather.icon + "@2x.png";
 
-        img.setAttribute("src", img_src);
+        document.getElementById('iconday_' + counter).setAttribute('src', image_src);
         
         let image_alt = jsObject.list[i].weather.description;
         
-        img.setAttribute("alt", image_alt);
+        document.getElementById('iconday_' + counter).setAttribute('alt', image_alt);
       }
 
     }
