@@ -13,7 +13,7 @@ fetch(forecastapiURL)
       if (jsObject.list[i].dt_txt.includes('18:00:00')) {
         document.getElementById('tempday_' + counter).textContent = jsObject.list[i].main.temp;
 
-        let image_src = "http://openweathermap.org/img/wn/" + jsObject.list[i].weather.icon + "@2x.png";
+        let image_src = "https://openweathermap.org/img/wn/" + jsObject.list[i].weather.icon + "@2x.png";
 
         document.getElementById('iconday_' + counter).setAttribute('src', image_src);
         
