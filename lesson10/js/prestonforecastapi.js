@@ -8,7 +8,7 @@ fetch(forecastapiURL)
  //   document.getElementById('iconday_1').icon = 'https://openweathermap.org/img/wn/' + (jsObject) + list[0].weather[0].icon + "@2x.png";
 
     for (let i = 0; i < (jsObject.list.length); i++) {
-      if (jsObject.list[i].dt_txt.includes('18:00:00')); {
+      if (jsObject.list[i].dt_txt.includes('18:00:00')) {
         document.getElementById('tempday_1').textContent = jsObject.main.;
         
         let img = document.createElement("img");
