@@ -153,6 +153,32 @@
         margin: 0;
     }
 
+   
+
+    .row3 .rowImage3 img {
+        margin: 0;
+        float: right;
+        top: 20px;
+        right: 20px;
+        width: 33%;
+        margin-left: 10px;
+    }
+
+
+     /*    Week 10    */ 
+     article.events {
+        padding: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .events img {
+        margin: 0;
+        float: left;
+        top: 20px;
+        width: 33%;
+    }
+
     /*article:nth-child(2) {
         display: block;
     }*/

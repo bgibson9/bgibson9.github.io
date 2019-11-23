@@ -434,6 +434,31 @@ figcaption {
     padding-top: 10px;
 }
 
+/*     Week 10,11 - Events    */
+article.events {
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+section.townevents {
+    margin-bottom: 25px;
+
+}
+
+article.events img {
+    width: 100%;
+    border: 3px solid #2364aa;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.article.events h3 {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
 /*     Week 09 - Three Towns Page     */
 
 /*.row3.rowImage3.row3threetownspage {
