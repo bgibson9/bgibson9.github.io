@@ -27,10 +27,9 @@ fetch(forecastapiURL)
 
         document.getElementById('day_' + counter).textContent = days[d.getDay()];
 
-
-
         counter++;
-      }  // End of If Statement
+
+    }  // End of If Statement
 
     } //End of For Loop
 
