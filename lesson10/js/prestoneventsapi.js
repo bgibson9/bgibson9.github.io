@@ -15,13 +15,19 @@ fetch(requestURL)
         if (towns[i].name == 'Preston') {
 
             let section = document.createElement('section');
-            let article = document.createElement('article');
             let h3 = document.createElement('name');
             let events = document.createElement("p");
             let image = document.createElement("img");
             
             h3.textContent = towns[i].name + ' Upcoming Events: ';
-            events.textContent = towns[i].events;
+            for (let j = 0; j < towns[i].events.length; j++)
+            {
+                let p = document.createElement('p');
+                p.textContent = towns[i].events[j];
+                event.appendChild(p);
+
+            }
+            //events.textContent = towns[i].events;
 
             section.appendChild(article);
             section.appendChild(h3);
