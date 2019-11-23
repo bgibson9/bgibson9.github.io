@@ -22,15 +22,12 @@ fetch(forecastapiURL)
         document.getElementById('iconday_' + counter).setAttribute('alt', image_alt);
 
         counter++;
-      }
+      }  // End of If Statement
 
-    }
+    } //End of For Loop
 
   });
 
-
-
-/
 
 // Function takes in a Date object and returns the day of the week in a text format.
 
