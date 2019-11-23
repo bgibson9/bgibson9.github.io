@@ -25,7 +25,7 @@ fetch(requestURL)
             {
                 let p = document.createElement('p');
                 p.textContent = towns[i].events[j];
-                event.appendChild(p);
+                events.appendChild(p);
 
             }
             //events.textContent = towns[i].events;
