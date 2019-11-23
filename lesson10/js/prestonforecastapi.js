@@ -5,9 +5,6 @@ fetch(forecastapiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
-    let forecast-temps = jsObject.list;
-    let dt_text
-
  //   document.getElementById('iconday_1').icon = 'https://openweathermap.org/img/wn/' + (jsObject) + list[0].weather[0].icon + "@2x.png";
 
     for (let i = 0; i < (jsObject.list.length); i++) {
