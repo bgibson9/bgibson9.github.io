@@ -447,7 +447,7 @@ section.townevents {
 
 }
 
-article.events img {
+.events img {
     width: 100%;
     border: 3px solid #2364aa;
     border-radius: 5px;
