@@ -35,23 +35,4 @@ fetch(forecastapiURL)
 
   });
 
-
-// Function takes in a Date object and returns the day of the week in a text format.
-
-//function getWeekDay(date) {
-  //Create an array containing each day, starting with Sunday.
-//  var weekdays = new Array(
-//    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-//  );
-  //Use the getDay() method to get the day.
-//  var day = date.getDay();
-  //Return the element that corresponds to that index.
-//  return weekdays[day];
-// });
-
-
-
-//my html ids on table cells
-//day of week in table "day_1"
-//weather icon "iconday_1"
-//temp "tempday_1"
+  //Thank you tutor Collin Blake. This page wouldn't have happened without your patient tutoring. You are a great teacher.
