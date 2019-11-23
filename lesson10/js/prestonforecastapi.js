@@ -13,12 +13,12 @@ fetch(forecastapiURL)
       if (jsObject.list[i].dt_txt.includes('18:00:00')) {
         document.getElementById('tempday_' + counter).textContent = jsObject.list[i].main.temp;
 
+        let image_src = "http://openweathermap.org/img/wn/" + jsObject.list[i].weather.icon + "@2x.png";
 
-        
-        let img = document.createElement("img");
-        let image_src = "http://openweathermap.org/img/wn/" + weather_icon + "@2x.png";
         img.setAttribute("src", img_src);
-        let image_alt = forecast_data[i].weather[0].description;
+        
+        let image_alt = jsObject.list[i].weather.description;
+        
         img.setAttribute("alt", image_alt);
       }
 
