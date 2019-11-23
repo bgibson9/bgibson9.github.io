@@ -452,12 +452,16 @@ article.events img {
     border: 3px solid #2364aa;
     border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin-bottom: 25px;
 }
 
 .article.events h3 {
     font-weight: bold;
     padding-top: 10px;
 }
+
+
+
 
 /*     Week 09 - Three Towns Page     */
 
