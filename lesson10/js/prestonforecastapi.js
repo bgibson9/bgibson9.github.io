@@ -28,23 +28,9 @@ fetch(forecastapiURL)
 
   });
 
-//  
-
-//  
-// <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="icon" alt="icon" id="icon"></p>
-
-//if (jsObject.list[i].dt_txt.includes('18:00:00')); {
-   // document.getElementById('tempday_1').innerHTML = jsObject.main.temp_max;
 
 
-//list.main.temp_max
-//list.dt
-//list.dt_txt includes '18:00:00'
-
-//my html ids on table cells
-//day of week in table "day_1"
-//weather icon "iconday_1"
-//temp "tempday_1"
+/
 
 // Function takes in a Date object and returns the day of the week in a text format.
 
@@ -58,3 +44,10 @@ fetch(forecastapiURL)
   //Return the element that corresponds to that index.
 //  return weekdays[day];
 // });
+
+
+
+//my html ids on table cells
+//day of week in table "day_1"
+//weather icon "iconday_1"
+//temp "tempday_1"
