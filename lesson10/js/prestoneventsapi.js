@@ -15,6 +15,7 @@ fetch(requestURL)
         if (towns[i].name == 'Preston') {
 
             let section = document.createElement('section');
+            let article = document.createElement('article');
             let h3 = document.createElement('name');
             let events = document.createElement("p");
             let image = document.createElement("img");
