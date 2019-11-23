@@ -11,7 +11,7 @@ fetch(forecastapiURL)
 
  for (let i = 0; i < (jsObject.list.length); i++) {
       if (jsObject.list[i].dt_txt.includes('18:00:00')) {
-        document.getElementById('tempday_' + counter).textContent = jsObject.list[i].main.temp;
+        document.getElementById('tempday_' + counter).textContent = jsObject.list[i].main.temp.toFixed();
 
         let image_src = "https://openweathermap.org/img/wn/" + jsObject.list[i].weather[0].icon + "@2x.png";
 
