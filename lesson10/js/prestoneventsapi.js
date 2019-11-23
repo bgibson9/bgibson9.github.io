@@ -21,6 +21,8 @@ fetch(requestURL)
             let image = document.createElement("img");
             
             h3.textContent = towns[i].name + ' Upcoming Events: ';
+            
+            let div = document.createElement('div');
             for (let j = 0; j < towns[i].events.length; j++)
             {
                 let p = document.createElement('p');
