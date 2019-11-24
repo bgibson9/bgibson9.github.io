@@ -132,11 +132,11 @@
 
     .row3 .rowImage3 img {
         margin: 0;
-        float: right;
+        float: left;
         top: 20px;
-        right: 20px;
+        right: 5px;
         width: 33%;
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .row3 .rowImage3 h3 {
@@ -155,7 +155,7 @@
 
      /*    Week 10 - Upcoming Events    */ 
     .events section {
-        padding: 15px;
+        /*padding: 15px;*/
         /*margin-top: 25px 25px 25px 0;*/
         font-size: .85em;
     }
@@ -163,22 +163,13 @@
     .events h3 {
         padding: 0 0 20px;
     }
-
-   /* .events img {
-        margin: 0;
-        top: 20px;
-        width: 45%;
-        top: 20px;
-        left: 20px;
-        width: 33%;
-    }*/
-
     
     .events section p {
         display: grid;
         grid-template-rows: 1fr;
         padding: 5px;
-        justify-content: center;
+        text-align: left;
+        /*justify-content: center;*/
         /*text-align: center;
         align-items: center;*/
 
@@ -190,8 +181,9 @@
     }
 
     .events p {
-        float: right;
-        text-align: left;
+        float: left;
+        /*margin-left: 20px;*/
+        text-align: right;
         line-height: .5em;
     }
 
