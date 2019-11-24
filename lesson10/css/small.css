@@ -7,6 +7,7 @@ dk blue #2364aa
 darken that blue for accessibility 
 = #184676; 
  med blue #3da5d9;
+ maybe try aad7ee lighter blue
  (61,165,217); tint (lighter) #ebf6fb;
  aqua blue #73bfb8;
  (115,191,184); 
@@ -421,6 +422,7 @@ figcaption {
 .row3 {
     margin-top: 50px;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .row3 .rowImage3 img {
@@ -435,16 +437,15 @@ figcaption {
 }
 
 /*     Week 10,11 - Events    */
-article.events {
-    margin-top: 20px;
+
+.events {
+    background-color: #aad7ee;
+    border: 1px solid #2364aa;
     border-radius: 5px;
     text-align: center;
-
-}
-
-section.townevents {
+    padding: 10px;
     margin-bottom: 25px;
-
+    font-weight: bold;
 }
 
 .events img {
@@ -452,38 +453,22 @@ section.townevents {
     border: 3px solid #2364aa;
     border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    margin-bottom: 25px;
 }
 
-.article.events h3 {
-    font-weight: bold;
-    padding-top: 10px;
+.events h3 {
+    padding: 10px 0;
 }
-
-
-
 
 /*     Week 09 - Three Towns Page     */
-
-/*.row3.rowImage3.row3threetownspage {
-    margin-top: 0;
-} */
 
 .threetownspage {
     padding: 5px;
     text-align: left;
-
 }
 
 .towns {
     display: flex;
     flex-direction: column;
-
-
-    /*justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: auto;*/
     padding: 5px;
     border: 1px solid #2364aa;
     border-radius: 5px;
@@ -551,6 +536,7 @@ section.townevents {
     justify-content: center;
     align-items: center;
     border: 1px solid #ea7317;
+    border-bottom: none;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }

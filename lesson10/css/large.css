@@ -76,6 +76,21 @@
                 text-align: center;
         }
 
+        .rowimage3 {
+                max-width: 960px;
+        }
+
+                /*     Week 10     */
+        .events section p {
+                align-items: center;
+                margin-right: 40px;
+                justify-content: center;
+        }
+
+        /*.events p {
+                margin-top: 30px;
+        }*/
+
         .row4 {
                 clear: both;
         }
@@ -84,16 +99,8 @@
                 grid-column: span 2;
         }
 
-        .rowimage3 {
-                max-width: 960px;
-
-        }
-
         .row4content {
                 font-size: 1em;
         }
 
-        article img {
-                display: block;
-        }
 }

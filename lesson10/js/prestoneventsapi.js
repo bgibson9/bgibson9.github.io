@@ -16,15 +16,17 @@ fetch(requestURL)
 
             let section = document.createElement('section');
            // let article = document.createElement('article');
-            let h3 = document.createElement('name');
-            let events = document.createElement("p");
-            let image = document.createElement("img");
+            let h3 = document.createElement('h3');
+            let events = document.createElement('p');
+            let image = document.createElement('img');
             
             h3.textContent = towns[i].name + ' Upcoming Events: ';
 
-            let div = document.createElement('div');
-            for (let j = 0; j < towns[i].events.length; j++)
+            //let div = document.createElement('div');
+            for (let j = 0; j < towns[i].events.length; j++) 
             {
+        
+            
                 let p = document.createElement('p');
                 p.textContent = towns[i].events[j];
                 events.appendChild(p);
@@ -38,7 +40,7 @@ fetch(requestURL)
             section.appendChild(image);
 
             image.setAttribute('src', 'images/david-brooke-martin-t_ZdxJsE8iM-unsplash1.jpg');
-            image.setAttribute('alt', towns[i].name + 'town event photo');
+            image.setAttribute('alt', towns[i].name + ' town event photo');
 
             document.querySelector('article.events').appendChild(section);
 
