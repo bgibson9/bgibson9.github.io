@@ -39,7 +39,7 @@ fetch(requestURL)
             section.appendChild(events);
             section.appendChild(image);
 
-            image.setAttribute('src', 'images/david-brooke-martin-t_ZdxJsE8iM-unsplash1.jpg');
+            image.setAttribute('src', 'images/michael-heuser-2rvnqI4lUN8-unsplash.jpg');
             image.setAttribute('alt', towns[i].name + ' town event photo');
 
             document.querySelector('article.events').appendChild(section);
