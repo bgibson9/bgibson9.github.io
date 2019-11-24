@@ -95,7 +95,6 @@
 
     .towns section {
         display: flex;
-        /* margin-bottom: 10px;   */
         padding: 20px;
     }
 
@@ -155,8 +154,6 @@
 
      /*    Week 10 - Upcoming Events    */ 
     .events section {
-        /*padding: 15px;*/
-        /*margin-top: 25px 25px 25px 0;*/
         font-size: .85em;
     }
 
@@ -169,10 +166,6 @@
         grid-template-rows: 1fr;
         padding: 5px;
         text-align: left;
-        /*justify-content: center;*/
-        /*text-align: center;
-        align-items: center;*/
-
     }
 
     .events img {
@@ -182,7 +175,6 @@
 
     .events p {
         float: left;
-        /*margin-left: 20px;*/
         text-align: right;
         line-height: .5em;
     }
