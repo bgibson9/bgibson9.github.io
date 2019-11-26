@@ -3,7 +3,7 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
+  //console.log(jsObject); //to test data pull
 
     document.getElementsByClassName('currently')[0].textContent = jsObject.weather[0].description;
     document.getElementsByClassName('high-temp')[0].textContent = jsObject.main.temp_max;
