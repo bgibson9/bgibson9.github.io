@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambi Gibson: CIT 230 Assignment - Storm Center</title>
+    <meta name="description" content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 8 - The Storm Center">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--cannot use per Collin Blake 10/19/2019 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- <link href="css/main.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+    <aside class="bannerad">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
+    </aside>
+
+    <header>
+        <div class="header-wrapper">
+            <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
+            <div class="header-titles">
+                <h1 class="title">Southeast Idaho Weather</h1>
+                <h2 class="subtitle">"Your Regional Weather Forecast"</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li> <!-- Here added hamb was toggleMenu???  -->
+            <li><a href="index.html">Home</a></li>
+            <!-- change to elements in assignment? Tag the other hrefs active when the pages are made (on that particular page) -->
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="stormcenter">
+        <div>
+            <h2>Southeastern Idaho Storm Center</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="contactinfo">Full Name* <input type="text" name="name" placeholder="Full Name"
+                            required pattern="[A-Za-z '-]{5,99}"></label>
+                    <!--minlength="5"-->
+                    <label class="contactinfo">Email <input type="email" name="email"
+                            placeholder="name@example.com"></label>
+                    <label class="contactinfo">Phone* <input type="tel" name="phone" required
+                            placeholder="1235551234"></label>
+                    <label class="contactinfo">Zip Code* <input type="number" name="postal-code" placeholder="Zip Code"
+                            required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm Details</legend>
+                    <div></div>
+                    <label class="stormdetails">Storm Date <input type="date" name="stormDate"></label>
+
+                    <label class="sbs">Storm Type <input type="text" name="stormtype" list="storms">
+                        <!-- This one must have an "id" and not a class -->
+                        <datalist id="storms">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+
+                    <label class="stormseverityrange" for="rating"><span>Storm Severity (1-10) &nbsp;&nbsp;&nbsp;</span>
+                        <!--</span>class="ratingvalue">1-->
+                        <input type="range" id="rating" value="10" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">10</span></label>
+                
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+                    <label class="dropdown">Storm Region <select name="region">
+                                <!--<datalist> -->
+                            <option value="" disabled="disabled" selected="selected">Select Region... &#9660;</option>
+                            <option value="fishhaven">Fish Haven</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                        </select>
+                    </label>
+                        <!--</datalist>   -->
+                
+                    <span class="danger-level">
+                        Is user in danger?
+                        <label class="user-danger"><input type="radio" name="danger" value="yes"> Yes</label>
+                        <label class="user-danger"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                        <label class="user-danger"><input type="radio" name="danger" value="no"> No</label>
+                        
+                    </span>
+    
+                </fieldset>
+
+                <!--down arrow code &#9662-->
+                            <!--     leaving NAME the same allows one to deactivate as another is selected. If you were to have audience1, audience2, audience3, all 3 radio buttons could be selected, which defeats the purpose of a radio button
+                    sbs class means side by side     -->
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                        <label class="textinfo">Comments
+                            <textarea class="addlinfo" name="comments" placeholder="Type your comments here..."></textarea>
+                        </label>
+                </fieldset>
+
+                    <input type="submit" value="Report Storm" class="submitBtn">
+
+            </form>
+
+
+
+        <section class="row4">  
+                <!--Contact Information-->
+
+             <div class="rowImage4">
+
+                    <img class="row4map" src="images/soda-fish-preston-map.jpg"
+                        alt="map showing Preston Soda Springs and Fish Haven">
+                    <div class="row4content">
+                        <h3>Southeast Idaho Weather</h3>
+                        <address> <img class="row4googlepin" src="images/googlemapspinlogo-resized2.png"
+                                alt="googlepinlogo"> 30 N 1st E</address>
+                        <address>Preston, ID 83263</address>
+                        <p>&#9742; 999.999.9999</p>
+                        <p>&#9993; seidw@SoutheastIdahoWeather.com</p>
+                        <div class="socialMediaIcons">
+                            <a href="https://www.facebook.com" class="facebooklogo">
+                                <img src="images/f_logo_RGB-Hex-Blue_512.png" alt="facebook link and logo"></a>
+                            <a href="https://www.pinterest.com" class="pinterestlogo"><img
+                                    src="images/Pinterest-badgeRGB-244px.png" alt="pinterest link and logo"></a>
+                            <a href="https://www.twitter.com" class="twitterlogo"><img
+                                    src="images/Twitter_Social_Icon_Circle_Color.png" alt="twitter link and logo"></a>
+                            <a href="https://www.whatsapp.com" class="whatsapplogo"><img
+                                    src="images/WhatsApp-Logo-1-cropped-47px.png" alt="whatsapp link and logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>     
+    </main>     
+    <footer>
+            <p>&copy; <span id="copyright"></span>Southeast Idaho Weather | Terms of Use | Bambi Gibson | <a href="https://bgibson9.github.io/index.html">CIT230 Portal Home</a></p>
+
+        <p><span id="currentDate"></span></p>
+
+    </footer>
+
+
+    <script src="js/ratingscale.js"> </script>
+    <script src="js/banner.js"> </script>
+    <script src="js/togglehambmenu.js"> </script>
+    <script src="js/currentdate.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambi Gibson: CIT 230 Assignment - SouthEast Idaho Weather</title>
+    <meta name="description"
+        content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 10 - The Weather Site Project - Home Page">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--cannot use per Collin Blake 10/19/2019 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- <link href="css/main.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+    <aside class="bannerad">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
+    </aside>
+
+    <header>
+        <div class="header-wrapper">
+            <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
+            <div class="header-titles">
+                <h1 class="title">Southeast Idaho Weather</h1>
+                <h2 class="subtitle">"Your Regional Weather Forecast"</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li> <!-- Here added hamb was toggleMenu???  -->
+            <li><a class="active" href="index.html">Home</a></li>
+            <!-- change to elements in assignment? Tag the other hrefs active when the pages are made (on that particular page) -->
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Southeastern Idaho Towns</h2>
+        <section class="row1">
+            <div class="herodiv">
+                <div class="rowImage1">
+                    <picture>
+                        <source srcset="images/4k-wallpaper-clouds-cropland-842711-cropped-resized.jpg"
+                            media="(min-width: 300px) and (max-width: 519px)">
+                        <source srcset="images/4k-wallpaper-clouds-cropland-842711-cropped-resized.jpg"
+                            media="(min-width: 520px) and (max-width: 895px)">
+                        <source srcset="images/4k-wallpaper-clouds-cropland-842711-cropped-resized.jpg"
+                            media="(min-width: 896px)">
+                        <img src="images/4k-wallpaper-clouds-cropland-842711-cropped-resized.jpg"
+                            alt="town in mountains with crop land">
+                    </picture>
+                </div>
+            </div>
+
+            <article class="row3">
+                <div class="rowImage3 row3townspage">
+                        <img src="images/NWS-Pocatello-20191114.jpg"
+                            alt="national weather service picture of southeast idaho weather November 14 2019">
+                        <div class="threetownspage">
+                            <h3>Southeast Idaho Weather Forecast</h3>
+                            <h4>by Bambi Gibson</h4>
+                            <p>Mike Houston from the Southeast Idaho Weather Hazard Briefing out of Pocatello, Idaho reports there will be continued warm temperatures across the region with readings in the 50s in the  Snake River plain and lower 40s to lower 50s in the central mountains and Southeast Highland. Friday will bring some wind. Saturday morning will see light precipitation along the Montana – Wyoming border. Sunday may see the same light precipitation. <a href="https://www.youtube.com/watch?list=PLpNc4MXZhFrYda8tdWotdjq9eFKR8qFXr&time_continue=22&v=Km8rCa97USU&feature=emb_logo">Click here to continue to video report</a></p>
+                        </div>
+                </div>
+            </article>
+
+            <span class="towns">
+
+            </span>
+
+        </section>
+
+        <section class="row4">
+            <!--Contact Information-->
+
+            <div class="rowImage4">
+
+                <img class="row4map" src="images/soda-fish-preston-map.jpg"
+                    alt="map showing Preston Soda Springs and Fish Haven">
+                <div class="row4content">
+                    <h3>Southeast Idaho Weather</h3>
+                    <address> <img class="row4googlepin" src="images/googlemapspinlogo-resized2.png"
+                            alt="googlepinlogo"> 30 N 1st E</address>
+                    <address>Preston, ID 83263</address>
+                    <p>&#9742; 999.999.9999</p>
+                    <p>&#9993; seidw@SoutheastIdahoWeather.com</p>
+                    <div class="socialMediaIcons">
+                        <a href="https://www.facebook.com" class="facebooklogo">
+                            <img src="images/f_logo_RGB-Hex-Blue_512.png" alt="facebook link and logo"></a>
+                        <a href="https://www.pinterest.com" class="pinterestlogo"><img
+                                src="images/Pinterest-badgeRGB-244px.png" alt="pinterest link and logo"></a>
+                        <a href="https://www.twitter.com" class="twitterlogo"><img
+                                src="images/Twitter_Social_Icon_Circle_Color.png" alt="twitter link and logo"></a>
+                        <a href="https://www.whatsapp.com" class="whatsapplogo"><img
+                                src="images/WhatsApp-Logo-1-cropped-47px.png" alt="whatsapp link and logo"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span>Southeast Idaho Weather | Terms of Use | Bambi Gibson | <a href="https://bgibson9.github.io/index.html">CIT230 Portal Home</a> | <a href="images/Week09-WireframeHomePageBambiGibson.pdf">Wireframes</a></p>
+
+        <p><span id="currentDate"></span></p>
+
+    </footer>
+
+    <script src="js/idahotowns1.js"> </script>
+    <script src="js/togglehambmenu.js"> </script>
+    <script src="js/currentdate.js"> </script>
+
+</body>
+
+</html>

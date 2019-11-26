@@ -1,0 +1,260 @@
+@media only screen and (min-width: 32.5em) {
+
+    /*  causing header to not center when switching from small to medium. Also 520px = 32.5em based on 16px size*/
+
+    header,
+    nav,
+    main,
+    footer {
+        min-width: 32.5em;
+    }
+
+    header {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    header img {
+        min-width: 100px;
+    }
+
+    main {
+        font-size: 1em;
+    }
+
+    footer {
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav {
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li a {
+        white-space: nowrap;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        border-radius: 10px;
+
+    }
+
+    .galleryimages {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    main .thanksmessage {
+        font-size: 1.5rem;
+    }
+
+    .stats {
+        font-size: 1rem;
+        width: 250px;
+    }
+
+    .row2 {
+        display: block;
+        margin-top: 30px;
+        align-content: stretch;
+        /*align-content: space-evenly;*/
+    }
+
+    .rowImage2 table {
+        background-color: #aad7ee;
+        width: 60%;
+        align-content: space-evenly;
+    }
+
+    .row2 .rowImage2 h3 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /*    Week 09     */
+
+    .towns {
+        margin-bottom: 20px;
+    }
+
+    .towns section {
+        display: flex;
+        padding: 20px;
+    }
+
+    .towns section:nth-child(2),
+    .towns section:nth-child(3) {
+        margin-bottom: 5px;
+    }
+
+    .towns section span :nth-child(1) {
+        order: 3;
+    }
+
+    .towns :nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    .towns p {
+        font-size: .75em;
+        line-height: .75em;
+        justify-content: center;
+    }
+
+    .towns section img {
+        width: 50%;
+    }
+
+    .row3 {
+        background-color: #f9dcc5;
+        border: 1px solid #ea7317;
+        padding: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .row3 .rowImage3 img {
+        margin: 0;
+        float: left;
+        top: 20px;
+        right: 5px;
+        width: 33%;
+        margin-right: 10px;
+    }
+
+    .row3 .rowImage3 h3 {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .row3 .rowImage3 h4 {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .row3 .row3content p {
+        margin: 0;
+    }
+
+     /*    Week 10 - Upcoming Events    */ 
+    .events section {
+        font-size: .85em;
+    }
+
+    .events h3 {
+        padding: 0 0 20px;
+    }
+    
+    .events section p {
+        display: grid;
+        grid-template-rows: 1fr;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .events img {
+        width: 45%;
+        
+    }
+
+    .events p {
+        float: left;
+        text-align: right;
+        line-height: .5em;
+    }
+
+    /*article:nth-child(2) {     display: block; }*/
+
+    /*     contact info     */
+    .row4content {
+        clear: both;
+        width: 50%;
+        padding: 0 10%;
+        margin: auto;
+        word-break: normal;
+        font-size: .80em;
+    }
+
+    .row4map {
+        width: 50%;
+        padding: 20px;
+    }
+
+
+    .row4 .rowImage4 img {
+        display: block;
+    }
+
+    .row4 address img {
+        width: 10px;
+    }
+
+    .row4content h3 {
+        font-size: 1.4em;
+    }
+
+
+/*     article:nth-child(3){
+    
+}     */
+
+    main h2 {
+        margin: 10px;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid black;
+        width: 100px;
+    }
+
+    table tr th {
+        align-content: center;
+        align-content: space-evenly;
+    }
+
+    th {
+        background-color: #3da5d9;
+    }
+
+    tr td img {
+        height: 32px;
+        width: 32px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        white-space: nowrap;
+    }
+
+    h2 {
+        font-size: 1.50rem;
+        white-space: nowrap;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+}
