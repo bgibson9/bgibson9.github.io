@@ -12,7 +12,7 @@ fetch(requestURL)
 
         for (let i = 0; i < towns.length; i++) {
 
-        if (towns[i].name == 'Preston') {
+        if (towns[i].name == 'Fish Haven') {
 
             let section = document.createElement('section');
            // let article = document.createElement('article');
@@ -39,7 +39,7 @@ fetch(requestURL)
             section.appendChild(events);
             section.appendChild(image);
 
-            image.setAttribute('src', 'images/michael-heuser-2rvnqI4lUN8-unsplash.jpg');
+            image.setAttribute('src', 'images/viktor-talashuk-cLAWgt4SlA4-unsplash400.jpg');
             image.setAttribute('alt', towns[i].name + ' town event photo');
 
             document.querySelector('article.events').appendChild(section);
