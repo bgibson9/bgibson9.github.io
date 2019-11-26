@@ -1,11 +1,11 @@
-const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
+const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.05&lon=-111.46&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
 
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday','Thursday', 'Friday', 'Saturday'];
 
 fetch(forecastapiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+  //console.log(jsObject);
 
  //   document.getElementById('iconday_1').icon = 'https://openweathermap.org/img/wn/' + (jsObject) + list[0].weather[0].icon + "@2x.png";
 

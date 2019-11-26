@@ -1,9 +1,9 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?lat=42.05&lon=-111.46&units=imperial&appid=762f823e91c9a4fe9f9e3d69f9ee6521';
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
+    console.log(jsObject);
 
     document.getElementsByClassName('currently')[0].textContent = jsObject.weather[0].description;
     document.getElementsByClassName('high-temp')[0].textContent = jsObject.main.temp_max;
