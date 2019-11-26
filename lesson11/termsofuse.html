@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bambi Gibson: CIT 230 Assignment W08 - SouthEast Idaho Weather</title>
+    <title>Bambi Gibson: CIT 230 Assignment W11 - SouthEast Idaho Weather</title>
     <meta name="description"
-        content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 11 - The Weather Site Project">
+        content="Bambi Gibson BYUI CIT 230 - Web Frontend Development Lesson 11 - The Weather Site Project - Preston -Soda Springs - Fish Haven">
 
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
 
@@ -23,23 +23,38 @@
 
 </head>
 
-<body>
+<body onload="runWC()">
+
+    <aside class="bannerad">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
+    </aside>
 
     <header>
-            <div class="header-wrapper">
-                <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
-                <div class="header-titles">
-                    <h1 class="title">Southeast Idaho Weather</h1>
-                    <h2 class="subtitle">"Your Regional Weather Forecast"</h2>
-                </div>
+        <div class="header-wrapper">
+            <img src="images/iconfinder_15_Cloud_Raindrop_Sun_183424.png" alt="cloud raindrop sun icon">
+            <div class="header-titles">
+                <h1 class="title">Southeast Idaho Weather</h1>
+                <h2 class="subtitle">"Your Regional Weather Forecast"</h2>
             </div>
+        </div>
     </header>
 
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li> <!-- Here added hamb was toggleMenu???  -->
+            <li><a href="index.html">Home</a></li>
+            <!-- change to elements in assignment? Tag the other hrefs active when the pages are made (on that particular page) -->
+            <li><a href="preston-11.html">Preston</a></li>
+            <li><a href="sodasprings-11.html">Soda Springs</a></li>
+            <li><a href="fishhaven-11.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
     <main>
-
         <h1>Terms of Use</h1>
-
-
 
         <h2><strong>Terms and Conditions</strong></h2>
 
@@ -275,6 +290,7 @@
             not be
             liable for any loss or damage of any nature.</p>
 
+
         <section class="row4">
             <!--Contact Information-->
 
@@ -285,8 +301,7 @@
                 <div class="row4content">
                     <h3>Southeast Idaho Weather</h3>
                     <address> <img class="row4googlepin" src="images/googlemapspinlogo-resized2.png"
-                            alt="googlepinlogo"> 30 N
-                        1st E</address>
+                            alt="googlepinlogo"> 30 N 1st E</address>
                     <address>Preston, ID 83263</address>
                     <p>&#9742; 999.999.9999</p>
                     <p>&#9993; seidw@SoutheastIdahoWeather.com</p>
@@ -315,6 +330,9 @@
 
     </footer>
 
+    <script src="js/prestoneventsapi.js"> </script>
+    <script src="js/prestonweatherapi.js"> </script>
+    <script src="js/prestonforecastapi.js"> </script>
     <script src="js/banner.js"> </script>
     <script src="js/togglehambmenu.js"> </script>
     <script src="js/currentdate.js"> </script>
