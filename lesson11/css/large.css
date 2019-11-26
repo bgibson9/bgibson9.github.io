@@ -81,8 +81,14 @@
         }
 
                 /*     Week 10     */
+        
+        .events section {
+                font-size: 1em;
+        }
+
         .events section p {
                 margin-left: 40px;
+                vertical-align: middle;
         }
 
         .row4 {
