@@ -5,7 +5,7 @@ var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday','Thursday', 'Friday', 'Sa
 fetch(forecastapiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+  // console.log(jsObject);
 
  //   document.getElementById('iconday_1').icon = 'https://openweathermap.org/img/wn/' + (jsObject) + list[0].weather[0].icon + "@2x.png";
 
