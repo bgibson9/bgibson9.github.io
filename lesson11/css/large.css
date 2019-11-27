@@ -87,8 +87,12 @@
         }
 
         .events section p {
-                margin-left: 40px;
-                vertical-align: middle;
+                padding-left: 25px;
+                line-height: 0.75em;
+        }
+
+        .events img {
+                width: 55%;
         }
 
         .row4 {

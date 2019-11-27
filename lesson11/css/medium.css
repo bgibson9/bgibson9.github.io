@@ -164,19 +164,21 @@
     .events section p {
         display: grid;
         grid-template-rows: 1fr;
-        text-align: left;
-        vertical-align: center;
+        padding-left: 10px;
+        line-height: 0.09em;
     }
 
     .events img {
-        width: 45%;
+        width: 50%;
+        margin-left: 10px;
         
     }
 
     .events p {
         float: left;
         text-align: left;
-        line-height: 0.01em;
+        align-items: center;
+        vertical-align: middle;
     }
 
     /*article:nth-child(2) {     display: block; }*/
