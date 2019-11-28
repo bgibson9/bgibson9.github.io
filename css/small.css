@@ -84,8 +84,7 @@ a:visited {
 }
 
 a:hover {
-    color: darkgoldenrod;
-}
+    color: #000;
 
 figure:hover {
     
