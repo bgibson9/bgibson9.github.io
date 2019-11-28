@@ -164,7 +164,6 @@ nav ul li a {
 
 .active {
     background-color: #3da5d9;
-    color: #000;
 }
 
 main {
@@ -721,7 +720,7 @@ footer a:visited {
 }
 
 footer a:hover {
-    text-decoration: underline overline;
+    text-decoration: #000 underline overline;
 }
 /*#copyright {
     color: #f1f5f7;
