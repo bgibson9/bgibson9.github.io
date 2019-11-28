@@ -666,7 +666,6 @@ h1 {
 h2 {
     font-size: 1.25rem;
     color: #184676;
-    ;
     text-align: center;
 }
 
@@ -681,7 +680,7 @@ ul li a:link {
 }
 
 ul li a:visited {
-    color: #fff;
+    color: #f1f5f7; /*changed this*/
 }
 
 ul li a:hover {
@@ -704,6 +703,8 @@ footer {
 
 footer p {
     margin: 0;
+    color: #fff;
+    font-size: 14px;
 }
 
 body footer p:nth-child(1) {
@@ -714,11 +715,14 @@ body footer p:nth-child(2) {
     margin-bottom: 15px;
 }
 
-#copyright {
+footer a:visited {
+    color: #f1f5f7;
+}
+/*#copyright {
     color: #f1f5f7;
     font-size: 14px;
 }
 
 #currentDate {
-    color: #000;
-}
+    color: #f1f5f7;
+}*/
