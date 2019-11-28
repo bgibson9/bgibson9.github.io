@@ -685,7 +685,7 @@ ul li a:visited {
 ul li a:hover {
     background-color: #3da5d9;
     color: #f3f315;
-    text-decoration: #000 overline underline;
+    text-decoration: #000 underline;
 }
 
 a:link {
