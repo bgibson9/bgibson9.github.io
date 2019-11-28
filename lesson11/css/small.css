@@ -95,7 +95,6 @@ header img {
 }
 
 header h2 {
-    text-shadow: 1px 1px 1px #fff;
     font-size: 1rem;
 }
 
@@ -656,7 +655,7 @@ h6 {
 h1 {
     display: block;
     font-size: 1.25rem;
-    color: #fff;
+    color: #000;
     text-align: center;
     font-weight: bold;
     white-space: nowrap;
@@ -703,7 +702,7 @@ footer {
 
 footer p {
     margin: 0;
-    color: #fff;
+    color: #000;
     font-size: 14px;
 }
 
@@ -716,7 +715,11 @@ body footer p:nth-child(2) {
 }
 
 footer a:visited {
-    color: #f1f5f7;
+    color: #010507;
+}
+
+footer a:hover {
+    color: #f3f315;
 }
 /*#copyright {
     color: #f1f5f7;
