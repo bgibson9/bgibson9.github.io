@@ -689,8 +689,10 @@ ul li a:hover {
 }
 
 a:link {
-    text-decoration: none;
+    text-decoration: underline;
 }
+
+
 
 footer {
     padding: 5px;
@@ -719,9 +721,9 @@ footer a:visited {
     color: #000;
 }
 
-footer a {
-    text-decoration: underline;
-}
+/*footer a {
+    text-decoration: #000 underline overline;
+}*/
 /*#copyright {
     color: #f1f5f7;
     font-size: 14px;
