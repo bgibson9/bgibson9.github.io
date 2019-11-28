@@ -702,12 +702,13 @@ footer {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+    color: #000;
+    font-size: .875em;
 }
 
 footer p {
     margin: 0;
     color: #000;
-    font-size: 14px;
 }
 
 body footer p:nth-child(1) {
@@ -720,6 +721,7 @@ body footer p:nth-child(2) {
 
 footer a:visited {
     color: #000;
+    text-decoration: overline;
 }
 
 /*footer a {
