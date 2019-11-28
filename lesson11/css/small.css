@@ -96,6 +96,7 @@ header img {
 
 header h2 {
     font-size: 1rem;
+    color: #000;
 }
 
 nav {
@@ -719,7 +720,7 @@ footer a:visited {
 }
 
 footer a:hover {
-    color: #f3f315;
+    text-decoration: underline;
 }
 /*#copyright {
     color: #f1f5f7;
