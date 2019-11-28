@@ -18,7 +18,7 @@ fetch(forecastapiURL)
         let image_src = 'https://openweathermap.org/img/wn/' + jsObject.list[i].weather[0].icon + '@2x.png';
         document.getElementById('iconday_' + counter).setAttribute('src', image_src);
         
-        let image_alt = jsObject.list[i].weather.description;
+        let image_alt = '' + jsObject.list[i].weather.description;
         document.getElementById('iconday_' + counter).setAttribute('alt', image_alt);
 
         var d = new Date(jsObject.list[i].dt_txt);
