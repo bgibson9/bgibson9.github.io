@@ -593,7 +593,8 @@ figcaption {
 
 hr {
     grid-column: span 2;
-    color: #000;
+    
+    border: 1px solid #000;
     width: 90%;
 }
 
