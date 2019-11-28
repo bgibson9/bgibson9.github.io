@@ -685,11 +685,11 @@ ul li a:visited {
 ul li a:hover {
     background-color: #3da5d9;
     color: #f3f315;
-    text-decoration: #000 underline;
+    text-decoration: none;
 }
 
 a:link {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -719,9 +719,9 @@ body footer p:nth-child(2) {
     margin-bottom: 15px;
 }
 
-footer a:visited {
+footer a {
     color: #000;
-    text-decoration: overline;
+    border: 1px solid #000;
 }
 
 /*footer a {
