@@ -656,11 +656,9 @@ h6 {
 h1 {
     display: block;
     font-size: 1.25rem;
-    color: #184676;
-    ;
+    color: #fff;
     text-align: center;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #fff;
     white-space: nowrap;
     /*height: 7vh;*/
 }
