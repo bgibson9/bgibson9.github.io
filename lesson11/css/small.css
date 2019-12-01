@@ -593,7 +593,6 @@ figcaption {
 
 hr {
     grid-column: span 2;
-    
     border: 1px solid #000;
     width: 90%;
 }
@@ -724,15 +723,3 @@ footer a {
     color: #000;
     border: 1px solid #000;
 }
-
-/*footer a {
-    text-decoration: #000 underline overline;
-}*/
-/*#copyright {
-    color: #f1f5f7;
-    font-size: 14px;
-}
-
-#currentDate {
-    color: #f1f5f7;
-}*/
