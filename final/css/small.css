@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900|Solway:400,700&display=swap');
+
+/*#1c304a rgb(28,48,74) Very dark blue
+  #046b99 rgb(4,107,153) Medium blue
+  #00cfff rgb(0,207,255) Very bright blue
+  #b3efff rgb(179,239,255) Light sky blue
+  #ffffff rgb(255,255,255) White
+  #000000 rgb(0,0,0) Black
+  #ea7317 rgb(234,115,23) Orange accent attention grabber
+  Bambi Gibson
+*/
+
+/* {
+    border: 1px solid red !important; /* demo for Box Model Presentation Useful for figuring where boxes are located
+ }     */
+
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.1em;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    /*centers the page*/
+}
+
+header,
+footer {
+    background-color: #b3efff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    font-family: 'Solway', serif;
+    padding-top: 10px;
+}
+
+header img {
+    max-width: 75px;
+    height: auto;
+    padding-right: 20px;
+}
+
+header h2 {
+    font-size: 1rem;
+    color: #000;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: #046b99;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    color: #f3f315;
+    list-style-type: none;
+}
+
+/*header {height: 100px;} */
+/* try not to use heights, not having a height allows the page elements to nest under each other properly! */
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: .2rem auto;
+    max-width: 767px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #1c304a;
+    background-color: #00cfff;
+    font-weight: bold;
+}
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    background-color: #00cfff;
+}
+
+/* finished looking at CSS up to here */
+
+main {
+    font-size: 0.8rem;
+    padding: 0 5px;
+    max-width: 967px;
+    margin: auto;
+}
+
+main h2 {
+    color: #2364aa;
+    padding: 10px 0;
+}
+
+/*     Week 08     */
+main .thanksmessage {
+    margin: 0 auto;
+    padding: 25px 0;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #184676;
+}
+
+/*     Week 08 Forms     */
+
+form {
+    font-family: Roboto, sans-serif;
+}
+
+form fieldset {
+    margin: 0 auto;
+    border: 1px solid #2364aa;
+    border-radius: 10px;
+    padding: .5rem 3%;
+    max-width: 25rem;
+    margin-bottom: 20px;
+}
+
+form label.contactinfo input,
+form label.stormdetails input,
+form label.sbs input,
+form label.dropdown select,
+form input.submitBtn {
+    -webkit-appearance: none;
+    /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own &#9660; in html next to please select*/
+    display: block;
+    /*makes them appear below their titles */
+    font-size: 1rem;
+    border: solid 1px #2364aa;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: .75rem;
+    /* 44px touch space for mobile */
+    color: #184676;
+    /* color of input type */
+    width: 100%;
+    /* small screen width looks dumb on lg set max-width*/
+    max-width: 20rem;
+    /*looks better on large screen */
+    background-color: rgba(61, 165, 217, 0.051);
+    /* 10% bkgd color for inputs */
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #2364aa;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    margin: 0 auto;
+    /*margin: 0 0 1.5rem 15.5rem; /*0top 0right 2rem bottom 2% left pushes over 2%*/
+    text-align: center;
+    width: 96%;
+    /*matches inputs on smaller screens */
+    max-width: 20rem;
+    /* for lg screens */
+    margin-bottom: 20px;
+}
+
+form label.stormseverityrange,
+form label.user-danger {
+    display: block;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+form label.danger-level input {
+    display: block;
+    /*stacks the radio and check boxes on top of each other */
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: .75rem 0;
+    /*44px high for small screens - 0 aligns them to the left*/
+    max-width: 20rem;
+    /*good design is consistent*/
+
+}
+
+form label.danger-level div {
+    padding-bottom: 30px;
+}
+
+form label.textinfo {
+    width: 20rem;
+}
+
+/*   this helps users quickly identify required fields */
+form label.contactinfo input:required {
+    border-left: #f4b98b solid 4px;
+}
+
+form label.contactinfo input:required:valid {
+    /* marks green to left if settin input is valid */
+    border-left: green solid 4px;
+}
+
+form textarea.addlinfo {
+    width: 100%;
+    height: 6em;
+}
+
+
+
+/* From first videos W08 not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*
+
+/*    form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+label {
+    order: 1;
+    width: 10em;
+    padding-right: 0.5em;
+}
+
+input, textarea, select {
+    order: 2;
+    flex: 1 1 auto;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    order: 1;
+    flex: none;
+    width: auto;
+    margin-left: 10em;
+
+}
+
+input[type="checkbox"] ~ label, input[type="radio"] ~ label {
+    width: auto;
+    padding-left: 0.4em;
+
+}
+*/
+
+/*     Week 04     */
+.row1 {
+    position: relative;
+}
+
+.herodiv {
+    margin: 10px auto;
+}
+
+/* is this needed? img {  10/29/2019 from How to lazy load images YouTube video by Kevin Powell
+    min-width: 50px;  
+    min-height: 50px;
+    /*if you have 5 images on first row and more images on 2nd row and you want them to make sure they lazyload separately know that by default your images have load by default images have a 0 x 0px, so if you load in a bunch of pictures you don't actually mean to load yet, I recommend you give a min-width and min-height to be sure it's taking up a little space*/
+
+/*}*/
+
+/*     Week 07     */
+
+[data-src] {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+/*main picture.responsivephoto{
+    width:90%;
+    /*margin: 0 0 0 2%;
+    
+}*/
+
+/*main picture.responsivephoto img{
+    width: 100%;
+}*/
+
+/*main figure.myphoto figcaption { From W06 Dr. Cheney video C using figure and figcaption
+    text-align: center;
+    font-size: .75rem;
+}*/
+
+.lazyloaddemo {
+    display: grid;
+    grid-column: 1;
+    justify-content: center;
+    align-content: center;
+}
+
+.galleryimages {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25px;
+}
+
+/*for lazyload.html */
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
+/*    for gallery-7.html */
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    width: 100%;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.rowImage1 img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #184676;
+}
+
+.row2 {
+    display: none;
+}
+
+.row3 {
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.row3 .rowImage3 img {
+    width: 100%;
+    border: 3px solid #2364aa;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.row3content h3 {
+    padding-top: 10px;
+}
+
+/*     Week 10,11 - Events    */
+
+.events {
+    background-color: #aad7ee;
+    border: 1px solid #2364aa;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.events img {
+    width: 100%;
+    border: 3px solid #2364aa;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.events h3 {
+    padding: 10px 0;
+}
+
+/*     Week 09 - Three Towns Page     */
+
+.threetownspage {
+    padding: 5px;
+    text-align: left;
+}
+
+.towns {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid #2364aa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.towns section {
+    background-color: #3da5d9;
+    justify-content: center;
+    text-align: center;
+    /*align-content: center;*/
+    line-height: 1em;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #184676;
+    border-radius: 5px;
+}
+
+.towns section span {
+    margin: auto;
+}
+
+.towns section img {
+    border: 1px solid #184676;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.towns name {
+    font-size: 2em;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.towns p {
+    font-size: 1em;
+    line-height: .75em;
+}
+
+
+/*    This does the 2nd and 3rd section children    */
+.towns section:nth-child(2),
+.towns section:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.towns section:nth-child(3) {
+    padding-left: 10px;
+}
+
+/*     This does just the child line 2   */
+.towns section span :nth-child(2) {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.towns section:first-child {
+    order: 3;
+}
+
+/*     Row 4 is Contact Information     */
+.row4 {
+    background-color: #f4b98b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ea7317;
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.rowImage4 {
+    display: flex;
+    
+}
+
+.row4map {
+    display: none;
+}
+
+.row4content {
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    word-break: break-all;
+}
+
+.row4content h3 {
+    padding: 0;
+    color: black;
+    font-size: 1.2em;
+}
+
+.row4googlepin {
+    display: block;
+    float: left;
+    width: 10px;
+}
+
+.stats {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 196px;
+    min-width: 196px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    background-color: #3da5d9;
+    color: #000;
+    font-size: .75rem;
+    text-align: right;
+    opacity: 0.85;
+}
+
+.stats h3 {
+    text-align: center;
+}
+
+.weathersummaryheading {
+    grid-column: span 2;
+}
+
+hr {
+    grid-column: span 2;
+    border: 1px solid #000;
+    width: 90%;
+}
+
+.stats div h4 {
+
+    text-align: center;
+}
+
+.stats div:nth-child(odd) {
+    text-align: right;
+}
+
+.stats div:nth-child(even) {
+    text-align: left;
+}
+
+.socialMediaIcons {
+    display: flex;
+}
+
+.facebooklogo img {
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.pinterestlogo img {
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.twitterlogo img {
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.whatsapplogo img {
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 1.25rem;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    /*height: 7vh;*/
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #184676;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #000;
+}
+
+ul li a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:visited {
+    color: #f1f5f7; /*changed this*/
+}
+
+ul li a:hover {
+    background-color: #3da5d9;
+    color: #f3f315;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+footer {
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    /*height: 60px; removing this worked to allow the page elements to nest under each other properly! */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    font-size: .875em;
+}
+
+footer p {
+    margin: 0;
+    color: #000;
+}
+
+body footer p:nth-child(1) {
+    margin-top: 15px;
+}
+
+body footer p:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #000;
+    border: 1px solid #000;
+}
