@@ -125,43 +125,40 @@ nav ul li a {
     text-decoration: none;
 }
 
-.navigation a:hover {
-    color: #000;
-    background-color: #fff;
-    font-weight: bold;
-}
-
 .responsive li {
     display: block;
 }
 
 .active {
-    color: #1c304a;
+    color: #000;
     background-color: #00cfff;
-    font-weight: bold;
-    
 }
 /* moved all the link properties here to see them together */
 a:link {
     text-decoration: none;
 }
 
-/* ul li a:link {    Saturday 12/7
-    color: #fff;
-    text-decoration: none;
-}     */
-
 ul li a:visited {
-    color: #f1f5f7;
+    color: #fff;
+    font-weight: bold;
 }
 
-/*ul li a:hover {
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+ul li a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
     background-color: #3da5d9;
     color: #f3f315;
     text-decoration: none;
-}         changed this 12/7 Saturday
-
-
+}
 
 
 /* finished looking at CSS up to here */
@@ -499,7 +496,7 @@ figcaption {
 
 .towns name {
     font-size: 2em;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: 'Solway', serif;
 }
 
 .towns p {
@@ -649,7 +646,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Solway', serif;
     margin: 0;
 }
 
