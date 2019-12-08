@@ -127,8 +127,7 @@ nav ul li a {
 
 .navigation a:hover {
     color: #000;
-    background-color: green;
-    font-weight: bold;
+    background-color: #fff;
 }
 
 .responsive li {
