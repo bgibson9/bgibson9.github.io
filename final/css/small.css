@@ -650,20 +650,20 @@ h3 {
     color: #000;
 }
 
-ul li a:link {
+/* ul li a:link {    Saturday 12/7
     color: #fff;
     text-decoration: none;
 }
 
 ul li a:visited {
-    color: #f1f5f7; /*changed this*/
+    color: #f1f5f7; /*changed this*/ /*  Saturday 12/7
 }
 
-ul li a:hover {
+ul li a:hover {                 Saturday 12/7
     background-color: #3da5d9;
     color: #f3f315;
     text-decoration: none;
-}
+} */
 
 a:link {
     text-decoration: none;
