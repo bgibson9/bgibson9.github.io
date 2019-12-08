@@ -126,8 +126,8 @@ nav ul li a {
 }
 
 .navigation a:hover {
-    color: #1c304a;
-    background-color: #00cfff;
+    color: #000;
+    background-color: #ea7317;
     font-weight: bold;
 }
 
@@ -136,8 +136,9 @@ nav ul li a {
 }
 
 .active {
-    background-color: #00cfff;
     color: #1c304a;
+    background-color: #00cfff;
+    
 }
 
 /* finished looking at CSS up to here */
