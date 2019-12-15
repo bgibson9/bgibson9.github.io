@@ -226,33 +226,30 @@ figure img{
     padding: 10px 0;
 }
 
-.contactInfoIndex {
-    border: 1px solid black;
-}
-
 /* finished looking at CSS up to here */
 
 main {
     font-size: 0.8rem;
     padding: 0 5px;
-    max-width: 967px;
     margin: auto;
 }
 
+.mainwrapper {
+    max-width: 967px;
+}
 main h2 {
     color: #2364aa;
     padding: 10px 0;
 }
 
-/*     Week 08     */
-main .thanksmessage {
+/*     Reservation Thanks Page     */
+.thanksmessage {
     margin: 0 auto;
     padding: 25px 0;
     max-width: 800px;
     text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #184676;
+    font-size: .75rem;
+    color: #1c304a;
 }
 
 /*    Reservation Form     */
@@ -325,7 +322,7 @@ form label.numberguests input:required,
 form label.contactinfo input:required,
 form label.contactus-name input:required,
 form label.contactus-email input:required {
-border-left: #ea7317 solid 4px;
+    border-left: #ea7317 solid 4px;
 }
 
 form label.sbs input:required:valid,
@@ -333,8 +330,9 @@ form label.arrivaldetails input:required:valid,
 form label.departuredetails input:required:valid,
 form label.numberrooms input:required:valid,
 form label.numberguests input:required:valid,
-form label.contactinfo input:required:valid {
-    /* marks green to left if settin input is valid */
+form label.contactinfo input:required:valid,
+form label.contactus-name input:required:valid,
+form label.contactus-email input:required:valid {
     border-left: green solid 4px;
 }
 
@@ -725,7 +723,9 @@ h3 {
     padding: 10px 0;
 }
 
-
+div.contactInfoIndex {
+    border: 1px solid black;
+}
 
 footer {
     padding: 5px;

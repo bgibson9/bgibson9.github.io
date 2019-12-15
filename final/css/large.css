@@ -15,8 +15,9 @@
         }
 
         main .thanksmessage {
-                font-size: 2rem;
-        }
+                font-size: 1.25rem;
+            }
+        
 
         /*     Week 08     */
         form label.stormseverityrange span {
