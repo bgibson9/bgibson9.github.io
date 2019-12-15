@@ -226,6 +226,11 @@ figure img{
     text-align: center;
     padding: 10px 0;
 }
+
+.contactInfoIndex {
+    border: 1px solid black;
+}
+
 /* finished looking at CSS up to here */
 
 main {
@@ -278,19 +283,17 @@ form input.submitBtn {
     display: flex;
     /*makes them appear below their titles */
     font-size: 1rem;
-    border: solid 1px #2364aa;
-    border-radius: 4px;
+    border: solid 1px #000;
     margin-bottom: 15px;
     padding: .75rem;
     /* 44px touch space for mobile */
-    color: #184676;
+    color: #000;
     /* color of input type */
     width: 100%;
     /* small screen width looks dumb on lg set max-width*/
     max-width: 20rem;
     /*looks better on large screen */
-    background-color: rgba(28, 48, 74, 0.051);
-    /* 10% bkgd color for inputs */
+    background-color: #b3efff;
 }
 
 form input.submitBtn {
@@ -299,12 +302,9 @@ form input.submitBtn {
     color: #fff;
     padding: .75rem 1.5rem;
     margin: 0 auto;
-    /*margin: 0 0 1.5rem 15.5rem; /*0top 0right 2rem bottom 2% left pushes over 2%*/
     text-align: center;
     width: 96%;
-    /*matches inputs on smaller screens */
     max-width: 20rem;
-    /* for lg screens */
     margin-bottom: 20px;
 }
 
@@ -313,11 +313,22 @@ form label.textinfo {
     width: 20rem;
 }
 
-/*   this helps users quickly identify required fields */
+/*   Accessibility Required Fields */
+
+form label.sbs input:required,
+form label.arrivaldetails input:required,
+form label.departuredetails input:required,
+form label.numberrooms input:required,
+form label.numberguests input:required,
 form label.contactinfo input:required {
-    border-left: #ea7317 solid 4px;
+border-left: #ea7317 solid 4px;
 }
 
+form label.sbs input:required:valid,
+form label.arrivaldetails input:required:valid,
+form label.departuredetails input:required:valid,
+form label.numberrooms input:required:valid,
+form label.numberguests input:required:valid,
 form label.contactinfo input:required:valid {
     /* marks green to left if settin input is valid */
     border-left: green solid 4px;
