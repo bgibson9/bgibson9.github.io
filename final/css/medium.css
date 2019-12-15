@@ -9,9 +9,9 @@
         min-width: 32.5em;
     }
 
-    header {
+    /*header { 
         border-radius: 10px 10px 0px 0px;
-    }
+    }*/
 
     header img {
         min-width: 100px;
@@ -21,13 +21,13 @@
         font-size: 1em;
     }
 
-    footer {
+    /*footer {
         border-radius: 0 0 10px 10px;
-    }
+    }*/
 
-    nav {
+    /*nav {
         border-radius: 0 0 10px 10px;
-    }
+    }*/
 
     nav ul {
         flex-direction: row;
@@ -47,19 +47,25 @@
 
     .navigation li {
         display: block;
-        flex: 1 1 100%;
+        /*flex: 1 1 100%;*/
     }
 
-    .navigation li a {
+    /*.navigation li a {
         border-radius: 10px;
 
-    }
+    }*/
 
-    .galleryimages {
+    /*     Home Page Styling     */
+    
+    .templeAttendingActivityPhotos {
         grid-template-columns: 1fr 1fr;
-
     }
 
+    .brighamTemple img {
+        width: 100%;
+    }
+
+   
     main .thanksmessage {
         font-size: 1.5rem;
     }

@@ -27,7 +27,7 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     background-color: #fff;
-    color: #000;
+    color: #1c304a;
 }
 
 header,
@@ -47,7 +47,7 @@ footer {
     justify-content: center;
     width: 100%;
     text-align: center;
-    border: 1px solid #000;
+    border: 1px solid #1c304a;
 }
 
 .header-wrapper {
@@ -72,11 +72,13 @@ header h2 {
     color: #000;
 }
 
+/*    Home Page Navigation     */
+
 nav {
     margin: 0 auto;
     background-color: #046b99;
     text-align: center;
-    border: 1px solid #000;
+    border: 1px solid #1c304a;
 }
 
 nav ul {
@@ -94,7 +96,10 @@ nav ul li {
 }
 
 /*header {height: 100px;} */
-/* try not to use heights, not having a height allows the page elements to nest under each other properly! */
+/* try not to use heights,
+ not having a height 
+ allows the page elements 
+ to nest under each other properly! */
 
 nav ul li a {
     display: block;
@@ -129,11 +134,11 @@ nav ul li a {
     display: block;
 }
 
-.active {
+a.active{
     color: #000;
     background-color: #00cfff;
 }
-/* moved all the link properties here to see them together */
+/* moved all the link properties in the document here to see them together */
 a:link {
     text-decoration: none;
 }
@@ -160,7 +165,67 @@ ul li a:hover {
     text-decoration: none;
 }
 
+/*     Other Home Page Styling */
 
+.reserve {
+    margin-top: 5px;
+    width: 100%;
+    background-color: #ea7317;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.reserve a {
+    display: block;
+}
+
+.templeAttendingActivityPhotos {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.templeAttendingActivityPhotos figure {
+    border: 1px solid black;
+    width: 100%;
+}
+
+article {
+    background-color: #b3efff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+figure img{
+    width: 100%;
+}
+
+.brighamTemple img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.contactInfoIndex,
+.contactInfoIndex h3 {
+    background-color: #046b99;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 /* finished looking at CSS up to here */
 
 main {
@@ -186,7 +251,7 @@ main .thanksmessage {
     color: #184676;
 }
 
-/*     Week 08 Forms     */
+/*    Reservation Form     */
 
 form {
     font-family: Roboto, sans-serif;
@@ -194,21 +259,23 @@ form {
 
 form fieldset {
     margin: 0 auto;
-    border: 1px solid #2364aa;
-    border-radius: 10px;
+    border: 1px solid #000;
     padding: .5rem 3%;
     max-width: 25rem;
     margin-bottom: 20px;
 }
 
 form label.contactinfo input,
-form label.stormdetails input,
+form label.arrivaldetails input,
+form label.departuredetails input,
+form label.numberrooms input,
+form label.numberguests input,
 form label.sbs input,
 form label.dropdown select,
 form input.submitBtn {
     -webkit-appearance: none;
     /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own &#9660; in html next to please select*/
-    display: block;
+    display: flex;
     /*makes them appear below their titles */
     font-size: 1rem;
     border: solid 1px #2364aa;
@@ -222,13 +289,13 @@ form input.submitBtn {
     /* small screen width looks dumb on lg set max-width*/
     max-width: 20rem;
     /*looks better on large screen */
-    background-color: rgba(61, 165, 217, 0.051);
+    background-color: rgba(28, 48, 74, 0.051);
     /* 10% bkgd color for inputs */
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #2364aa;
+    background-color: #046b99;
     color: #fff;
     padding: .75rem 1.5rem;
     margin: 0 auto;
@@ -241,28 +308,6 @@ form input.submitBtn {
     margin-bottom: 20px;
 }
 
-form label.stormseverityrange,
-form label.user-danger {
-    display: block;
-    white-space: nowrap;
-    padding-bottom: 20px;
-}
-
-form label.danger-level input {
-    display: block;
-    /*stacks the radio and check boxes on top of each other */
-    margin-bottom: 15px;
-    border-radius: 4px;
-    padding: .75rem 0;
-    /*44px high for small screens - 0 aligns them to the left*/
-    max-width: 20rem;
-    /*good design is consistent*/
-
-}
-
-form label.danger-level div {
-    padding-bottom: 30px;
-}
 
 form label.textinfo {
     width: 20rem;
@@ -270,7 +315,7 @@ form label.textinfo {
 
 /*   this helps users quickly identify required fields */
 form label.contactinfo input:required {
-    border-left: #f4b98b solid 4px;
+    border-left: #ea7317 solid 4px;
 }
 
 form label.contactinfo input:required:valid {
@@ -283,6 +328,11 @@ form textarea.addlinfo {
     height: 6em;
 }
 
+form .terms p {
+    margin: 0 auto;  
+    width: 300px;
+    padding-bottom: 10px;  
+}
 
 
 /* From first videos W08 not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*
@@ -365,15 +415,6 @@ input[type="checkbox"] ~ label, input[type="radio"] ~ label {
     align-content: center;
 }
 
-.galleryimages {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 25px;
-}
-
 /*for lazyload.html */
 picture img[data-src] {
     filter: blur(0.2em);
@@ -385,7 +426,7 @@ picture img {
 }
 
 
-/*    for gallery-7.html */
+/*    for gallery-7.html 
 figure img[data-src] {
     filter: blur(0.2em);
 }
@@ -394,16 +435,9 @@ figure img {
     filter: blur(0em);
     transition: filter 0.5s;
     width: 100%;
-}
+}     */
 
-figure {
-    margin: 0 auto;
-}
 
-figcaption {
-    text-align: center;
-    font-size: .75rem;
-}
 
 .rowImage1 img {
     width: 100%;
