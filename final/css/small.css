@@ -168,7 +168,6 @@ ul li a:hover {
 /*     Other Home Page Styling */
 
 .reserve {
-    margin-top: 5px;
     width: 100%;
     background-color: #ea7317;
     text-align: center;
@@ -277,7 +276,10 @@ form label.numberrooms input,
 form label.numberguests input,
 form label.sbs input,
 form label.dropdown select,
-form input.submitBtn {
+form input.submitBtn, 
+form label.contactus-name input,
+form label.contactus-email input,
+form label.contactus-msg input {
     -webkit-appearance: none;
     /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own &#9660; in html next to please select*/
     display: flex;
@@ -320,7 +322,9 @@ form label.arrivaldetails input:required,
 form label.departuredetails input:required,
 form label.numberrooms input:required,
 form label.numberguests input:required,
-form label.contactinfo input:required {
+form label.contactinfo input:required,
+form label.contactus-name input:required,
+form label.contactus-email input:required {
 border-left: #ea7317 solid 4px;
 }
 
@@ -714,6 +718,11 @@ h2 {
 h3 {
     font-size: 1rem;
     color: #000;
+}
+
+.contact-us h3 {
+    text-align: center;
+    padding: 10px 0;
 }
 
 

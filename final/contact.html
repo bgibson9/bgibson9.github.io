@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Temple Inn &amp; Suites</title>
+    <meta name="description" content="Bambi Gibson BYUI CIT 230 - Final Project - Temple Inn and Suites - Contact Page">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <a href="https://bgibson9.github.io/final/index.html"><img src="images/logo.png"
+                    alt="line draw of temple"></a>
+            <div class="header-titles">
+                <h1 class="title">Temple Inn &amp; Suites</h1>
+                <h2 class="subtitle">"Your Home Away from Home"</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <!-- REMEMBER!!!!!! Tag the other hrefs active when the pages are made (on that particular page) -->
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="reserve">
+        <p><a href="reservations.html"> Reserve Now! Click here! </a></p>
+    </div>
+
+    <main>
+
+        
+            <div class="contact-us">
+                
+                    <h3>Contact Temple Inn &amp; Suites</h3>
+                    <form method="get" action="contactthanks.html">
+                    
+                        
+                        <fieldset>
+                            <legend>Send Us a Message</legend>
+                            <label class="contactus-name">Name*
+                            <input placeholder="Full Name"
+                            required pattern="[A-Za-z '-]{5,99}"></label>
+                            <label class="contactus-email">Email*
+                                <input type="email" name="email" required
+                                placeholder="name@example.com"></label>
+
+                            <legend class="contactus-email">Message*</legend>
+                            <label class="textinfo">                      <textarea class="addlinfo" name="comments" required placeholder="Type your comments here..."></textarea>
+                            </label>
+                            
+                        </fieldset>
+
+                        <input type="submit" value="Send Message" class="submitBtn">
+                        
+                    </form>
+                </div>    
+
+                <div class="contactInfoIndex">
+                        <h3>Temple Inn &amp; Suites</h3>
+                        <h4><em>Corporate Headquarters</em></h4>
+                        <address>4800 Montgomery Ln #300</address>
+                        <address>Bethesda, MD 20814</address>
+                        <p>&#9742; 240.555.1212</p>
+                        <p>&#9993; info@TempleInnandSuites.com</p>  
+                </div>
+                
+</main>
+
+<footer>
+
+    <p>&copy; <span id="copyright"></span>Temple Inn &amp; Suites | <a
+            href="https://bgibson9.github.io/lesson11/termsofuse.html" target="_blank" rel="noopener">Terms of
+            Use</a> | <a href="https://bgibson9.github.io/lesson11/attributions.html" target="_blank"
+            rel="noopener">Resources</a> | Bambi Gibson - Utah | <a
+            href="https://bgibson9.github.io/index.html">CIT230 Portal Home</a></p>
+
+    <p><span id="currentDate"></span></p>
+
+</footer>
+
+<!--<script src="js/idahotowns1.js"> </script>      -->
+<script src="js/togglehambmenu.js"> </script>
+<script src="js/currentdate.js"> </script>
+
+</body>
+
+</html>
