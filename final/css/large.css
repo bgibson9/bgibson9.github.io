@@ -105,6 +105,9 @@
                 grid-column: span 2;
         }
 
+        .services {
+                width: 60%;
+        }
         .row4content {
                 font-size: 1em;
         }

@@ -200,6 +200,10 @@ article {
     border: 1px solid black;
 }
 
+article p{
+    text-align: center;
+}
+
 figure {
     margin: 0 auto;
 }
@@ -685,7 +689,14 @@ hr {
 /*     Services Page     */
 
 .services {
-    width: 100%;
+    margin-bottom: 25px;
+}
+.services figure figcaption {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 25px;
 }
 
 
