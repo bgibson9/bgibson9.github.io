@@ -365,6 +365,11 @@ form .terms p {
     position: absolute;
 }
 
+/*     Temples Page     */
+
+.nobullets {
+    list-style-type: none;
+}
 /* From first videos W08 not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*
 
 /*    form {
@@ -589,6 +594,7 @@ figure img {
     order: 3;
 }
 
+
 /*     Row 4 is Contact Information     */
 .row4 {
     background-color: #f4b98b;
@@ -629,27 +635,32 @@ figure img {
     width: 10px;
 }
 
-.stats {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 196px;
+/*     Brigham City Temple Weather Summary API     */
+
+.statsbrighamcity,
+.statsogden {
+    /*position: absolute;
+    top: 170px;
+    left: 15px;  */
+    margin: 10px 0px;
     min-width: 196px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 15px;
-    background-color: #3da5d9;
+    background-color: #fff;
     color: #000;
     font-size: .75rem;
     text-align: right;
     opacity: 0.85;
 }
 
-.stats h3 {
+.statsbrighamcity h4,
+.statsogden h4 {
     text-align: center;
 }
 
-.weathersummaryheading {
+.weathersummaryheadingbrighamcity,
+.weathersummaryheadingogden {
     grid-column: span 2;
 }
 
@@ -659,18 +670,26 @@ hr {
     width: 90%;
 }
 
-.stats div h4 {
 
-    text-align: center;
-}
-
-.stats div:nth-child(odd) {
+.statsbrighamcity div:nth-child(odd),
+.statsogden div:nth-child(odd) {
     text-align: right;
 }
 
-.stats div:nth-child(even) {
+.statsbrighamcity div:nth-child(even),
+.statsogden div:nth-child(even) {
     text-align: left;
 }
+
+
+/*     Services Page     */
+
+.services {
+    width: 40%;
+}
+
+
+/*     Social Media Icons     */
 
 .socialMediaIcons {
     display: flex;

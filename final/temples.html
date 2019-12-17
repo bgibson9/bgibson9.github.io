@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body onload="runWC()">
 
     <header>
         <div class="header-wrapper">
@@ -31,9 +31,9 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <!-- REMEMBER!!!!!! Tag the other hrefs active when the pages are made (on that particular page) -->
-            <li><a href="temples.html">Temples</a></li>
+            <li><a class="active" href="temples.html">Temples</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -47,12 +47,308 @@
 
         <div class=mainwrapper>
 
-            <span class="temples">
+            <article>
 
-            </span>
+                <h3>Brigham City Utah Temple</h3>
+
+                <section class="statsbrighamcity">
+                    <div class="weathersummaryheadingbrighamcity">
+                        <h4>Brigham City, Utah</h4>
+                        <h4>Weather Summary</h4>
+                    </div>
+                    <hr>
+                    <div>Currently:&nbsp; &nbsp;</div>
+                    <div><span class="currently"></span></div>
+                    <div>High:&nbsp; &nbsp;</div>
+                    <div><span class="high-temp"></span> &#8457;</div>
+                    <div>Wind Chill: &nbsp; &nbsp;</div>
+                    <div><span class="wChill"></span> &#8457;</div>
+                    <div>Humidity: &nbsp; &nbsp;</div>
+                    <div><span class="humidity"></span>%</div>
+                    <div>Wind Speed: &nbsp; &nbsp;</div>
+                    <div><span class="windSpeed"></span> mph</div>
+                </section>
+
+                <address>250 S Main St</address>
+                <address>Brigham City, UT 84302-2560</address>
+                <p>435-695-2170</p>
+                <P>email</P>
+                <h4>Services</h4>
+                <ul class="nobullets">
+                    <li>No clothing rental available</li>
+                    <li>No cafeteria available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+
+                <h4>History</h4>
+                <p>The Brigham City Utah Temple was announced on 3 October 2009. "I am home," said President Boyd K.
+                    Packer in his opening remarks at the Brigham City Utah Temple groundbreaking held Saturday, July 31,
+                    2010. President Packer, president of the Quorum of the Twelve Apostles, and his wife Donna are
+                    natives of Brigham City. President Packer had attended elementary school 80 years before on the very
+                    site where he stood. He continued, "I can see in my mind's eye a temple sitting here in about two
+                    years time. It will be gorgeous, it will be white. You will see in the design of it reflections of
+                    previous temples that have been built, particularly the Salt Lake Temple. It will be a beacon from
+                    all over the valley." The gold-leafed statue of the angel Moroni was set in place on Tuesday, July
+                    12, 2011, from about 1:40 to 2:30 p.m. Weather conditions delayed the raising. Surrounding streets
+                    were closed to allow the approximately 5,000 spectators to view the proceedings. The exterior finish
+                    is precast concrete. The temple was dedicated on 23 September 2012 by Boyd K. Packer.</p>
+
+                <h4>Baptistry Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 8:00 PM</li>
+                    <li>Wednesday - 5:15 AM - 8:00 PM</li>
+                    <li>Thursday - 6:00 AM - 8:00 PM</li>
+                    <li>Friday - 7:00 AM - 8:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+
+                <h4>Initiatory/Endowment Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 7:00 PM</li>
+                    <li>Wednesday - 5:30 AM - 7:00 PM</li>
+                    <li>Thursday - 7:00 AM - 7:00 PM</li>
+                    <li>Friday - 7:00 AM - 7:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+                <h4>Sealing Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - Friday 7:00 AM - 8:30 PM</li>
+                    <li>Saturday - 7:30 AM - 8:30 PM</li>
+                </ul>
+
+                <span class="temples">
+                    Here will be the json file with temple closure dates
+                </span>
+
+            </article>
+
+            <article>
+
+                <h3>Ogden Utah Temple</h3>
+
+                <section class="statsogden">
+                    <div class="weathersummaryheadingogden">
+                        <h4>Ogden, Utah</h4>
+                        <h4>Weather Summary</h4>
+                    </div>
+                    <hr>
+                    <div>Currently:&nbsp; &nbsp;</div>
+                    <div><span class="currently"></span></div>
+                    <div>High:&nbsp; &nbsp;</div>
+                    <div><span class="high-temp"></span> &#8457;</div>
+                    <div>Wind Chill: &nbsp; &nbsp;</div>
+                    <div><span class="wChill"></span> &#8457;</div>
+                    <div>Humidity: &nbsp; &nbsp;</div>
+                    <div><span class="humidity"></span>%</div>
+                    <div>Wind Speed: &nbsp; &nbsp;</div>
+                    <div><span class="windSpeed"></span> mph</div>
+                </section>
+
+                <address>250 S Main St</address>
+                <address>Brigham City, UT 84302-2560</address>
+                <p>435-695-2170</p>
+                <P>email</P>
+                <h4>Services</h4>
+                <ul class="nobullets">
+                    <li>No clothing rental available</li>
+                    <li>No cafeteria available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+
+                <h4>History</h4>
+                <p>The Brigham City Utah Temple was announced on 3 October 2009. "I am home," said President Boyd K.
+                    Packer in his opening remarks at the Brigham City Utah Temple groundbreaking held Saturday, July 31,
+                    2010. President Packer, president of the Quorum of the Twelve Apostles, and his wife Donna are
+                    natives of Brigham City. President Packer had attended elementary school 80 years before on the very
+                    site where he stood. He continued, "I can see in my mind's eye a temple sitting here in about two
+                    years time. It will be gorgeous, it will be white. You will see in the design of it reflections of
+                    previous temples that have been built, particularly the Salt Lake Temple. It will be a beacon from
+                    all over the valley." The gold-leafed statue of the angel Moroni was set in place on Tuesday, July
+                    12, 2011, from about 1:40 to 2:30 p.m. Weather conditions delayed the raising. Surrounding streets
+                    were closed to allow the approximately 5,000 spectators to view the proceedings. The exterior finish
+                    is precast concrete. The temple was dedicated on 23 September 2012 by Boyd K. Packer.</p>
+
+                <h4>Baptistry Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 8:00 PM</li>
+                    <li>Wednesday - 5:15 AM - 8:00 PM</li>
+                    <li>Thursday - 6:00 AM - 8:00 PM</li>
+                    <li>Friday - 7:00 AM - 8:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+
+                <h4>Initiatory/Endowment Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 7:00 PM</li>
+                    <li>Wednesday - 5:30 AM - 7:00 PM</li>
+                    <li>Thursday - 7:00 AM - 7:00 PM</li>
+                    <li>Friday - 7:00 AM - 7:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+                <h4>Sealing Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - Friday 7:00 AM - 8:30 PM</li>
+                    <li>Saturday - 7:30 AM - 8:30 PM</li>
+                </ul>
+
+                <span class="temples">
+                    Here will be the json file with temple closure dates
+                </span>
+
+            </article>
+
+            <article>
+
+                <h3>Provo City Center Temple</h3>
+
+                <section class="statsbrighamcity">
+                    <div class="weathersummaryheadingbrighamcity">
+                        <h4>Provo, Utah</h4>
+                        <h4>Weather Summary</h4>
+                    </div>
+                    <hr>
+                    <div>Currently:&nbsp; &nbsp;</div>
+                    <div><span class="currently"></span></div>
+                    <div>High:&nbsp; &nbsp;</div>
+                    <div><span class="high-temp"></span> &#8457;</div>
+                    <div>Wind Chill: &nbsp; &nbsp;</div>
+                    <div><span class="wChill"></span> &#8457;</div>
+                    <div>Humidity: &nbsp; &nbsp;</div>
+                    <div><span class="humidity"></span>%</div>
+                    <div>Wind Speed: &nbsp; &nbsp;</div>
+                    <div><span class="windSpeed"></span> mph</div>
+                </section>
+
+                <address>250 S Main St</address>
+                <address>Brigham City, UT 84302-2560</address>
+                <p>435-695-2170</p>
+                <P>email</P>
+                <h4>Services</h4>
+                <ul class="nobullets">
+                    <li>No clothing rental available</li>
+                    <li>No cafeteria available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+
+                <h4>History</h4>
+                <p>The Brigham City Utah Temple was announced on 3 October 2009. "I am home," said President Boyd K.
+                    Packer in his opening remarks at the Brigham City Utah Temple groundbreaking held Saturday, July 31,
+                    2010. President Packer, president of the Quorum of the Twelve Apostles, and his wife Donna are
+                    natives of Brigham City. President Packer had attended elementary school 80 years before on the very
+                    site where he stood. He continued, "I can see in my mind's eye a temple sitting here in about two
+                    years time. It will be gorgeous, it will be white. You will see in the design of it reflections of
+                    previous temples that have been built, particularly the Salt Lake Temple. It will be a beacon from
+                    all over the valley." The gold-leafed statue of the angel Moroni was set in place on Tuesday, July
+                    12, 2011, from about 1:40 to 2:30 p.m. Weather conditions delayed the raising. Surrounding streets
+                    were closed to allow the approximately 5,000 spectators to view the proceedings. The exterior finish
+                    is precast concrete. The temple was dedicated on 23 September 2012 by Boyd K. Packer.</p>
+
+                <h4>Baptistry Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 8:00 PM</li>
+                    <li>Wednesday - 5:15 AM - 8:00 PM</li>
+                    <li>Thursday - 6:00 AM - 8:00 PM</li>
+                    <li>Friday - 7:00 AM - 8:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+
+                <h4>Initiatory/Endowment Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 7:00 PM</li>
+                    <li>Wednesday - 5:30 AM - 7:00 PM</li>
+                    <li>Thursday - 7:00 AM - 7:00 PM</li>
+                    <li>Friday - 7:00 AM - 7:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+                <h4>Sealing Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - Friday 7:00 AM - 8:30 PM</li>
+                    <li>Saturday - 7:30 AM - 8:30 PM</li>
+                </ul>
+
+                <span class="temples">
+                    Here will be the json file with temple closure dates
+                </span>
+
+            </article>
+
+            <article>
+
+                <h3>Payson Utah Temple</h3>
+
+                <section class="statsbrighamcity">
+                    <div class="weathersummaryheadingbrighamcity">
+                        <h4>Payson, Utah</h4>
+                        <h4>Weather Summary</h4>
+                    </div>
+                    <hr>
+                    <div>Currently:&nbsp; &nbsp;</div>
+                    <div><span class="currently"></span></div>
+                    <div>High:&nbsp; &nbsp;</div>
+                    <div><span class="high-temp"></span> &#8457;</div>
+                    <div>Wind Chill: &nbsp; &nbsp;</div>
+                    <div><span class="wChill"></span> &#8457;</div>
+                    <div>Humidity: &nbsp; &nbsp;</div>
+                    <div><span class="humidity"></span>%</div>
+                    <div>Wind Speed: &nbsp; &nbsp;</div>
+                    <div><span class="windSpeed"></span> mph</div>
+                </section>
+
+                <address>250 S Main St</address>
+                <address>Brigham City, UT 84302-2560</address>
+                <p>435-695-2170</p>
+                <P>email</P>
+                <h4>Services</h4>
+                <ul class="nobullets">
+                    <li>No clothing rental available</li>
+                    <li>No cafeteria available</li>
+                    <li>Distribution center nearby</li>
+                </ul>
+
+                <h4>History</h4>
+                <p>The Brigham City Utah Temple was announced on 3 October 2009. "I am home," said President Boyd K.
+                    Packer in his opening remarks at the Brigham City Utah Temple groundbreaking held Saturday, July 31,
+                    2010. President Packer, president of the Quorum of the Twelve Apostles, and his wife Donna are
+                    natives of Brigham City. President Packer had attended elementary school 80 years before on the very
+                    site where he stood. He continued, "I can see in my mind's eye a temple sitting here in about two
+                    years time. It will be gorgeous, it will be white. You will see in the design of it reflections of
+                    previous temples that have been built, particularly the Salt Lake Temple. It will be a beacon from
+                    all over the valley." The gold-leafed statue of the angel Moroni was set in place on Tuesday, July
+                    12, 2011, from about 1:40 to 2:30 p.m. Weather conditions delayed the raising. Surrounding streets
+                    were closed to allow the approximately 5,000 spectators to view the proceedings. The exterior finish
+                    is precast concrete. The temple was dedicated on 23 September 2012 by Boyd K. Packer.</p>
+
+                <h4>Baptistry Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 8:00 PM</li>
+                    <li>Wednesday - 5:15 AM - 8:00 PM</li>
+                    <li>Thursday - 6:00 AM - 8:00 PM</li>
+                    <li>Friday - 7:00 AM - 8:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+
+                <h4>Initiatory/Endowment Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - 7:00 AM - 7:00 PM</li>
+                    <li>Wednesday - 5:30 AM - 7:00 PM</li>
+                    <li>Thursday - 7:00 AM - 7:00 PM</li>
+                    <li>Friday - 7:00 AM - 7:00 PM</li>
+                    <li>Saturday - 7:00 AM - 7:00 PM</li>
+                </ul>
+                <h4>Sealing Operating Schedule</h4>
+                <ul class="nobullets">
+                    <li>Tuesday - Friday 7:00 AM - 8:30 PM</li>
+                    <li>Saturday - 7:30 AM - 8:30 PM</li>
+                </ul>
+
+                <span class="temples">
+                    Here will be the json file with temple closure dates
+                </span>
+
+            </article>
 
         </div>
-        
+
 
         <div class="contactInfoIndex">
             <h3>Temple Inn &amp; Suites</h3>
@@ -78,6 +374,11 @@
 
     </footer>
 
+    <script src="js/brighamcityweatherapi.js"> </script>
+    <script src="js/ogdenutahweatherapi.js"> </script>
+    <script src="js/provoutahweatherapi.js"> </script>
+    <script src="js/paysonutahweatherapi.js"> </script>
+    <script src="js/templeclosures.js"> </script>
     <script src="js/togglehambmenu.js"> </script>
     <script src="js/currentdate.js"> </script>
 

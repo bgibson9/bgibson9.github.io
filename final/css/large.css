@@ -100,7 +100,8 @@
                 clear: both;
         }
 
-        .stats h4 {
+        .statsbrighamcity h4,
+        .statsogden h4 {
                 grid-column: span 2;
         }
 

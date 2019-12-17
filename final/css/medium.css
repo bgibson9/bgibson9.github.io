@@ -77,9 +77,18 @@
     }*/
 
 
-    .stats {
+    .statsbrighamcity,
+    .statsogden {
+        float: right;
         font-size: 1rem;
         width: 250px;
+    }
+
+.services {
+        display: grid;
+        grid-row: span 2;
+        padding: 10px;
+
     }
 
     .row2 {

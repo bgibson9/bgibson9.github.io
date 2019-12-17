@@ -8,16 +8,16 @@ fetch(requestURL)
   .then(function (jsonObject) {
      console.table(jsonObject);  // temporary checking for valid response and data parsing
 
-    const temples = jsonObject['temples'];
+    const temples = jsonObject["temples"];
 
     for (let i = 0; i < temples.length; i++) {
 
-    if(temples[i].name == "Brigham City Utah Temple")
+    if(temples[i].name == "Brigham City Utah Temple" ||  temples[i].name == "Ogden Utah Temple" || temples[i].name == "Provo City Center Temple" || temples[i].name == "Payson Utah Temple")
         {
 
       //let creates variables in this html tag document. card is a variable. the document is the web page we are referencing here in this case, the weather page index.html where we have referenced this js file. We are creating an element called section or span, name, p, etc.
 
-        let section = document.createElement("section");
+        let article = document.createElement("article");
         let span = document.createElement("span");
         let h3 = document.createElement("h3");
         let templeClosures = document.createElement("p");
@@ -46,7 +46,7 @@ fetch(requestURL)
         //image.setAttribute('src', 'images/');
         //image.setAttribute('alt', temples[i].name + 'photo');
         
-        document.querySelector('span.temples').appendChild(p);
+        document.querySelector('span.templeClosures').appendChild(span);
     }
   }
 });
