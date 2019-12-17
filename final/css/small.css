@@ -312,7 +312,7 @@ form label.textinfo {
     width: 20rem;
 }
 
-/*   Accessibility Required Fields */
+/*   Reservation Form Page Accessibility Required Fields */
 
 form label.sbs input:required,
 form label.arrivaldetails input:required,
@@ -348,20 +348,21 @@ form .terms p {
 }
 
 /*     Contact Us Page     */
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:300px;
-    width:300px;}
-    
-.gmap_canvas {
-    margin: 0 auto;
+
+.map-responsive {
     overflow:hidden;
-    background:none!important;
-    height:250px;
-    width:300px;
-    text-align: center;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
     margin-bottom: 15px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 /* From first videos W08 not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*

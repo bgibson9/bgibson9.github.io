@@ -1,6 +1,6 @@
 @media only screen and (min-width: 32.5em) {
 
-    /*  causing header to not center when switching from small to medium. Also 520px = 32.5em based on 16px size*/
+    /*    520px = 32.5em based on 16px size     */
 
     header,
     nav,
@@ -64,16 +64,17 @@
     .brighamTemple img {
         width: 100%;
     }
+    /*     Reservation Page     */
 
-   
     main .thanksmessage {
         font-size: 1rem;
     }
 
-    .gmap_canvas {
+    /*     Contact Page     */
+    /*.map-responsive {
         height:300px;
         width:400px;
-    }
+    }*/
 
 
     .stats {
