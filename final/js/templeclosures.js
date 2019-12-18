@@ -32,7 +32,7 @@ fetch(requestURL)
 
         {
 
-            let p = document.createElement('p');
+            //let p = document.createElement('p');
             p.textContent = temples[i].templeClosures[j];
             templeClosures.appendChild(p);
 
