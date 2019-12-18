@@ -40,7 +40,7 @@ fetch(requestURL)
 
         
         span.appendChild(h3);
-        span.appendChild(templeClosures{0]);
+        span.appendChild(templeClosures);
         //article.appendChild(image);
 
         //image.setAttribute('src', 'images/');
