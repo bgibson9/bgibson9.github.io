@@ -46,7 +46,7 @@ fetch(requestURL)
         //image.setAttribute('src', 'images/');
         //image.setAttribute('alt', temples[i].name + 'photo');
         
-        document.querySelector('span.temples').appendChild(p);
+       // document.querySelector('span.temples').appendChild(p);
         document.querySelector('span.temples').appendChild(templeClosures);
     }
   }
