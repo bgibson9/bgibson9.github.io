@@ -200,8 +200,8 @@ article {
     border: 1px solid black;
 }
 
-article p{
-    text-align: center;
+article p {
+    text-align: left;
 }
 
 figure {
@@ -373,6 +373,13 @@ form .terms p {
 
 .nobullets {
     list-style-type: none;
+}
+
+
+/*     Reception Page     */
+
+.center p {
+    text-align: center;
 }
 /* From first videos W08 not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*
 
@@ -642,7 +649,8 @@ figure img {
 /*     Brigham City Temple Weather Summary API     */
 
 .statsbrighamcity,
-.statsogden {
+.statsogden,
+.statsprovocityctr {
     /*position: absolute;
     top: 170px;
     left: 15px;  */
@@ -659,12 +667,14 @@ figure img {
 }
 
 .statsbrighamcity h4,
-.statsogden h4 {
+.statsogden h4,
+.statsprovocityctr h4 {
     text-align: center;
 }
 
 .weathersummaryheadingbrighamcity,
-.weathersummaryheadingogden {
+.weathersummaryheadingogden,
+.weathersummaryheadingprovocityctr {
     grid-column: span 2;
 }
 
@@ -676,12 +686,14 @@ hr {
 
 
 .statsbrighamcity div:nth-child(odd),
-.statsogden div:nth-child(odd) {
+.statsogden div:nth-child(odd),
+.statsprovocityctr div:nth-child(odd) {
     text-align: right;
 }
 
 .statsbrighamcity div:nth-child(even),
-.statsogden div:nth-child(even) {
+.statsogden div:nth-child(even),
+.statsprovocityctr div:nth-child(even) {
     text-align: left;
 }
 

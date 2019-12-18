@@ -101,7 +101,8 @@
         }
 
         .statsbrighamcity h4,
-        .statsogden h4 {
+        .statsogden h4
+        .statsprovocityctr {
                 grid-column: span 2;
         }
 
