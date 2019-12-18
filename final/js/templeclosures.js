@@ -17,7 +17,7 @@ fetch(requestURL)
 
       //let creates variables in this html tag document. card is a variable. the document is the web page we are referencing here in this case, the weather page index.html where we have referenced this js file. We are creating an element called section or span, name, p, etc.
 
-        let section = document.createElement("section");
+        //let section = document.createElement("section");
         let span = document.createElement("span");
         let h3 = document.createElement("h3");
         let templeClosures = document.createElement("p");
