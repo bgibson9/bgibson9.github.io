@@ -381,6 +381,21 @@ form .terms p {
 .center p {
     text-align: center;
 }
+
+/*     Missionary Page     */
+
+.suites {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.suites img {
+    width: 100%;
+}
+    
+
+
+
 /* From first videos W08 not Dr. Cheney videos. Dr. Cheney videos were simple and easy to understand. /*
 
 /*    form {
@@ -762,7 +777,7 @@ h1 {
     color: #000;
     text-align: center;
     font-weight: bold;
-    white-space: nowrap;
+    /*white-space: nowrap; removed 12/17/2019  */
     /*height: 7vh;*/
 }
 

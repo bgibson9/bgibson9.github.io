@@ -109,6 +109,11 @@
         .services {
                 width: 60%;
         }
+
+        /*     Missionary Page     */
+        .suites img {
+                width: 75%;
+            }
         .row4content {
                 font-size: 1em;
         }

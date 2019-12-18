@@ -96,6 +96,11 @@
         text-align: center;
     }
 
+
+    /*     Missionary Page     */
+    .suites img {
+        width: 50%;
+    }
     .row2 {
         display: block;
         margin-top: 30px;
@@ -272,7 +277,7 @@
 
     h1 {
         font-size: 1.75rem;
-        white-space: nowrap;
+        /* white-space: nowrap;  removed 12/17   */
     }
 
     h2 {
