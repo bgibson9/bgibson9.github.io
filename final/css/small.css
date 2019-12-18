@@ -198,6 +198,13 @@ article p {
     text-align: left;
 }
 
+.services {
+    width: 100%;
+}
+
+.services p {
+    text-align: center;
+}
 figure {
     margin: 0 auto;
 }
@@ -714,11 +721,8 @@ hr {
 /*     Services Page     */
 
 .services {
-    margin-bottom: 25px;
-}
-.services figure figcaption {
-        display: grid;
-        grid-template-columns: 1fr;
+    width: 100%;
+        text-align: center;
         justify-content: center;
         align-content: center;
         margin-bottom: 25px;
