@@ -374,6 +374,12 @@ form .terms p {
     list-style-type: none;
 }
 
+.temples p {
+    margin: 0;
+    padding: 0;
+    text-indent: 3em;
+}
+
 
 /*     Reception Page     */
 

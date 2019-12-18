@@ -26,7 +26,7 @@ fetch(requestURL)
         
       //here we are calling out what we created in let, similiar to the idea of calling by id or class.  textContent gets the content of all elements, including <script> and <style> elements. In contrast, innerText only shows “human-readable” elements. 
 
-      h4.textContent = temples[i].name + ' Closure dates: ';
+      h4.textContent = temples[i].name + ' Closure Dates: ';
 
       for (let j=0; j < temples[i].templeClosures.length; j++)
 
