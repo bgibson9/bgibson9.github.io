@@ -12,7 +12,7 @@ fetch(requestURL)
 
     for (let i = 0; i < temples.length; i++) {
 
-    if(temples[i].name == 'Brigham City Temple' )
+    if(temples[i].name == 'Ogden Utah Temple' )
         {
 
       //let creates variables in this html tag document. card is a variable. the document is the web page we are referencing here in this case, the weather page index.html where we have referenced this js file. We are creating an element called section or span, name, p, etc.
@@ -46,7 +46,7 @@ fetch(requestURL)
         //image.setAttribute('src', 'images/');
         //image.setAttribute('alt', temples[i].name + 'photo');
         
-       // document.querySelector('span.temples').appendChild(p);
+       //document.querySelector('span.temples').appendChild(p);
         document.querySelector('span.temples').appendChild(span);
     }
   }
