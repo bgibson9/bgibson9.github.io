@@ -40,14 +40,14 @@ fetch(requestURL)
 
         
         span.appendChild(h3);
-        span.appendChild(templeClosures);
+        span.appendChild(templeClosures[0]);
         //article.appendChild(image);
 
         //image.setAttribute('src', 'images/');
         //image.setAttribute('alt', temples[i].name + 'photo');
         
        // document.querySelector('span.temples').appendChild(p);
-        document.querySelector('span.temples').appendChild(templeClosures);
+        document.querySelector('span.temples').appendChild(templeClosures[0]);
     }
   }
 });
