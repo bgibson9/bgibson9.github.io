@@ -19,14 +19,14 @@ fetch(requestURL)
 
         //let section = document.createElement("section");
         let span = document.createElement('span');
-        let h3 = document.createElement('h3');
+        let h4 = document.createElement('h4');
         let templeClosures = document.createElement('p');
         //let image = document.createElement('img');
 
         
       //here we are calling out what we created in let, similiar to the idea of calling by id or class.  textContent gets the content of all elements, including <script> and <style> elements. In contrast, innerText only shows “human-readable” elements. 
 
-      h3.textContent = temples[i].name + ' Closure dates: ';
+      h4.textContent = temples[i].name + ' Closure dates: ';
 
       for (let j=0; j < temples[i].templeClosures.length; j++)
 
@@ -39,7 +39,7 @@ fetch(requestURL)
         }
 
         
-        span.appendChild(h3);
+        span.appendChild(h4);
         span.appendChild(templeClosures);
         //article.appendChild(image);
 
