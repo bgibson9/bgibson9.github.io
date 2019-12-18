@@ -5,24 +5,24 @@ fetch(apiURL3)
   .then((jsObject) => {
   //console.log(jsObject); //to test data pull
 
-    document.getElementsByClassName('currently')[0].textContent = jsObject.weather[0].description;
-    document.getElementsByClassName('high-temp')[0].textContent = jsObject.main.temp_max;
-    document.getElementsByClassName('windSpeed')[0].textContent = jsObject.wind.speed;
-    document.getElementsByClassName('humidity')[0].textContent = jsObject.main.humidity;
+    document.getElementsByClassName('currently3')[0].textContent = jsObject.weather[0].description;
+    document.getElementsByClassName('high-temp3')[0].textContent = jsObject.main.temp_max;
+    document.getElementsByClassName('windSpeed3')[0].textContent = jsObject.wind.speed;
+    document.getElementsByClassName('humidity3')[0].textContent = jsObject.main.humidity;
 
     runWC();
 
   });
 
 function runWC() {
-  var tempF = parseFloat(document.getElementsByClassName("high-temp")[0].textContent);
-  var speed = parseFloat(document.getElementsByClassName("windSpeed")[0].textContent);
+  var tempF = parseFloat(document.getElementsByClassName("high-temp3")[0].textContent);
+  var speed = parseFloat(document.getElementsByClassName("windSpeed3")[0].textContent);
 
  // console.log(tempF)
  // console.log(speed)
 
   var f = calcWindChill(tempF, speed);
-  document.getElementsByClassName("wChill")[0].textContent = f;
+  document.getElementsByClassName("wChill3")[0].textContent = f;
 }
 
 function calcWindChill(tempF, speed) {

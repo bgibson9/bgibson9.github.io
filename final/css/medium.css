@@ -78,9 +78,10 @@
 
 /*     Temples Page     */ 
 
-    .statsbrighamcity,
-    .statsogden,
-    .statsprovocityctr {
+    section.statsbrighamcity,
+    section.statsogden,
+    section.statsprovocityctr,
+    section.statspayson {
         float: right;
         font-size: 1rem;
         width: 250px;

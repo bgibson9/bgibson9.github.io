@@ -101,10 +101,12 @@
         }
 
         .statsbrighamcity h4,
-        .statsogden h4
-        .statsprovocityctr {
+        .statsogden h4,
+        .statsprovocityctr h4,
+        .statspayson h4 {
                 grid-column: span 2;
         }
+
 
         .services {
                 width: 60%;
