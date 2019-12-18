@@ -12,7 +12,7 @@ fetch(requestURL)
 
     for (let i = 0; i < temples.length; i++) {
 
-    if(temples[i].name == "Brigham City Utah Temple")
+    if(temples[i].name == 'Brigham City Utah Temple')
         {
 
       //let creates variables in this html tag document. card is a variable. the document is the web page we are referencing here in this case, the weather page index.html where we have referenced this js file. We are creating an element called section or span, name, p, etc.
