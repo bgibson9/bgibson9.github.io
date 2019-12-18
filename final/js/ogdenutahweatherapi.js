@@ -21,11 +21,11 @@ function runWC() {
  // console.log(tempF)
  // console.log(speed)
 
-  var f = calcWindChill(tempF, speed);
+  var f = calcWindChill2(tempF, speed);
   document.getElementsByClassName("wChill2")[0].textContent = f;
 }
 
-function calcWindChill(tempF, speed) {
+function calcWindChill2(tempF, speed) {
   var t = tempF;
   var s = speed;
 
