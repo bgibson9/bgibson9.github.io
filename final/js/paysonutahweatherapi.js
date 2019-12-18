@@ -10,11 +10,11 @@ fetch(apiURL4)
     document.getElementsByClassName('windSpeed4')[0].textContent = jsObject.wind.speed;
     document.getElementsByClassName('humidity4')[0].textContent = jsObject.main.humidity;
 
-    runWC();
+    runWC4();
 
   });
 
-function runWC() {
+function runWC4() {
   var tempF = parseFloat(document.getElementsByClassName("high-temp4")[0].textContent);
   var speed = parseFloat(document.getElementsByClassName("windSpeed4")[0].textContent);
 

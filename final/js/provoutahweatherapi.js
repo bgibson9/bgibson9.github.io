@@ -10,11 +10,11 @@ fetch(apiURL3)
     document.getElementsByClassName('windSpeed3')[0].textContent = jsObject.wind.speed;
     document.getElementsByClassName('humidity3')[0].textContent = jsObject.main.humidity;
 
-    runWC();
+    runWC3();
 
   });
 
-function runWC() {
+function runWC3() {
   var tempF = parseFloat(document.getElementsByClassName("high-temp3")[0].textContent);
   var speed = parseFloat(document.getElementsByClassName("windSpeed3")[0].textContent);
 
