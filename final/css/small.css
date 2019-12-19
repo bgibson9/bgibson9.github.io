@@ -374,7 +374,10 @@ form .terms p {
     list-style-type: none;
 }
 
-.temples p {
+.temples p,
+.temples2 p,
+.temples3 p,
+.temples4 p {
     margin: 0;
     padding: 0;
     text-indent: 3em;

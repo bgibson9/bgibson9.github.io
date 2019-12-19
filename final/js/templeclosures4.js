@@ -1,6 +1,6 @@
-const requestURL2 = 'https://bgibson9.github.io/final/json/temples.json';
+const requestURL4 = 'https://bgibson9.github.io/final/json/temples.json';
 
-fetch(requestURL2)
+fetch(requestURL4)
 
   .then(function (response) {
     return response.json();
@@ -12,7 +12,7 @@ fetch(requestURL2)
 
     for (let i = 0; i < temples.length; i++) {
 
-    if(temples[i].name == 'Ogden Utah Temple' )
+    if(temples[i].name == 'Payson Utah Temple' )
         {
 
       //let creates variables in this html tag document. card is a variable. the document is the web page we are referencing here in this case, the weather page index.html where we have referenced this js file. We are creating an element called section or span, name, p, etc.
@@ -47,7 +47,7 @@ fetch(requestURL2)
         //image.setAttribute('alt', temples[i].name + 'photo');
         
        //document.querySelector('span.temples').appendChild(p);
-        document.querySelector('span.temples2').appendChild(span);
+        document.querySelector('span.temples4').appendChild(span);
     }
   }
 });
