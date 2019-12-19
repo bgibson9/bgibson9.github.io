@@ -18,87 +18,9 @@
                 font-size: 1.25rem;
             }
         
-
-        /*     Week 08     */
-        form label.stormseverityrange span {
-                display: inline;
-                padding-bottom: 15px;
-        }
-
-        /*     Week 09     */
-
-        .towns {
-                display: flex;
-                flex-direction: row;
-                margin-bottom: 25px;
-        }
-
-        .towns section {
-                flex-direction: column;
-                justify-content: center;
-                margin-bottom: 0;
-        }
-
-        .towns :nth-child(3) {
-                flex-direction: column;
-        }
-
-        .towns section img {
-                align-items: center;
-                width: 100%;
-        }
-
-        .towns section:nth-child(2),
-        .towns section:nth-child(3) {
-                margin-bottom: 0;
-        }
-     
-/* we have to look at the actual inspect on the page to see which child the thing we want to change is in the HTML, for example, visually on the large.css soda springs is in the middle or 2nd. I want to put a left and right margin on that section. Soda springs is physically in the HTML the 3rd section so I have to put the margins on that section. Thus why I had to do the code below this way. */
-
-        .towns section:nth-child(3) {
-                margin-left: 15px;
-                margin-right: 15px;
-        }
-
-
-        /*     Week 07     */
-
         .templeAttendingActivityPhotos {
                 grid-template-columns: 1fr 1fr 1fr;
             }
-
-        figure:hover {
-                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
-
-        .row1,
-        .row2 {
-                margin: 5px 0 0;
-                text-align: center;
-        }
-
-        .rowimage3 {
-                max-width: 960px;
-        }
-
-                /*     Week 10     */
-        
-        .events section {
-                font-size: 1em;
-        }
-
-        .events section p {
-                padding-left: 25px;
-                line-height: 0.75em;
-        }
-
-        .events img {
-                width: 55%;
-        }
-
-        .row4 {
-                clear: both;
-        }
 
         .statsbrighamcity h4,
         .statsogden h4,
@@ -111,8 +33,5 @@
         .suites img {
                 width: 75%;
             }
-        .row4content {
-                font-size: 1em;
-        }
-
+ 
 }

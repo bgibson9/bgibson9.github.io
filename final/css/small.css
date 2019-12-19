@@ -10,11 +10,6 @@
   Bambi Gibson
 */
 
-/* {
-    border: 1px solid red !important; /* demo for Box Model Presentation Useful for figuring where boxes are located
- }     */
-
-
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

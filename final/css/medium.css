@@ -90,31 +90,6 @@
         margin: 10px;
     }
 
-    table,
-    tr,
-    th,
-    td {
-        margin: 0 auto;
-        justify-content: center;
-        text-align: center;
-        border: 1px solid black;
-        width: 100px;
-    }
-
-    table tr th {
-        align-content: center;
-        align-content: space-evenly;
-    }
-
-    th {
-        background-color: #3da5d9;
-    }
-
-    tr td img {
-        height: 32px;
-        width: 32px;
-    }
-
     h1 {
         font-size: 1.75rem;
         /* white-space: nowrap;  removed 12/17   */
