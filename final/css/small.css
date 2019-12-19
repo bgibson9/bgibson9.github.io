@@ -404,9 +404,6 @@ section.statsbrighamcity,
 section.statsogden,
 section.statsprovocityctr,
 section.statspayson {
-    /*position: absolute;
-    top: 170px;
-    left: 15px;  */
     margin: 10px 0px;
     min-width: 196px;
     width: 250px;
@@ -483,8 +480,6 @@ h1 {
     color: #000;
     text-align: center;
     font-weight: bold;
-    /*white-space: nowrap; removed 12/17/2019  */
-    /*height: 7vh;*/
 }
 
 h2 {
