@@ -9,10 +9,6 @@
         min-width: 32.5em;
     }
 
-    /*header { 
-        border-radius: 10px 10px 0px 0px;
-    }*/
-
     header img {
         min-width: 100px;
     }
@@ -20,14 +16,6 @@
     main {
         font-size: 1em;
     }
-
-    /*footer {
-        border-radius: 0 0 10px 10px;
-    }*/
-
-    /*nav {
-        border-radius: 0 0 10px 10px;
-    }*/
 
     nav ul {
         flex-direction: row;
@@ -47,13 +35,7 @@
 
     .navigation li {
         display: block;
-        /*flex: 1 1 100%;*/
     }
-
-    /*.navigation li a {
-        border-radius: 10px;
-
-    }*/
 
     /*     Home Page Styling     */
     
@@ -69,12 +51,6 @@
     main .thanksmessage {
         font-size: 1rem;
     }
-
-    /*     Contact Page     */
-    /*.map-responsive {
-        height:300px;
-        width:400px;
-    }*/
 
 /*     Temples Page     */ 
 
